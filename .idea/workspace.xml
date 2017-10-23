@@ -1,39 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/shake.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/css/index.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/css/index.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_Android.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_back.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_iOS.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_level.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_mess.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_record.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_resultbg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_review1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_review2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_server1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_server2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teacher1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teacher2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teaching_material.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_titleline.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_titleline_blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/touxiang.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/invite.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/countryCode.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/jquery-2.1.0.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/vue.min.js" afterPath="" />
-    </list>
+    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -186,12 +154,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508748373605</updated>
-      <workItem from="1508748374900" duration="875000" />
+      <workItem from="1508748374900" duration="927000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="875000" />
+    <option name="totallyTimeSpent" value="927000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
