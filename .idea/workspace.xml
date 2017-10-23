@@ -2,7 +2,37 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/shake.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/.project" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/css/index.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_Android.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_iOS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_level.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_mess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_record.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_resultbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_review1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_review2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_server1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_server2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teacher1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teacher2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_teaching_material.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_titleline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/share_app_titleline_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/img/touxiang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/invite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/countryCode.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/jquery-2.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/share/js/vue.min.js" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -16,20 +46,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="invite.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/share/invite.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="634">
-              <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-              <folding>
-                <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,10 +89,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="talkpal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="share" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -173,12 +186,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1508748373605</updated>
-      <workItem from="1508748374900" duration="586000" />
+      <workItem from="1508748374900" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="586000" />
+    <option name="totallyTimeSpent" value="875000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -216,9 +229,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="634">
           <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
