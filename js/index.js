@@ -1565,9 +1565,22 @@ var app = new Vue({
 					error:function (e,b,c) {
 						console.log(e,b,c);
                         var errorText = JSON.parse(e.responseText);
-                        if(errorText.errors.phone_number[0] === "Registered"){
-							alert("该号码已经注册,请到app直接登陆");
-						}
+                        if (errorText.errors.phone_number) {
+                            if(errorText.errors.phone_number[0] === "Registered"){
+                                alert("该号码已经注册,请到app直接登陆");
+                            }
+                        }
+                        if (errorText.errors.invitee_phone_number) {
+                            if(errorText.errors.invitee_phone_number[0] === "has already been taken"){
+                                alert("该号码已经接受过邀请");
+                            }
+                        }
+                        if (errorText.errors.verify) {
+                            if (errorText.errors.verify[0] === 'Incorrect verification code') {
+                                alert('您输入的验证码有误，请等待重新获取');
+                            }
+
+                        }
                     }
 				});
 			}
