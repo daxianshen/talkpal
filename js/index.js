@@ -1567,19 +1567,22 @@ var app = new Vue({
                         var errorText = JSON.parse(e.responseText);
                         if (errorText.errors.phone_number) {
                             if(errorText.errors.phone_number[0] === "Registered"){
-                                alert("该号码已经注册,请到app直接登陆");
+                                alert("该号码已经注册,请打开或下载 App 直接登陆");
+                                _this.succeedBol = true;
+                                _this.CodeBol = false;
                             }
                         }
                         if (errorText.errors.invitee_phone_number) {
                             if(errorText.errors.invitee_phone_number[0] === "has already been taken"){
-                                alert("该号码已经接受过邀请");
+                                alert("您已成功接受邀请");
+                                _this.succeedBol = true;
+                                _this.CodeBol = false;
                             }
                         }
                         if (errorText.errors.verify) {
                             if (errorText.errors.verify[0] === 'Incorrect verification code') {
                                 alert('您输入的验证码有误，请等待重新获取');
                             }
-
                         }
                     }
 				});
