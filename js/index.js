@@ -1556,7 +1556,7 @@ var app = new Vue({
 					data: {
 						"phone_number": _this.country + _this.placeholder,
 						"verification_code": _this.code,
-						"promotion_code": _this.user_id
+						"promotion_code": _this.GetRequest().code
 					},
 					success: function(data) {
 						_this.succeedBol = true;
