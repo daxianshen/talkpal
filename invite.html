@@ -36,7 +36,7 @@
 	<body>
 		<div id="app" v-cloak>
 			<div class="share">
-				<img v-if="user_url !== null&!user_url" :src="user_url" />
+				<img v-if="user_url" :src="user_url" />
 				<img v-else src="img/share_app_default_phone.jpg" />
 				<h4><img style="transform: rotateZ(180deg);" align="center" src="img/share_app_titleline.png"/> {{user_name}}邀请你一起学英语 <img align="center" src="img/share_app_titleline.png"/></h4>
 				<div class="login">
