@@ -1,7 +1,204 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="" />
+    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/21days_background.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/21days_erweima.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/21days_talkpal.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/21days_title.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/bg.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/book.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/book.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/book1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/book5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/code.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/color.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/fn.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/global.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/home.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/home1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/log.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/log1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/map.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/message.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/movie.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/movie1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/music.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/music1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/music5.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/paly.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/pause.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/review.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/mixin/setArrow.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/mixin/setOnepx.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_Android.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_back.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_bg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_bottom.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_default_phone.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_iOS.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_level.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_mess.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_record.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_resultbg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_review1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_review2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_server1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_server2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_teacher1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_teacher2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_teaching_material.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_time.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_titleline.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/share_app_titleline_blue.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/mixin/text.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/timg.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/img/touxiang.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-button.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-cell.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-dialog.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-grid.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-msg.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/variable/weui-progress.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/zan.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/icon/zhibo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/.project" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/app.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/app.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/book/book.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/book/book.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/book/book.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/book/book.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/booklist/booklist.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/booklist/booklist.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/booklist/booklist.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/booklist/booklist.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/js/countryCode.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/demo/demo.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/demo/demo.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/demo/demo.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/demo/demo.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/index/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/js/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/index/index.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/css/index.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/index/index.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/index/index.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/invite.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/js/jquery-2.1.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/logs/logs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/logs/logs.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/logs/logs.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/logs/logs.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/music/music.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/music/music.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/music/music.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/music/music.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/package/package.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/package/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/package/package.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/book/package.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/package/package.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/project.config.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/base/reset.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/utils/util.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/video/video.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/video/video.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/video/video.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/video/video.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/site/js/vue.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-access.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-agree/weui-agree.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-animate/weui-animate.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-page/weui-article.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-tips/weui-badge.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-button/weui-button.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-cell.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-check.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-flex/weui-flex.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-footer/weui-footer.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-form/weui-form-preview.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-form.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-form/weui-form_common.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-grid/weui-grid.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-loading/weui-loading.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-tips/weui-loadmore.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-media-box/weui-media-box.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-page/weui-msg.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-tab/weui-navbar.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-panel/weui-panel.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-progress/weui-progress.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-searchbar/weui-searchbar.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-form/weui-select.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-switch.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-tab/weui-tab.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-uploader.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/widget/weui-cell/weui-form/weui-vcode.wxss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/style/weui.wxss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/css/index.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/21days_background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/21days_erweima.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/21days_talkpal.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/21days_title.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_Android.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_back.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_default_phone.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_iOS.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_level.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_mess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_record.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_resultbg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_review1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_review2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_server1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_server2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_teacher1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_teacher2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_teaching_material.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_time.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_titleline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/share_app_titleline_blue.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/img/touxiang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/invite.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/countryCode.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/jquery-2.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/js/vue.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -12,24 +209,119 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="talkpal-site" />
+  </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/README.md">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+            <state split_layout="FIRST">
+              <first_editor vertical-scroll-proportion="0.73490816">
+                <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="project.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/project.config.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8095238">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8095238">
+              <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".project" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.project">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="66.48">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.6">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="util.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/applet/utils/util.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.7061791">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/applet/README.md" />
+        <option value="$PROJECT_DIR$/applet/app.json" />
+        <option value="$PROJECT_DIR$/applet/utils/util.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="x" value="138" />
+    <option name="y" value="24" />
+    <option name="width" value="1920" />
+    <option name="height" value="987" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -42,14 +334,16 @@
       <autoscrollToSource />
       <autoscrollFromSource />
       <sortByType />
-      <manualOrder />
-      <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talkpal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="talkpal-site" />
@@ -60,8 +354,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talkpal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="talkpal-site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -83,32 +393,54 @@
     </option>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="INTERPRETER_PATH" value="/bin/bash" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
-    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-      <node-interpreter value="project" />
-      <working-dir value="" />
-      <envs />
-      <scope-kind value="ALL" />
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <kind value="FILE" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
-      <config-file value="" />
-      <node-interpreter value="project" />
-      <envs />
+    <configuration default="true" type="GoRunFileConfiguration" factoryName="Go Single File">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method />
     </configuration>
-    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-      <config-file value="" />
-      <node-interpreter value="project" />
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="DIRECTORY" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
       <method />
     </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
@@ -121,38 +453,32 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-      <command value="run" />
-      <scripts />
-      <node-interpreter value="project" />
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
     </configuration>
     <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
-      <node-interpreter>project</node-interpreter>
       <node-options />
       <working-directory />
       <pass-parent-env>true</pass-parent-env>
       <envs />
       <ui />
       <extra-mocha-options />
-      <test-kind>DIRECTORY</test-kind>
       <test-directory />
       <recursive>false</recursive>
       <method />
     </configuration>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="" />
       <created>1508748373605</created>
       <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
       <updated>1508748373605</updated>
       <workItem from="1508748374900" duration="927000" />
     </task>
@@ -162,24 +488,26 @@
     <option name="totallyTimeSpent" value="927000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="138" y="24" width="1920" height="987" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -193,10 +521,61 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/share/invite.html">
+    <entry file="file://$PROJECT_DIR$/applet/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MultiMarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor vertical-scroll-proportion="0.73490816">
+            <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/project.config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="89" column="18" lean-forward="true" selection-start-line="89" selection-start-column="18" selection-end-line="89" selection-end-column="18" />
+        <state vertical-scroll-proportion="-3.8095238">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/icon/book.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8095238">
+          <caret line="7" column="30" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.project">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="66.48">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.6">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/utils/util.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7061791">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>

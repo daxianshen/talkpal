@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/mine/mine",
+    "pages/package/package",
+    "pages/book/book",
+    "pages/activity/activity",
+    "pages/activitydetail/activitydetail",
+    "pages/booklist/booklist",
+    "pages/index/index",
+    "pages/videoDetail/videoDetail",
+    "pages/openclass/openclass",
+    "pages/logs/logs",
+    "pages/demo/demo",
+    "pages/discount/discount"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "脱口派",
+    "navigatio99nBarTextStyle": "white"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "backgroundColor": "#Ef9b6c",
+    "color": "#fff",
+    "selectedColor": "black",
+    "list": [
+      {
+        "pagePath": "pages/openclass/openclass",
+        "text": "主页",
+        "iconPath": "./icon/home.png",
+        "selectedIconPath": "./icon/home.png"
+      },
+      {
+        "pagePath": "pages/book/book",
+        "text": "主课",
+        "iconPath": "./icon/book.png",
+        "selectedIconPath": "./icon/book.png"
+      },
+      {
+        "pagePath": "pages/activity/activity",
+        "text": "活动",
+        "iconPath": "./icon/book.png",
+        "selectedIconPath": "./icon/book.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "./icon/log.png",
+        "selectedIconPath": "./icon/log.png"
+      }
+    ]
+  }
+}

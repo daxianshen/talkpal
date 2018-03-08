@@ -1,0 +1,45 @@
+<view class="page">
+    <view class="info-box">
+     <image class="avatar" src="{{info.avatarUrl}}"/>
+    <view class="score">积分:5</view>
+    <view class='navitorbox score'>
+        <view class='singlebox borderr'>
+          我的小组
+    </view>
+    <view class='singlebox borderr'>
+        我的钱包
+    </view>
+    <view class='singlebox'>
+         我的优惠券
+    </view>
+    </view>
+
+
+ </view>
+
+
+  <view class="weui-cells__title"></view>
+  <view class="weui-cells weui-cells_after-title">
+    <navigator url="../book/book" class="weui-cell" hover-class="navigator-hover" open-type="switchTab">
+      <view class="weui-cell__hd">
+        <image src="/icon/book5.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">阅读</view>
+      <view class="weui-cell__ft">我的阅读小屋</view>
+    </navigator>
+    <navigator url="../video/video" class="weui-cell" hover-class="navigator-hover" open-type="switchTab">
+      <view class="weui-cell__hd">
+        <image src="/icon/zhibo.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">视频</view>
+      <view class="weui-cell__ft">我的视频小屋</view>
+    </navigator>
+      <navigator url="../package/package" class="weui-cell" hover-class="navigator-hover">
+      <view class="weui-cell__hd">
+        <image src="/icon/zhibo.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+      </view>
+      <view class="weui-cell__bd">购买套餐</view>
+    </navigator>
+  </view>
+  <view class="weui-cells__title"></view>
+</view>

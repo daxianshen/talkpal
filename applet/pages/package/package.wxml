@@ -1,0 +1,16 @@
+<!--pages/package/package.wxml-->
+ 
+ <view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      人数：{{array[index]}}
+    </view>
+  </picker>          
+</view>
+ <view class="movieList" wx:for="{{items}}" wx:key="{{index}}">
+      <view class="singlemovie" bindtap="gotoDetail" data-id="{{item._id}}"data-name="{{item.name}}"data-price="{{item.price}}" data-lessonNum="{{item.lessonNum}}" data-long="{{item.long}}">
+        <view class="title">{{item.name}}</view>
+        <view class="jr">¥{{item.price}}/节 每人</view>
+        <view>总价: ¥{{item.price * item.lessonNum * joinNum}}</view>
+      </view>
+</view>
