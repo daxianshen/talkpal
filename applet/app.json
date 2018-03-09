@@ -1,12 +1,12 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/mine/mine",
     "pages/package/package",
     "pages/book/book",
     "pages/activity/activity",
     "pages/activitydetail/activitydetail",
     "pages/booklist/booklist",
-    "pages/index/index",
     "pages/videoDetail/videoDetail",
     "pages/openclass/openclass",
     "pages/logs/logs",
@@ -26,7 +26,7 @@
     "selectedColor": "black",
     "list": [
       {
-        "pagePath": "pages/openclass/openclass",
+        "pagePath": "pages/index/index",
         "text": "主页",
         "iconPath": "./icon/home.png",
         "selectedIconPath": "./icon/home.png"
