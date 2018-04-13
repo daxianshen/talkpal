@@ -22,7 +22,7 @@ page{
 }
 
 .navitorbox{
-  margin-top: 5px;
+  margin-top: 15px;
   width: 100%;
 }
 .singlebox{
@@ -34,6 +34,9 @@ page{
   border-right: 1px solid #999999
 }
 
+.weui-cells{
+  margin-top: 1em
+}
 .weui-cell__bd{
     color: #000;
     font-size: 14px;

@@ -1,10 +1,12 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .6)" indicator-active-color="rgba(239, 155, 108, 1)"  circular="{{true}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="swiperChange">
+    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+        <swiper-item>
+            <image src="{{item}}" style="width:100%" bindtap="swipclick"/>
+        </swiper-item>
+    </block>
+</swiper>
 
-<scroll-view scroll-y="true" style="height:{{scrollTop}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
-  <view class="movieList" wx:for="{{movielist}}" wx:key="{{index}}">
-      <view class="singlemovie" bindtap="gotoDetail" data-vid="{{item.id}}">
-        <image src="{{item.imgSrc}}"></image>
-        <view class="title">{{item.name}}</view>
-        <view class="jr">进入学习</view>
-      </view>
-  </view>
-</scroll-view>
+<view wx:for="{{detail}}">
+  <navigator class="section s-item" url='{{item.url}}' style='background:url("{{item.imgurl}}") no-repeat;background-size:100% 100%;' bindtap='click'>
+  </navigator>
+</view>

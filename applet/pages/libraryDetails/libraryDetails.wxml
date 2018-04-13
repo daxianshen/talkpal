@@ -1,0 +1,24 @@
+<!--pages/libraryDetails.wxml-->
+
+<view>
+  <view class='title' bindtap='both'> <image animation="{{animation1}}" class="arrow" src="/icon/right.png"></image> e-book</view>
+  <view class='box' animation="{{animation2}}" style="height:{{height}}">
+    <view class="smallbox">
+      <view class='section' wx:for="{{books}}">
+        <view class='section-item' data-index="{{index}}" bindtap='click'>{{item.bName}}</view>
+      </view>
+      <!-- <view class='section' style="font-size:15px">
+        <text selectable='true'>百度云链接：https://pan.baidu.com/s/1Lsj6RrwFL8hl6Bqy1s-_5A  \n</text>
+        <text selectable='true'>密码：pnhe</text>
+      </view> -->
+    </view>
+  </view>
+</view>
+
+
+
+
+<view class="loading" style="{{style}}">
+  <image src="/icon/load.gif"></image>
+  <view>{{text}}</view>
+</view>

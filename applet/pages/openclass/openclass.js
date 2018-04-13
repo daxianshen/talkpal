@@ -1,53 +1,56 @@
+
+var imageUtil = require('../../utils/util.js');
+
 Page({
   data: {
-    videoList: [
-      { name: '亲子阅读', id: 'guowei', imgSrc:"http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" },
-      { name: '亲子阅读', id: 'shucai', imgSrc: "http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" },
-      { name: '亲子阅读', id: 'chaohuo', imgSrc: "http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" },
-      { name: '亲子阅读', id: 'dianxin', imgSrc: "http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" },
-      { name: '亲子阅读', id: 'cucha', imgSrc: "http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" },
-      { name: '亲子阅读', id: 'danfan', imgSrc: "http://cdn.32ci.com/o_1bg5jfhhe1thrq81qqq1ogo14o88.jpg-w640" }
+    imgUrls:[    'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
+'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
+'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
     ],
+    detail: [
+        {
+          imgurl:"/icon/library.png",
+          url:"/pages/libraryDetails/libraryDetails"
+        },
+        {
+          imgurl: "/icon/class.png",
+        },
+        {
+          imgurl: "/icon/ekids.png",
+        }
+      ],
+    indicatorDots: true,
+    autoplay: true,
+    interval: 5000,
+    duration: 1000,
+    current:0,
+   
+
+    imagewidth:0,
+    imageheight:0
   },
   changeIndicatorDots: function (e) {
     this.setData({
       indicatorDots: !this.data.indicatorDots
     })
   },
+  swiperChange: function (e) {
+    //只要把切换后当前的index传给<swiper>组件的current属性即可  
+    this.setData({
+      current: e.detail.current
+    })
+  }, 
+  swipclick: function (e) {//点击图片触发事件
+    // console.log(this.data.jumpTo[this.data.current]);
+    var id = this.data.current;
+    wx.navigateTo({
+      url: '/pages/outview/outview',
+    })
+  },
+
   onLoad: function (options) {
-    // 页面初始化 options为页面跳转所带来的参数
-    var that = this;
-    that.setData({
-          movielist: this.data.videoList
-    })
-    wx.request({
-      url: 'http://talkpal.cc/teacher/list',
-      method: 'POST',
-      success: function (res) {
-        // success
-        console.log(res);
-      }
-    })
-    // wx.request({
-    //   url: 'http://www.maodan.online/php/movie.php',
-    //   success: function (res) {
-    //     console.log(res);
-    //     that.setData({
-    //       movielist: res.data
-    //     })
-    //   }
-    // });
   
   },
-  onReady: function () {
-    // 页面渲染完成
-  },
-  gotoDetail: function (event) {
-    var id = event.currentTarget.dataset.vid;
-    console.log(event, id);
-    wx.navigateTo({
-      url: '/pages/videoDetail/videoDetail?id=' + id
-    });
-  }
+
 
 })

@@ -1,0 +1,4 @@
+<!--pages/aboutus/aboutus.wxml-->
+<view>
+  <web-view src="{{url}}#wechat-redirect"></web-view>
+</view>

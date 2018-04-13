@@ -1,0 +1,9 @@
+<!--pages/advice/advice.wxml-->
+
+
+<view class="section">
+  <form bindsubmit="bindFormSubmit">
+    <textarea placeholder="写下你的建议吧" name="textarea" value="{{advice.info}}"/>
+    <button form-type="submit"> 提交 </button>
+  </form>
+</view>

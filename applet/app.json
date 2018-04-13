@@ -1,17 +1,18 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/mine/mine",
-    "pages/package/package",
-    "pages/book/book",
-    "pages/activity/activity",
-    "pages/activitydetail/activitydetail",
-    "pages/booklist/booklist",
-    "pages/videoDetail/videoDetail",
     "pages/openclass/openclass",
+    "pages/libraryDetails/libraryDetails",
+    "pages/activity/activity",
+    "pages/mine/mine",
+    "pages/advice/advice",
+    "pages/parents/parents",
+    "pages/activitydetail/activitydetail",
+    "pages/index/index",
     "pages/logs/logs",
-    "pages/demo/demo",
-    "pages/discount/discount"
+    "pages/discount/discount",
+    "pages/class/class",
+    "pages/aboutus/aboutus",
+    "pages/book/book"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,32 +22,26 @@
   },
   "tabBar": {
     "borderStyle": "white",
-    "backgroundColor": "#Ef9b6c",
+    "backgroundColor": "#fff",
     "color": "#fff",
     "selectedColor": "black",
     "list": [
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/openclass/openclass",
         "text": "主页",
-        "iconPath": "./icon/home.png",
+        "iconPath": "./icon/home1.png",
         "selectedIconPath": "./icon/home.png"
-      },
-      {
-        "pagePath": "pages/book/book",
-        "text": "主课",
-        "iconPath": "./icon/book.png",
-        "selectedIconPath": "./icon/book.png"
       },
       {
         "pagePath": "pages/activity/activity",
         "text": "活动",
-        "iconPath": "./icon/book.png",
+        "iconPath": "./icon/book1.png",
         "selectedIconPath": "./icon/book.png"
       },
       {
         "pagePath": "pages/mine/mine",
         "text": "我的",
-        "iconPath": "./icon/log.png",
+        "iconPath": "./icon/log1.png",
         "selectedIconPath": "./icon/log.png"
       }
     ]
