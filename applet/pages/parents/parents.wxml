@@ -1,5 +1,0 @@
-<!--pages/parents/parents.wxml-->
-<view class="pbox" wx:for="{{group.parents}}">
-  <image class="head" src="{{item.pic}}"></image>
-  <view class="name">{{item.name}}</view>
-</view>

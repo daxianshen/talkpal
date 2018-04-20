@@ -1,66 +1,61 @@
 // pages/book/book.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-  
+    windowHeight: 0,
+    dk:true
   },
+  onShareAppMessage: function (res) {
+    var that = this;
+    console.log(that);
+    if (res.from === 'button') {
+      that.dk=false;
+      // 来自页面内转发按钮
+      console.log(res.target);
+      console.log('hello');    
+    }
+    return {
+      title: '自定义转发标题',
+      path: '/page/user?id=123',
+      success: function (res) {
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
+        // 转发成功
+      },
+      fail: function (res) {
+        that.dk = true;
+        // 转发失败  
+      }
+    }
+  },
   onLoad: function (options) {
-  
+   var that = this;
+   wx.showShareMenu({
+     withShareTicket: true
+   })
+    wx.getSystemInfo({
+      success: function (res) {
+        console.log(res.model)
+        that.setData({
+          windowHeight:res.windowHeight
+        })
+      }
+    })
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+  confirm:function(event){
+      var value = event.detail.value;
+      wx.navigateTo({
+        url: '/pages/booklist/booklist?value='+value
+      })
+  },
   onReady: function () {
-  
+    // 页面渲染完成
   },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
-  
+    // 页面显示
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide: function () {
-  
+    // 页面隐藏
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload: function () {
-  
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-  
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-  
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-  
+    // 页面关闭
   }
 })

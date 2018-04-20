@@ -1,26 +1,10 @@
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .6)" indicator-active-color="rgba(239, 155, 108, 1)"  circular="{{true}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="swiperChange">
-  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-      <swiper-item style='background:url("{{item}}") no-repeat;background-size:cover' bindtap="swipclick">
-        
-      </swiper-item>
-  </block>
-</swiper>
 
-
-
-<view wx:for="{{activities}}">
-  <view class="article" style='background:url("{{item.img}}");background-size:cover'>
-  <view class='dBox'>
-    <view class='title'>{{item.title}}</view>
-    <view class='head'>
-      <view class='headPic' style='background:url("/icon/headPic.png");background-size:cover'></view>
-      <view style='float:left'>{{item.updator}}</view>
-      <view style='float:right'>{{item.create_at}}</view>
-    </view>
+<scroll-view scroll-y="true" style="height:{{scrollTop}}px;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+  <view class="movieList" wx:for="{{movielist}}" wx:key="{{index}}">
+      <view class="singlemovie" bindtap="gotoDetail" data-id="{{item._id}}"data-name="{{item.name}}"data-price="{{item.price}}">
+        <image src="{{item.imgSrc}}"></image>
+        <view class="title">{{item.name}}</view>
+        <view class="jr">报名</view>
+      </view>
   </view>
-  </view>
-</view>
-
-<view style='text-align:center;display:{{display}}'>
-  <image class='load' style='' src='/icon/load.gif'></image>
-</view>
+</scroll-view>

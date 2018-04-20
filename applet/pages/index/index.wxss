@@ -1,35 +1,40 @@
-/**index.wxss**/
-page{
+.swiper {
+  height: 400rpx;
+  width: 100%;
+}
+.swiper image {
   height: 100%;
-}
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 100%;
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.sectionMain{
+  padding: 10px;
+  margin-bottom: 8px;
+  border-bottom: 1px gray solid;
+}
+.section{
+  width: 25%;
+  display: inline-block
 }
 
-.userinfo-nickname {
-  color: #aaa;
+.sectionI{
+  padding: 2px;
+}
+.sectionImg{
+  height: 120rpx;
+  width: 100%;
 }
 
-.usermotto {
-  margin-top: 150px;
-}
-.lei{
-  background: red;
+.bannerMain{
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
-.container{
-    width: 100%;
-    background-image: url(http://img4.imgtn.bdimg.com/it/u=2157876659,3470217848&fm=214&gp=0.jpg);
-    background-size: 100% 100%;
-    color: white;
-    height:100%;
+.banner{
+  width: 100%;
+}
+
+.bannerImg{
+  height: 220rpx;
+  width: 100%;
 }
