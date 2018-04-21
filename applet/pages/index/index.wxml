@@ -1,28 +1,11 @@
-
-<swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">    
-      <block wx:for="{{movies}}" wx:key="{{index}}">    
-        <swiper-item>    
-          <image src="{{item.url}}" class="slide-image" mode="aspectFill"/>    
-        </swiper-item>    
-      </block>    
-</swiper> 
-
-
- <view class="sectionMain"> 
-  <view class="section" wx:for="{{sections}}" wx:key="{{index}}">
-    <view class="sectionI"> 
-   <image src="{{item.url}}" class="sectionImg"/>
-    <view>{{item.title}}</view> 
-      </view>
-   </view>
- </view>
-
-  <view class="bannerMain"> 
-  <view class="banner" wx:for="{{banners}}" wx:key="{{index}}">
-   <image src="{{item.url}}" class="bannerImg"/>
+<!--index.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
   </view>
-</view>
-
-
-
-
+  <view class="usermotto">
+    <text class="user-motto">萨顶顶撒从</text>
+  </view>
+  
+</view> 

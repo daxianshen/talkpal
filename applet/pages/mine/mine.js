@@ -1,7 +1,10 @@
 // pages/mine/mine.js
 Page({
   data: {
-    info: {}
+    info: {},
+    group:{},
+    animationData:{},
+    phoneCall:"15692404006"
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -15,29 +18,58 @@ Page({
       })
     })
 
-    console.log(this.data.info);
+    // wx.request({
+    //   url:'',
+    //   data:{},
+    //   method:"get",
+    //   success:function(res){
+    //     console.log(res.data.result);
+    //     that.setData({
+    //       group:res.data.result
+    //     })
+    //   }
+    // })
 
+    that.setData({
+       group:{
+         code:0,
+         parents:[
+           {
+             name:'mama',
+             pic:'/icon/zan.png'
+           },
+           {
+             name: 'baba',
+             pic: '/icon/zan.png'
+           },
+           {
+             name: 'jiejie',
+             pic: '/icon/zan.png'
+           },
+           {
+             name: 'jiejie',
+             pic: '/icon/zan.png'
+           },
+           {
+             name: 'jiejie',
+             pic: '/icon/zan.png'
+           }
+         ]
+       }
+    })
+
+    console.log(this.data.info);
+    console.log(this.data.group);
   },
-  saoyisao: function () {
-    wx.scanCode({
-      success: (res) => {
-        console.log(res)
-      }
+  call: function (e) {
+    wx.makePhoneCall({
+      phoneNumber: this.data.phoneCall,
     })
   },
-  location: function () {
-    wx.getLocation({
-      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
-      success: function (res) {
-        var latitude = res.latitude
-        var longitude = res.longitude
-        wx.openLocation({
-          latitude: latitude,
-          longitude: longitude,
-          scale: 28
-        })
-      }
-    })
+
+  advice: function (e) {
+    
   }
+  
 })
 

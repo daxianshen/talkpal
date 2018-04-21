@@ -1,7 +1,2 @@
-<view>
-  <view class='info'>
-     成为我们的会员，才可以上主课哦。
-  </view>
-  <button wx:if="{{dk}}" open-type="share">打卡</button>
-</view>
- 
+<!--pages/book/book.wxml-->
+<text>pages/book/book.wxml</text>

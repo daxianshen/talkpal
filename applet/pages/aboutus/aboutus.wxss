@@ -1,0 +1,5 @@
+/* pages/aboutus/aboutus.wxss */
+
+view{
+  background: #353535
+}

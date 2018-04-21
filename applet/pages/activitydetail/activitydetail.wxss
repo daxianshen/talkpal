@@ -1,15 +1,6 @@
 /* pages/activitydetail/activitydetail.wxss */
-.form-box{
-    padding-left: 30rpx;
-}
-.form-box input{
-    height: 90rpx;
-    border-bottom: 1rpx solid #ededed;
-    color: #999;
-}
-.form-box .input-placeholder{
-    color: #aaa;
-}
-.form-box button{
-    margin:30rpx 30rpx 0 0;
+
+web-view{
+  width: 100%;
+  height: 100%
 }
