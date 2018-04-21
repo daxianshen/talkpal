@@ -1,5 +1,4 @@
 // pages/aboutus/aboutus.js
-】uuuu
 
 var imageUtil = require('../../utils/util.js');
 
