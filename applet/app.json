@@ -12,7 +12,8 @@
     "pages/discount/discount",
     "pages/class/class",
     "pages/aboutus/aboutus",
-    "pages/book/book"
+    "pages/book/book",
+    "pages/test/test"
   ],
   "window": {
     "backgroundTextStyle": "light",

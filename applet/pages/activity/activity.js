@@ -7,7 +7,7 @@ Page({
     activities:[],
     display:"none",
     defaultnum:0,
-    loadnum:5,
+    loadnum:2,
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -32,10 +32,10 @@ Page({
     var idata;
 
     wx.request({
-      url: 'http://www.talkpal.cc/api/article/rest?count=true&page=1&size=100',
+      url: 'https://www.talkpal.cc/api/article/rest',
       method: 'GET',
       success: function (res) {
-        var ndata = res.data.data.data;
+        var ndata= res.data.data;
 
         for (var a = 0; a < ndata.length;a++){
           ndata[a].create_at = ndata[a].create_at.slice(0,10);
@@ -51,7 +51,7 @@ Page({
           key: 'num',
           data: {
             'nownum':5,
-            'totalnum':res.data.data.data.length,
+            'totalnum':res.data.data.length,
           }
         })
 
@@ -69,13 +69,12 @@ Page({
 
 
     wx.request({
-      url: 'http://www.talkpal.cc/api/article/rest?count=true&page=1&size=100',
+      url: 'http://www.talkpal.cc/api/article/rest',
       method: 'GET',
       success: function (res) {
 
         setTimeout(function () {
-         
-          var loadArr = res.data.data.data.slice(num1, num1 + num2)
+          var loadArr = res.data.data.slice(num1, num1 + num2)
 
 
           for (var b = 0; b < loadArr.length; b++) {
@@ -91,7 +90,7 @@ Page({
             key: 'num',
             data: {
               'nownum': num1 + num2,
-              'totalnum': res.data.data.data.length
+              'totalnum': res.data.data.length
             },
             success: function (res) {}
           })
