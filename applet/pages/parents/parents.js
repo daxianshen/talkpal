@@ -12,33 +12,31 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      this.setData({
-        group: {
-          code: 0,
-          parents: [
-            {
-              name: 'mama',
-              pic: '/icon/zan.png'
-            },
-            {
-              name: 'baba',
-              pic: '/icon/zan.png'
-            },
-            {
-              name: 'jiejie',
-              pic: '/icon/zan.png'
-            },
-            {
-              name: 'jiejie',
-              pic: '/icon/zan.png'
-            },
-            {
-              name: 'jiejie',
-              pic: '/icon/zan.png'
+    var app = getApp();
+    var g_data = app.globalData;
+    var that = this;
+
+      wx.request({
+        url: g_data.host + "/getCustomerGroup",
+        method: 'get',
+        data: {
+          token: g_data.token
+        },
+        success: function (res) {
+          if (res.data && res.data.data) {
+            var data = res.data.data;
+            var ps = [];
+            for (var i = 0,l = data.length;i<l; i++) {
+              ps.push({name: data[i].nickname, pic: data[i].headimgurl || '/icon/zan.png'})
             }
-          ]
+            that.setData({
+              group: {
+                parents: ps
+              }
+            })
+          }
         }
-      })
+        })
   },
 
   /**
