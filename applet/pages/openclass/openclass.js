@@ -1,5 +1,4 @@
 
-var imageUtil = require('../../utils/util.js');
 
 Page({
   data: {
