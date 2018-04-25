@@ -1,94 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/book/package.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/booklist/booklist.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/booklist/booklist.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/booklist/booklist.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/booklist/booklist.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/demo/demo.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/demo/demo.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/demo/demo.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/demo/demo.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/music/music.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/music/music.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/music/music.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/music/music.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/package/package.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/package/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/package/package.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/package/package.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/video/video.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/video/video.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/video/video.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/video/video.wxss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.wxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/videoDetail/videoDetail.wxss" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/21days_background.png" afterPath="$PROJECT_DIR$/site/img/21days_background.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/21days_erweima.png" afterPath="$PROJECT_DIR$/site/img/21days_erweima.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/21days_talkpal.png" afterPath="$PROJECT_DIR$/site/img/21days_talkpal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/21days_title.png" afterPath="$PROJECT_DIR$/site/img/21days_title.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_Android.png" afterPath="$PROJECT_DIR$/site/img/share_app_Android.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_back.png" afterPath="$PROJECT_DIR$/site/img/share_app_back.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_bg.png" afterPath="$PROJECT_DIR$/site/img/share_app_bg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_bottom.png" afterPath="$PROJECT_DIR$/site/img/share_app_bottom.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_default_phone.jpg" afterPath="$PROJECT_DIR$/site/img/share_app_default_phone.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_iOS.png" afterPath="$PROJECT_DIR$/site/img/share_app_iOS.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_level.png" afterPath="$PROJECT_DIR$/site/img/share_app_level.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_mess.png" afterPath="$PROJECT_DIR$/site/img/share_app_mess.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_record.png" afterPath="$PROJECT_DIR$/site/img/share_app_record.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_resultbg.png" afterPath="$PROJECT_DIR$/site/img/share_app_resultbg.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_review1.png" afterPath="$PROJECT_DIR$/site/img/share_app_review1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_review2.png" afterPath="$PROJECT_DIR$/site/img/share_app_review2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_server1.png" afterPath="$PROJECT_DIR$/site/img/share_app_server1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_server2.png" afterPath="$PROJECT_DIR$/site/img/share_app_server2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_teacher1.png" afterPath="$PROJECT_DIR$/site/img/share_app_teacher1.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_teacher2.png" afterPath="$PROJECT_DIR$/site/img/share_app_teacher2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_teaching_material.png" afterPath="$PROJECT_DIR$/site/img/share_app_teaching_material.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_time.png" afterPath="$PROJECT_DIR$/site/img/share_app_time.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_titleline.png" afterPath="$PROJECT_DIR$/site/img/share_app_titleline.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/share_app_titleline_blue.png" afterPath="$PROJECT_DIR$/site/img/share_app_titleline_blue.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/img/touxiang.png" afterPath="$PROJECT_DIR$/site/img/touxiang.png" />
+    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="Merge branch 'master' of https://github.com/Talkpal/talkpal-site&#10;&#10;# Conflicts:&#10;#&#9;applet/pages/aboutus/aboutus.js">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/advice/advice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/advice/advice.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/advice/advice.wxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/applet/pages/advice/advice.wxss" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/book.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/book5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/heart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/review.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/icon/timg.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/app.json" afterPath="$PROJECT_DIR$/applet/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.js" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.json" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.wxml" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.wxss" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.js" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.json" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxml" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxss" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/book/book.js" afterPath="$PROJECT_DIR$/applet/pages/book/book.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/book/book.json" afterPath="$PROJECT_DIR$/applet/pages/book/book.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/book/book.wxml" afterPath="$PROJECT_DIR$/applet/pages/book/book.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/book/book.wxss" afterPath="$PROJECT_DIR$/applet/pages/book/book.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/discount/discount.js" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/discount/discount.json" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/discount/discount.wxml" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/discount/discount.wxss" afterPath="$PROJECT_DIR$/applet/pages/discount/discount.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/index/index.js" afterPath="$PROJECT_DIR$/applet/pages/index/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/index/index.wxml" afterPath="$PROJECT_DIR$/applet/pages/index/index.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/index/index.wxss" afterPath="$PROJECT_DIR$/applet/pages/index/index.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/mine/mine.js" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/mine/mine.wxml" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/mine/mine.wxss" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.wxss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/aboutus/aboutus.js" afterPath="$PROJECT_DIR$/applet/pages/aboutus/aboutus.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.json" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxss" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/project.config.json" afterPath="$PROJECT_DIR$/applet/project.config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/utils/util.js" afterPath="$PROJECT_DIR$/applet/utils/util.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/css/index.css" afterPath="$PROJECT_DIR$/site/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/css/index.scss" afterPath="$PROJECT_DIR$/site/css/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/invite.html" afterPath="$PROJECT_DIR$/site/invite.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/js/countryCode.json" afterPath="$PROJECT_DIR$/site/js/countryCode.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/js/index.js" afterPath="$PROJECT_DIR$/site/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/js/jquery-2.1.0.js" afterPath="$PROJECT_DIR$/site/js/jquery-2.1.0.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/site/js/vue.min.js" afterPath="$PROJECT_DIR$/site/js/vue.min.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -112,18 +39,47 @@
       <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applet/app.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
+            <state relative-caret-position="154">
+              <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+              <folding>
+                <marker date="1524621697000" expanded="true" signature="0:1157" ph="{...}" />
+                <marker date="1524621697000" expanded="true" signature="13:323" ph="[...]" />
+                <marker date="1524621697000" expanded="true" signature="337:499" ph="{&quot;backgroundTextStyle&quot;: &quot;light&quot;...}" />
+                <marker date="1524621697000" expanded="true" signature="513:1155" ph="{&quot;borderStyle&quot;: &quot;white&quot;...}" />
+                <marker date="1524621697000" expanded="true" signature="637:1151" ph="[...]" />
+                <marker date="1524621697000" expanded="true" signature="645:811" ph="{&quot;pagePath&quot;: &quot;pages/openclass/openclass&quot;...}" />
+                <marker date="1524621697000" expanded="true" signature="819:983" ph="{&quot;pagePath&quot;: &quot;pages/activity/activity&quot;...}" />
+                <marker date="1524621697000" expanded="true" signature="991:1145" ph="{&quot;pagePath&quot;: &quot;pages/mine/mine&quot;...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="440">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/applet/README.md">
+      <file leaf-file-name="project.config.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/project.config.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="132">
+              <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="aboutus.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/applet/pages/aboutus/aboutus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -151,46 +107,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="book.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1521684684000" expanded="true" signature="630:634" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="openclass.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1522224230000" expanded="true" signature="1195:1198" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="7:1150" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="17:652" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="31:256" ph="[...]" />
+                <marker date="1524622455000" expanded="true" signature="270:506" ph="[...]" />
+                <marker date="1524622455000" expanded="true" signature="280:382" ph="{&quot;imgurl&quot;: &quot;/icon/library.png&quot;...}" />
+                <marker date="1524622455000" expanded="true" signature="392:440" ph="{&quot;imgurl&quot;: &quot;/icon/class.png&quot;...}" />
+                <marker date="1524622455000" expanded="true" signature="450:498" ph="{&quot;imgurl&quot;: &quot;/icon/ekids.png&quot;...}" />
+                <marker date="1524622455000" expanded="true" signature="690:767" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="709:762" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="798:908" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="864:903" ph="{&quot;current&quot;: e.detail.current...}" />
+                <marker date="1524622455000" expanded="true" signature="937:1105" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="938:1005" ph="//..." />
+                <marker date="1524622455000" expanded="true" signature="1056:1100" ph="{&quot;url&quot;: '/pages/outview/outview'...}" />
+                <marker date="1524622455000" expanded="true" signature="1137:1145" ph="{...}" />
+                <marker date="1524622455000" expanded="true" signature="1147:1150" ph="{...}" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discount.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="discount.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -217,6 +156,8 @@
         <option value="$PROJECT_DIR$/applet/utils/util.js" />
         <option value="$PROJECT_DIR$/applet/pages/mine/mine.js" />
         <option value="$PROJECT_DIR$/applet/app.json" />
+        <option value="$PROJECT_DIR$/applet/project.config.json" />
+        <option value="$PROJECT_DIR$/applet/pages/aboutus/aboutus.js" />
       </list>
     </option>
   </component>
@@ -227,9 +168,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="717" />
-    <option name="y" value="116" />
-    <option name="width" value="1920" />
+    <option name="x" value="269" />
+    <option name="y" value="177" />
+    <option name="width" value="1119" />
     <option name="height" value="987" />
   </component>
   <component name="ProjectView">
@@ -248,7 +189,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,34 +265,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="openclass" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkpal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="talkpal-site" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applet" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pages" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mine" />
+              <option name="myItemId" value="advice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -377,7 +296,23 @@
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
     </configuration>
+    <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
       <config-file value="" />
       <node-interpreter value="project" />
       <envs />
@@ -402,6 +337,13 @@
       <tasks />
       <arguments />
       <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
       <envs />
       <method />
     </configuration>
@@ -432,25 +374,35 @@
       <workItem from="1508748374900" duration="927000" />
       <workItem from="1524192742850" duration="313000" />
       <workItem from="1524193193577" duration="765000" />
+      <workItem from="1524290712994" duration="1442000" />
+      <workItem from="1524623286962" duration="438000" />
     </task>
+    <task id="LOCAL-00001" summary="update">
+      <created>1524623745634</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1524623745634</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2005000" />
+    <option name="totallyTimeSpent" value="3885000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="717" y="116" width="1920" height="987" extended-state="0" />
+    <frame x="269" y="177" width="1119" height="987" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24043716" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -467,16 +419,175 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applet/app.json">
+    <entry file="file://$PROJECT_DIR$/applet/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <marker date="1521526810000" expanded="true" signature="37:51" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524622455000" expanded="true" signature="7:1150" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="17:652" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="31:256" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="270:506" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="280:382" ph="{&quot;imgurl&quot;: &quot;/icon/library.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="392:440" ph="{&quot;imgurl&quot;: &quot;/icon/class.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="450:498" ph="{&quot;imgurl&quot;: &quot;/icon/ekids.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="690:767" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="709:762" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="798:908" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="864:903" ph="{&quot;current&quot;: e.detail.current...}" />
+            <marker date="1524622455000" expanded="true" signature="937:1105" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="938:1005" ph="//..." />
+            <marker date="1524622455000" expanded="true" signature="1056:1100" ph="{&quot;url&quot;: '/pages/outview/outview'...}" />
+            <marker date="1524622455000" expanded="true" signature="1137:1145" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="1147:1150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524621697000" expanded="true" signature="0:1157" ph="{...}" />
+            <marker date="1524621697000" expanded="true" signature="13:323" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="337:499" ph="{&quot;backgroundTextStyle&quot;: &quot;light&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="513:1155" ph="{&quot;borderStyle&quot;: &quot;white&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="637:1151" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="645:811" ph="{&quot;pagePath&quot;: &quot;pages/openclass/openclass&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="819:983" ph="{&quot;pagePath&quot;: &quot;pages/activity/activity&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="991:1145" ph="{&quot;pagePath&quot;: &quot;pages/mine/mine&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <marker date="1521526810000" expanded="true" signature="37:51" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524622455000" expanded="true" signature="7:1150" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="17:652" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="31:256" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="270:506" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="280:382" ph="{&quot;imgurl&quot;: &quot;/icon/library.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="392:440" ph="{&quot;imgurl&quot;: &quot;/icon/class.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="450:498" ph="{&quot;imgurl&quot;: &quot;/icon/ekids.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="690:767" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="709:762" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="798:908" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="864:903" ph="{&quot;current&quot;: e.detail.current...}" />
+            <marker date="1524622455000" expanded="true" signature="937:1105" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="938:1005" ph="//..." />
+            <marker date="1524622455000" expanded="true" signature="1056:1100" ph="{&quot;url&quot;: '/pages/outview/outview'...}" />
+            <marker date="1524622455000" expanded="true" signature="1137:1145" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="1147:1150" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="3" lean-forward="false" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1524621697000" expanded="true" signature="0:1157" ph="{...}" />
+            <marker date="1524621697000" expanded="true" signature="13:323" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="337:499" ph="{&quot;backgroundTextStyle&quot;: &quot;light&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="513:1155" ph="{&quot;borderStyle&quot;: &quot;white&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="637:1151" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="645:811" ph="{&quot;pagePath&quot;: &quot;pages/openclass/openclass&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="819:983" ph="{&quot;pagePath&quot;: &quot;pages/activity/activity&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="991:1145" ph="{&quot;pagePath&quot;: &quot;pages/mine/mine&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -498,42 +609,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1521684684000" expanded="true" signature="630:634" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js" />
     <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522224230000" expanded="true" signature="1195:1198" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="7:1150" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="17:652" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="31:256" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="270:506" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="280:382" ph="{&quot;imgurl&quot;: &quot;/icon/library.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="392:440" ph="{&quot;imgurl&quot;: &quot;/icon/class.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="450:498" ph="{&quot;imgurl&quot;: &quot;/icon/ekids.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="690:767" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="709:762" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="798:908" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="864:903" ph="{&quot;current&quot;: e.detail.current...}" />
+            <marker date="1524622455000" expanded="true" signature="937:1105" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="938:1005" ph="//..." />
+            <marker date="1524622455000" expanded="true" signature="1056:1100" ph="{&quot;url&quot;: '/pages/outview/outview'...}" />
+            <marker date="1524622455000" expanded="true" signature="1137:1145" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="1147:1150" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js" />
     <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -561,7 +664,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="7" column="30" lean-forward="false" selection-start-line="7" selection-start-column="30" selection-end-line="7" selection-end-column="30" />
-          <folding />
+          <folding>
+            <marker date="1524621697000" expanded="true" signature="0:1157" ph="{...}" />
+            <marker date="1524621697000" expanded="true" signature="13:323" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="337:499" ph="{&quot;backgroundTextStyle&quot;: &quot;light&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="513:1155" ph="{&quot;borderStyle&quot;: &quot;white&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="637:1151" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="645:811" ph="{&quot;pagePath&quot;: &quot;pages/openclass/openclass&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="819:983" ph="{&quot;pagePath&quot;: &quot;pages/activity/activity&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="991:1145" ph="{&quot;pagePath&quot;: &quot;pages/mine/mine&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,13 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
           <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/project.config.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -640,56 +745,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1521684684000" expanded="true" signature="630:634" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.json" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.wxml" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/book/book.js" />
     <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1522224230000" expanded="true" signature="1195:1198" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="7:1150" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="17:652" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="31:256" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="270:506" ph="[...]" />
+            <marker date="1524622455000" expanded="true" signature="280:382" ph="{&quot;imgurl&quot;: &quot;/icon/library.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="392:440" ph="{&quot;imgurl&quot;: &quot;/icon/class.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="450:498" ph="{&quot;imgurl&quot;: &quot;/icon/ekids.png&quot;...}" />
+            <marker date="1524622455000" expanded="true" signature="690:767" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="709:762" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="798:908" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="864:903" ph="{&quot;current&quot;: e.detail.current...}" />
+            <marker date="1524622455000" expanded="true" signature="937:1105" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="938:1005" ph="//..." />
+            <marker date="1524622455000" expanded="true" signature="1056:1100" ph="{&quot;url&quot;: '/pages/outview/outview'...}" />
+            <marker date="1524622455000" expanded="true" signature="1137:1145" ph="{...}" />
+            <marker date="1524622455000" expanded="true" signature="1147:1150" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json" />
+    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js" />
     <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -700,9 +785,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/applet/app.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="8" column="42" lean-forward="true" selection-start-line="8" selection-start-column="42" selection-end-line="8" selection-end-column="42" />
-          <folding />
+        <state relative-caret-position="154">
+          <caret line="7" column="42" lean-forward="false" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+          <folding>
+            <marker date="1524621697000" expanded="true" signature="0:1157" ph="{...}" />
+            <marker date="1524621697000" expanded="true" signature="13:323" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="337:499" ph="{&quot;backgroundTextStyle&quot;: &quot;light&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="513:1155" ph="{&quot;borderStyle&quot;: &quot;white&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="637:1151" ph="[...]" />
+            <marker date="1524621697000" expanded="true" signature="645:811" ph="{&quot;pagePath&quot;: &quot;pages/openclass/openclass&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="819:983" ph="{&quot;pagePath&quot;: &quot;pages/activity/activity&quot;...}" />
+            <marker date="1524621697000" expanded="true" signature="991:1145" ph="{&quot;pagePath&quot;: &quot;pages/mine/mine&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -729,7 +823,23 @@
     <entry file="file://$PROJECT_DIR$/applet/README.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="440">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/project.config.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/aboutus/aboutus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="9" lean-forward="true" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>

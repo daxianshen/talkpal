@@ -4,15 +4,12 @@
     "pages/openclass/openclass",
     "pages/libraryDetails/libraryDetails",
     "pages/mine/mine",
-    "pages/advice/advice",
     "pages/parents/parents",
     "pages/activitydetail/activitydetail",
-    "pages/index/index",
     "pages/logs/logs",
-    "pages/discount/discount",
     "pages/class/class",
-    "pages/aboutus/aboutus",
-    "pages/book/book"
+    "pages/advice/advice",
+    "pages/aboutus/aboutus"
   ],
   "window": {
     "backgroundTextStyle": "light",
