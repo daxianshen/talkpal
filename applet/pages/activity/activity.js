@@ -50,15 +50,15 @@ Page({
 
               var ndata = res.data.data.data;
 
-        for (var a = 0; a < ndata.length;a++){
-          ndata[a].create_at = ndata[a].create_at.slice(0,10);
-        }
+              for (var a = 0; a < ndata.length;a++){
+                ndata[a].create_at = ndata[a].create_at.slice(0,10);
+              }
 
-        idata = ndata.slice(0,5)
+              var idata = ndata.slice(0,5)
 
-        that.setData({
-          activities: idata
-        })
+              that.setData({
+                activities: idata
+              })
 
               wx.getStorage({
                 key: 'totalnum',
