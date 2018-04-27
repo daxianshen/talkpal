@@ -30,7 +30,7 @@ Page({
   getData:function(page){
 
 
-    
+
 
       var that = this;
       wx.request({
@@ -44,31 +44,21 @@ Page({
                 "num":res.data.data.count
                 },
               success:function(res){
-                
+
               }
             })
 
               var ndata = res.data.data.data;
 
-              for (var a = 0; a < ndata.length;a++){
-                  ndata[a].create_at = ndata[a].create_at.slice(0,10);
-              }
+        for (var a = 0; a < ndata.length;a++){
+          ndata[a].create_at = ndata[a].create_at.slice(0,10);
+        }
 
+        idata = ndata.slice(0,5)
 
-              setTimeout(function () {
-                that.setData({
-                  display: "none"
-                })
-              },2000)
-                
-                
-              setTimeout(function(){
-                that.setData({
-                  activities: that.data.activities.concat(ndata)
-                })
-              },1000)  
-              
-              
+        that.setData({
+          activities: idata
+        })
 
               wx.getStorage({
                 key: 'totalnum',
@@ -91,20 +81,20 @@ Page({
                 }
               })
 
-              
+
 
           }
       })
 
-      
+
 
 
 
   },
-  
+
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
-    
+
     this.getData(this.data.page);
 
   },

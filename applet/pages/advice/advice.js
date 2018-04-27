@@ -9,27 +9,30 @@ Page({
       info:""
     }
   },
-
   bindFormSubmit: function (e) {
-    console.log(e.detail.value.textarea);
+    var app = getApp();
+    var g_data = app.globalData;
     var that = this;
     if(e.detail.value.textarea){
       wx.request({
-        url: '',
+        url: g_data.host +"/api/miniFeedback/rest",
         method:'post',
-        data: e.detail.value.textarea,
-        complete:function(res){
-          if (res == null || res.data == null) {
-            console.error('网络请求失败');
-            return;
-          }else{
-            that.setData({
-              advice: {
-                info: ""
-              }
+        data: {
+          feedback:e.detail.value.textarea,
+          nickname: g_data.userInfo.nickName,
+          token:g_data.token
+          },
+        success:function(res){
+          wx.showToast({
+            title: '提交成功',
+            icon: 'success',
+            duration: 2000
+          })
+          setTimeout(function(){
+            wx.navigateBack({
+              delta: 1
             })
-          }
-          
+          },2000)
         }
       })
     }

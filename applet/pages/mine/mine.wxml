@@ -17,7 +17,7 @@
       </view>
       <view class="weui-cell__bd">课程复习</view>
     </navigator>
-    <navigator url="" class="weui-cell" hover-class="navigator-hover" open-type="switchTab">
+    <navigator url="/pages/test/test" class="weui-cell" hover-class="navigator-hover">
       <view class="weui-cell__hd">
         <image src="/icon/zhibo.png" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
       </view>

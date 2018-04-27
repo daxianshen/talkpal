@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/activity/activity",
     "pages/openclass/openclass",
+    "pages/activity/activity",
     "pages/libraryDetails/libraryDetails",
     "pages/mine/mine",
     "pages/parents/parents",

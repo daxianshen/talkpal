@@ -6,7 +6,7 @@
     </block>
 </swiper>
 
-<view wx:for="{{detail}}">
+<view wx:for="{{detail}}" wx:key="{{index}}">
   <navigator class="section s-item" url='{{item.url}}' style='background:url("{{item.imgurl}}") no-repeat;background-size:100% 100%;' bindtap='click'>
   </navigator>
 </view>

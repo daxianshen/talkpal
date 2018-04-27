@@ -10,13 +10,15 @@ Page({
     // 页面初始化 options为页面跳转所带来的参数
     var app = getApp();
     var that = this;
-    app.getUserInfo(function (userInfo) {
-      //更新数据
-      console.log(userInfo);
+    console.log("load");
+
+    // app.getUserInfo(function (userInfo) {
+    //   //更新数据
+    //   console.log(userInfo);
       that.setData({
-        info: userInfo
+        info: app.globalData.userInfo
       })
-    })
+    // })
 
     // wx.request({
     //   url:'',
