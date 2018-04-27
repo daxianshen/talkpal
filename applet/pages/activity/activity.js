@@ -8,6 +8,7 @@ Page({
     display:"none",
     defaultnum:0,
     loadnum:5,
+    page:1,
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -25,45 +26,93 @@ Page({
       current: e.detail.current
     })
   },
+
+  getData:function(page){
+
+
+    
+
+      var that = this;
+      wx.request({
+          url: 'http://www.talkpal.cc/api/article/rest?count=true&page='+ page +'&size=5',
+          method: 'GET',
+          success: function (res) {
+
+            wx.setStorage({
+              key: 'totalnum',
+              data: {
+                "num":res.data.data.count
+                },
+              success:function(res){
+                
+              }
+            })
+
+              var ndata = res.data.data.data;
+
+              for (var a = 0; a < ndata.length;a++){
+                  ndata[a].create_at = ndata[a].create_at.slice(0,10);
+              }
+
+
+              setTimeout(function () {
+                that.setData({
+                  display: "none"
+                })
+              },2000)
+                
+                
+              setTimeout(function(){
+                that.setData({
+                  activities: that.data.activities.concat(ndata)
+                })
+              },1000)  
+              
+              
+
+              wx.getStorage({
+                key: 'totalnum',
+                success: function (res) {
+                  var num = res.data.num;
+                  console.log(res)
+                  if(that.data.activities.length<num){
+
+                    that.setData({
+                      display: "block"
+                    })
+
+                    that.setData({
+                      page: that.data.page + 1
+                    })
+                  }
+                },
+                fail: function (res) {
+                  console.log(res)
+                }
+              })
+
+              
+
+          }
+      })
+
+      
+
+
+
+  },
   
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
-    var that = this;
-    var idata;
-
-    wx.request({
-      url: 'http://www.talkpal.cc/api/article/rest?count=true&page=1&size=100',
-      method: 'GET',
-      success: function (res) {
-        var ndata = res.data.data.data;
-
-        for (var a = 0; a < ndata.length;a++){
-          ndata[a].create_at = ndata[a].create_at.slice(0,10);
-        }
-
-        idata = ndata.slice(0,5)
-
-        that.setData({
-          activities: idata
-        })
-
-        wx.setStorage({
-          key: 'num',
-          data: {
-            'nownum':5,
-            'totalnum':res.data.data.data.length,
-          }
-        })
-
-      }
-    })
+    
+    this.getData(this.data.page);
 
   },
   onReady: function () {
     // 页面渲染完成
   },
 
-  loadData:function(num1,num2){
+/*  loadData:function(num1,num2){
 
     var that =this;
 
@@ -100,43 +149,11 @@ Page({
 
       }
     })
-  },
+  },*/
 
   onReachBottom:function(){
     var that=this;
-
-    this.setData({
-      display: "block"
-    })
-    wx.getStorage({
-      key: 'num',
-      success: function (res) {
-
-
-        var now =res.data.nownum;
-        var total=res.data.totalnum;
-        var load =that.data.loadnum;
-
-        if(now<total){
-
-         if(now+load<=total){
-           that.loadData(now,load);
-           console.log("还有数据")
-         }else{
-           load = total -now;
-           that.loadData(now,load);
-           console.log("加载完毕")
-         }
-          
-        }else{
-          setTimeout(function(){
-            that.setData({
-              display: "none"
-            })
-          })
-        }
-      }
-    })
+    this.getData(this.data.page);
   }
 
 })
