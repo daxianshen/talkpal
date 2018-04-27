@@ -29,9 +29,6 @@ Page({
 
   getData:function(page){
 
-
-
-
       var that = this;
       wx.request({
           url: 'https://www.talkpal.cc/api/article/rest?count=true&page='+ page +'&size=5',
@@ -45,41 +42,54 @@ Page({
                 },
               success:function(res){
 
+              } 
+            })
+
+            var ndata = res.data.data.data;
+
+            for (var a = 0; a < ndata.length;a++){
+              ndata[a].create_at = ndata[a].create_at.slice(0,10);
+            }
+
+            setTimeout(function () {
+              that.setData({
+                display: "block"
+              })
+            })
+
+            setTimeout(function () {
+              that.setData({
+                activities: that.data.activities.concat(ndata),
+              })
+            }, 1000)
+
+            wx.getStorage({
+              key: 'totalnum',
+              success: function (res) {
+                var num = res.data.num;
+                console.log(res)
+                if(that.data.activities.length<num){
+
+                  that.setData({
+                    page: that.data.page + 1
+                  })
+                  console.log(that.data.page)
+                }
+              },
+              fail: function (res) {
+                console.log(res)
               }
             })
 
-              var ndata = res.data.data.data;
 
-              for (var a = 0; a < ndata.length;a++){
-                ndata[a].create_at = ndata[a].create_at.slice(0,10);
-              }
-
-              var idata = ndata.slice(0,5)
-
+            setTimeout(function () {
               that.setData({
-                activities: idata
+                display: "none"
               })
+            }, 1000)
 
-              wx.getStorage({
-                key: 'totalnum',
-                success: function (res) {
-                  var num = res.data.num;
-                  console.log(res)
-                  if(that.data.activities.length<num){
-
-                    that.setData({
-                      display: "block"
-                    })
-
-                    that.setData({
-                      page: that.data.page + 1
-                    })
-                  }
-                },
-                fail: function (res) {
-                  console.log(res)
-                }
-              })
+            
+            
 
 
 
@@ -102,44 +112,6 @@ Page({
     // 页面渲染完成
   },
 
-/*  loadData:function(num1,num2){
-
-    var that =this;
-
-
-    wx.request({
-      url: 'http://www.talkpal.cc/api/article/rest?count=true&page=1&size=100',
-      method: 'GET',
-      success: function (res) {
-
-        setTimeout(function () {
-         
-          var loadArr = res.data.data.data.slice(num1, num1 + num2)
-
-
-          for (var b = 0; b < loadArr.length; b++) {
-            loadArr[b].create_at = loadArr[b].create_at.slice(0, 10);
-          }
-
-          that.setData({
-            activities: that.data.activities.concat(loadArr),
-            display:"none"
-          })
-
-          wx.setStorage({
-            key: 'num',
-            data: {
-              'nownum': num1 + num2,
-              'totalnum': res.data.data.data.length
-            },
-            success: function (res) {}
-          })
-
-        }, 1000);
-
-      }
-    })
-  },*/
 
   onReachBottom:function(){
     var that=this;
