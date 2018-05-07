@@ -1,1 +1,6 @@
 /* pages/getClass.wxss */
+
+image{
+  display: block;
+  width: 100%;
+}

@@ -1,7 +1,10 @@
 <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .6)" indicator-active-color="rgba(239, 155, 108, 1)"  circular="{{true}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="swiperChange">
-    <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+    <block wx:for="{{indicators}}" wx:key="{{index}}">
         <swiper-item>
-            <image src="{{item}}" style="width:100%" bindtap="swipclick"/>
+            <navigator url="/pages/activitydetail/activitydetail?id={{item._id}}">
+              <image src="{{item.imgUrl}}" style="width:100%" bindtap="swipclick"/>
+            </navigator>
+            
         </swiper-item>
     </block>
 </swiper>

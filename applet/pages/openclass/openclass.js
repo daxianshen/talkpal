@@ -2,9 +2,23 @@
 
 Page({
   data: {
-    imgUrls:[    'http://img02.tooopen.com/images/20150928/tooopen_sy_143912755726.jpg',
-'http://img06.tooopen.com/images/20160818/tooopen_sy_175866434296.jpg',
-'http://img06.tooopen.com/images/20160818/tooopen_sy_175833047715.jpg'
+    indicators:[    
+        {
+          imgUrl:"http://7xlw0s.com2.z0.glb.qiniucdn.com/FsE3NY83ACbNCB44spQ9PYcBEUkK",
+          _id:"5aeab6a11879ff2307fc0b99"
+        },
+        {
+          imgUrl:"http://7xlw0s.com2.z0.glb.qiniucdn.com/FgMGaNqoKUsHfPWUeJ2lmRJEtMNJ",
+          _id:"5aeaa8e51879ff2307fc0b93"
+        },
+        {
+          imgUrl:"http://7xlw0s.com2.z0.glb.qiniucdn.com/Fn2meE-U9mFy7Nh_SSVkSq9rzBp6",
+          _id:"5aeaa4951879ff2307fc0b8b"
+        },
+        {
+          imgUrl:"http://7xlw0s.com2.z0.glb.qiniucdn.com/Fgw2mWlHLFtyl3VkCTJLT31vHRC-",
+          _id:"5ae980141879ff2307fc0a83"
+        }
     ],
     detail: [
         {
@@ -13,9 +27,11 @@ Page({
         },
         {
           imgurl: "/icon/class.png",
+          url: "/pages/process/process"
         },
         {
           imgurl: "/icon/ekids.png",
+          url: "/pages/getClass/getClass"
         }
       ],
     indicatorDots: true,
@@ -39,13 +55,7 @@ Page({
       current: e.detail.current
     })
   }, 
-  swipclick: function (e) {//点击图片触发事件
-    // console.log(this.data.jumpTo[this.data.current]);
-    var id = this.data.current;
-    wx.navigateTo({
-      url: '/pages/outview/outview',
-    })
-  },
+  
 
   onLoad: function (options) {
   

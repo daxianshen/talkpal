@@ -1,10 +1,4 @@
-<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" indicator-color="rgba(255, 255, 255, .6)" indicator-active-color="rgba(239, 155, 108, 1)"  circular="{{true}}" interval="{{interval}}" duration="{{duration}}" current="{{current}}" bindchange="swiperChange">
-  <block wx:for="{{imgUrls}}" wx:key="{{index}}">
-      <swiper-item style='background:url("{{item}}") no-repeat;background-size:cover' bindtap="swipclick">
-        
-      </swiper-item>
-  </block>
-</swiper>
+
 
 
 

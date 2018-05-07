@@ -1,2 +1,7 @@
 <!--pages/getClass.wxml-->
-<text>pages/getClass.wxml</text>
+
+<view wx:for="{{imgs}}">
+  <image src="{{item}}" data-index="{{ index }}" bindload='imageLoad' style="width:{{images[index].width}}rpx; height:{{images[index].height}}rpx;"></image>
+
+  
+</view>

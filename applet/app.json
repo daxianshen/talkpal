@@ -10,7 +10,8 @@
     "pages/class/class",
     "pages/advice/advice",
     "pages/aboutus/aboutus",
-    "pages/getClass/getClass"
+    "pages/getClass/getClass",
+    "pages/process/process"
   ],
   "window": {
     "backgroundTextStyle": "light",

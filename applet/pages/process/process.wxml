@@ -1,0 +1,5 @@
+<!--pages/process/process.wxml-->
+
+<view>
+  <image src="{{imgs}}" bindload='imageLoad' style="width:{{images.width}}px; height:{{images.height}}px;"></image>
+</view>
