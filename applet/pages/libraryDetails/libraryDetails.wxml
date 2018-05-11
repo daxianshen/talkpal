@@ -1,7 +1,7 @@
 <!--pages/libraryDetails.wxml-->
 
 <view>
-  <view class='title' bindtap='both'> <image animation="{{animation1}}" class="arrow" src="/icon/right.png"></image> e-book</view>
+  <view class='title' bindtap='both'> <image animation="{{animation1}}" class="arrow" src="/icon/down.png"></image> e-book</view>
   <view class='box' animation="{{animation2}}" style="height:{{height}}">
     <view class="smallbox">
       <view class='section' wx:for="{{books}}">

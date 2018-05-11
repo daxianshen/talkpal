@@ -34,6 +34,9 @@ Page({
           url: "/pages/getClass/getClass"
         }
       ],
+
+    width: 0,
+
     indicatorDots: true,
     autoplay: true,
     interval: 5000,
@@ -60,6 +63,40 @@ Page({
   onLoad: function (options) {
   
   },
+
+  imageLoad: function (e) {
+    var $width = e.detail.width,    //获取图片真实宽度
+      $height = e.detail.height,
+      ratio = $width / $height;    //图片的真实宽高比例
+
+    var viewWidth = wx.getSystemInfoSync().windowWidth-20,           //设置图片显示宽度，左右留有16rpx边距
+      viewHeight = parseInt(viewWidth / ratio);    //计算的高度值
+
+    this.setData({
+      images: {
+        width: viewWidth,
+        height: viewHeight
+      }
+    })
+  },
+
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '脱口派',
+      path: '/pages/openclass/openclass',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  }
 
 
 })

@@ -10,10 +10,7 @@ Page({
       "/icon/find_02.png",
       "/icon/find_03.png",
       "/icon/find_04.png",
-      "/icon/find_05.png",
-      "/icon/find_06.png",
-      "/icon/find_07.png",
-      "/icon/find_08.png",
+      "/icon/find_05.png"
     ],
     images:{}
   },
@@ -39,5 +36,22 @@ Page({
     this.setData({
       images: image
     })
+  },
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '脱口派',
+      path: '/pages/openclass/openclass',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 })

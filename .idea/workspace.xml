@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="update">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/applet/pages/index/index.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/app.json" afterPath="$PROJECT_DIR$/applet/app.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.js" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activity/activity.wxml" afterPath="$PROJECT_DIR$/applet/pages/activity/activity.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.js" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.json" afterPath="$PROJECT_DIR$/applet/pages/activitydetail/activitydetail.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" afterPath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/getClass/getClass.wxml" afterPath="$PROJECT_DIR$/applet/pages/getClass/getClass.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/getClass/getClass.wxss" afterPath="$PROJECT_DIR$/applet/pages/getClass/getClass.wxss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.json" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" />
-    </list>
+    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="update" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -303,7 +289,7 @@
       <workItem from="1524623286962" duration="1471000" />
       <workItem from="1524647741913" duration="1269000" />
       <workItem from="1524792919145" duration="3244000" />
-      <workItem from="1525677248833" duration="121000" />
+      <workItem from="1525677248833" duration="265000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1524623745634</created>
@@ -365,7 +351,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9552000" />
+    <option name="totallyTimeSpent" value="9696000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">

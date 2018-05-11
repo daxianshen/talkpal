@@ -25,9 +25,9 @@ swiper{
 
 .section{
   margin: 10px;
-  padding: 50% 10px 10px 10px;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.5)
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  overflow: hidden
 }
 
 .actor{

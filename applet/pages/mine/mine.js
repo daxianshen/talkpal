@@ -4,7 +4,7 @@ Page({
     info: {},
     group:{},
     animationData:{},
-    phoneCall:"15692404006"
+    phoneCall:"020-38263691"
   },
   onLoad: function (options) {
     // 页面初始化 options为页面跳转所带来的参数
@@ -71,6 +71,23 @@ Page({
 
   advice: function (e) {
     
+  },
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '脱口派',
+      path: '/pages/openclass/openclass',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
   
 })

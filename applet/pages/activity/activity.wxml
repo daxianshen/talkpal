@@ -7,7 +7,7 @@
     <view class='dBox'>
       <view class='title'>{{item.title}}</view>
       <view class='head'>
-        <view class='headPic' style='background:url("/icon/headPic.png");background-size:cover'></view>
+        <image class='headPic' src="/icon/headPic.png" ></image>
         <view style='float:left'>{{item.updator}}</view>
         <view style='float:right'>{{item.create_at}}</view>
       </view>

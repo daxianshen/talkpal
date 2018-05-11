@@ -12,7 +12,7 @@ Page({
     height:0,
     style:"display:none",
     text:"加载中...",
-    state:true,
+    state:false,
     animation1:{},
     animation2: {},
   },
@@ -22,7 +22,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      books: postData.postList
+      books: postData.postList,
+      height: postData.postList.length*50+10+'px'
     });
   },
 
@@ -41,14 +42,14 @@ Page({
     })
 
     if(this.data.state){
-      this.animation.rotate(90).step();
+      this.animation.rotate(0).step();
       this.setData({
         //输出动画
         animation1: this.animation.export(),
       });
       
     }else{
-      this.animation.rotate(0).step()
+      this.animation.rotate(-90).step()
       this.setData({
         //输出动画
         animation1: this.animation.export(),
@@ -69,7 +70,7 @@ Page({
     })
 
     if (this.data.state) {
-      this.animation.height(50*this.data.books.length+10).step();
+      this.animation.height(50 * this.data.books.length + 10).step();
       this.setData({
         //输出动画
         animation2: this.animation.export(),
@@ -155,6 +156,23 @@ Page({
         })
       }
     })
+  },
+
+  onShareAppMessage: function (res) {
+    if (res.from === 'button') {
+      // 来自页面内转发按钮
+      console.log(res.target)
+    }
+    return {
+      title: '脱口派',
+      path: '/pages/openclass/openclass',
+      success: function (res) {
+        // 转发成功
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
   }
 
 })
