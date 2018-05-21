@@ -79,8 +79,18 @@ var books=[
   },
 ];
 
-
+var classGroup=[
+  {
+    "id":1,
+    "title":"多人拼课| 45分钟优质外教全广州上门体验课",
+    "groupPrice":38,
+    "previousPrice":400,
+    "detail":"仅限广州市区地铁沿线的家庭参加，年龄/英语基础需大概一致，3人起即拼团成功。",
+    "poster":"/icon/ekids.jpg"
+  }
+]
 
 module.exports={
-  postList: books
+  postList: books,
+  groupData: classGroup
 }

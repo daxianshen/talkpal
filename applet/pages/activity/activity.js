@@ -11,7 +11,7 @@ Page({
 
       var that = this;
       wx.request({
-          url: 'https://www.talkpal.cc/api/article/rest?count=true&page='+ page +'&size=5',
+          url: 'https://www.talkpal.cc/api/article/rest?count=true&page='+ page +'&size=5&sort=-hot',
           method: 'GET',
           success: function (res) {
 

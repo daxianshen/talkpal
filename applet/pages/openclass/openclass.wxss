@@ -5,11 +5,7 @@ page{
 scroll-view{
     padding:5px;
 }
-.title{
-    font-size: 14px;
-    color:#EF9B6C;
-    float: left
-}
+
 .jr{
     float: right;
     font-size: 14px;
@@ -42,8 +38,8 @@ scroll-view{
 }
 .title{
     font-size: 14px;
-    color:#EF9B6C;
     overflow: hidden;
+    font-weight: bold;
     white-space: nowrap;
     text-overflow: ellipsis;
 } 
@@ -52,4 +48,43 @@ scroll-view{
 }
 image{
     display: block
+}
+
+.s-item{
+  position: relative;
+}
+.bottom{
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  background: #fff;
+  padding: 10px;
+  box-sizing: border-box
+}
+
+
+
+
+
+.now{
+  color: #BA443F;
+  font-weight: bold;
+}
+.old{
+  font-size: 12px;
+  margin-left: 10px;
+  text-decoration: line-through
+}
+
+.now,.old,.go{
+  display: inline-block 
+}
+
+.go{
+  float:right;
+  padding: 5px 10px;
+  background: #e9a43a;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #fff
 }

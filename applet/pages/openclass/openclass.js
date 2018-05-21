@@ -1,4 +1,4 @@
-
+var postData = require("../../data/data.js");
 
 Page({
   data: {
@@ -28,12 +28,12 @@ Page({
         {
           imgurl: "/icon/class.png",
           url: "/pages/process/process"
-        },
-        {
-          imgurl: "/icon/ekids.png",
-          url: "/pages/getClass/getClass"
         }
       ],
+
+
+    groups: null,
+
 
     width: 0,
 
@@ -61,7 +61,10 @@ Page({
   
 
   onLoad: function (options) {
-  
+    this.setData({
+      groups: postData.groupData
+    })
+
   },
 
   imageLoad: function (e) {

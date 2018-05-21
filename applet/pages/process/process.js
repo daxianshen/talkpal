@@ -1,4 +1,9 @@
 // pages/process/process.js
+
+
+var postData = require('../../data/data.js');
+
+
 Page({
 
   /**
@@ -13,14 +18,17 @@ Page({
       "/icon/find_04.png",
       "/icon/find_05.png"
     ],
-    images:[]
+    images:[],
+    setGroups:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      setGroups: postData.classGroup
+    })
   },
 
   imageLoad: function (e) {

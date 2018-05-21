@@ -1,0 +1,66 @@
+/* pages/paydone/paydone.wxss */
+
+
+page{
+  background: #2e5b9c
+}
+.dt,.dd{
+  text-align: center;
+  color: #fff
+}
+.dt{
+  font-size: 1rem;
+}
+.dd{
+  font-size: 0.7rem;
+  margin-top: 5px
+}
+
+.donebox{
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-70%);
+  -o-transform: translateY(-70%);
+  -moz-transform: translateY(-70%);
+}
+.donepic{
+  display: block;
+  margin: 20px auto;
+}
+
+.buttonarea{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 5px;
+  background: #fff
+}
+
+.buttonarea:after{
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.detail,.invite{
+  width: 48%;
+  margin: 0 1%;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  float: left;
+  font-size: 12px;
+  padding: 10px 0
+}
+
+.detail{
+  background: #166fa9
+}
+
+.invite{
+  background: #ffd400
+}
