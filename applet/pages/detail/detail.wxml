@@ -11,7 +11,7 @@
   </view>
 </view>
 
-<view style="padding: 10px 20pxp">
+<view style="padding: 10px 20px">
   <view class="booking" style="display:{{state1}}">拼团中</view>
   <view class="booked" style="display:{{state2}}">已开团</view>
   <view class="share" style="display:{{state1}}">分享给更多好友组团</view>
