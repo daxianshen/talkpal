@@ -36,10 +36,10 @@
 <form bindsubmit='formSubmit' bindreset='formReset' style='display:{{button2}}'>
   <view class="formbox">
     <view class='section'>
-      <label>学生/家长昵称：</label><input class="name" name="name" placeholder='请输入学生昵称' />
+      <label>学生/家长昵称：</label><input class="name" name="name" placeholder='请输入学生昵称' value="nick"/>
     </view>
     <view class="section">
-      <label>手机号码：</label><input class="phone" name="mobile"  placeholder='请输入联系方式' />
+      <label>手机号码：</label><input class="phone" name="mobile"  placeholder='请输入联系方式' value="13644789098"/>
     </view>
     <view class="section">
       <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array}}" name="age">
@@ -65,7 +65,7 @@
     </view>
   
   </view>
-
+  <button class="pay" form-type='submit'>拼团支付</button>
 </form>
 
 <view class="desc">
@@ -81,6 +81,6 @@
     <button class="begin">开始体验</button>
     <button class="invite1" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
   </view>
-  <button class="pay" style="display:{{button2}}">拼团支付</button>
+
   <button class="invite2" style="display:{{button3}}" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
 </view>

@@ -51,14 +51,15 @@ Page({
     button2:"none",
     button3:"none",
     unum:0,
-    date:null
+    date:null,
+    order:null,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(options);
      var that = this;
       var app = getApp();
       var g_data = app.globalData;
@@ -125,7 +126,7 @@ Page({
                       }
                       if(istz){ //团长
                           that.setData({
-                                 button1: "block"
+                                 button2: "block"
                             });
                       }
                       if(jointhis){
@@ -167,13 +168,15 @@ Page({
    * 用户点击按钮分享
    */
   onShareAppMessage: function (res) {
-    console.log(res.from);
+    console.log(res);
 
     if(res.from==='button'){
       console.log(111);
+      var path = "/pages/detail/detail?oid="+this.data.oid;
+      console.log(path);
       return {
         title:"一起来上脱口派的体验课吧~",
-        path:"/pages/detail/detail?orderId="+this.data.oid,//订单号orderId
+        path:path,//订单号orderId
         success:function(res){
           
         }
@@ -183,7 +186,155 @@ Page({
     }
   },
 
-  begin:function(){
+    initPay:function(oid){
+        var that = this;
+        var app = getApp();
+        var g_data = app.globalData;
+        var params = {
+            order_id: oid,
+            trade_type:"miniApp"
+        };
+
+        wx.request({
+            url: g_data.host + "/pay/init",
+            method: 'post',
+            data: params,
+            success: function (res) {
+                if (res.data && res.data.data) {
+                    var data = res.data.data;
+                    console.log(data);
+                    wx.hideLoading()
+                    // wx.requestPayment(
+                    //     {
+                    //         'timeStamp': data.timeStamp,
+                    //         'nonceStr': data.nonceStr,
+                    //         'package': data.package,
+                    //         'signType': 'MD5',
+                    //         'paySign': data.paySign,
+                    //         'success': function (res) {
+                    var order  = that.data.order;
+                    var data = {
+                        phone:order.mobile,
+                        childName:order.name,
+                        sex:order.sex,
+                        age:order.age,
+                        order_id:oid,
+                        address: order.address,
+                        level:order.level,
+                        headimgurl:g_data.userInfo.avatarUrl,
+                        token:g_data.token,
+                    };
+                    wx.request({
+                        url: g_data.host + '/api/shareclass_join/'+that.data.oid,//存储用户拼团订单接口
+                        data: data,
+                        method: 'post',
+                        header: {
+                            'content-type': 'application/json' // 默认值
+                        },
+                        success: function (res) {
+                            wx.showToast({
+                                title: '支付成功'
+                            });
+                            setTimeout(function () {
+                                wx.hideToast()
+                                wx.navigateTo({
+                                    url: '../../pages/paydone/paydone?orderid=' + that.data.oid
+                                })
+                            }, 2000)
+                        }
+                    })
+                };
+                //     'fail': function (res) {
+                //       wx.hideLoading()
+                //         wx.showToast({
+                //             title: '用户取消',
+                //             icon: 'loading',
+                //             duration: 1500
+                //         })
+                //         setTimeout(function () {
+                //             wx.hideToast()
+                //         }, 2000)
+                //
+                //
+                //     }
+                // })
+                //  }
+            }
+        })
+
+
+    },
+
+    pay:function(){
+        console.log("pay");
+        wx.showLoading({
+            title: '加载中',
+        })
+
+        var app = getApp();
+        var g_data = app.globalData;
+        var that = this;
+        var order  = that.data.order;
+        var params = {
+            price: 0.01,
+            type: "ping",
+            goodsName: "脱口派拼团",
+            deleted: true,
+            token: g_data.token
+        }
+        wx.request({
+            url: g_data.host + "/order/add",
+            method: 'post',
+            data: params,
+            success: function (res) {
+                if (res.data && res.data.data) {
+                    var data = res.data.data;
+                    that.initPay(data._id);
+                }
+            }
+        })
+    },
+
+    formSubmit:function(e){
+        //e.detail.value
+        console.log("submit form");
+        var that=this;
+
+        if (!e.detail.value.name || !e.detail.value.mobile || !array[e.detail.value.age] || !e.detail.value.sex || !that.data.larray[e.detail.value.level]){
+            wx.showToast({
+                title: '请完善信息！',
+                icon:'loading',
+                duration:1500
+            })
+            setTimeout(function(){
+                wx.hideToast()
+            },2000)
+        } else if (e.detail.value.mobile.length != 11) {
+            wx.showToast({
+                title: '请输入11位手机号码!',
+                icon: 'loading',
+                duration: 1500
+            })
+            setTimeout(function () {
+                wx.hideToast()
+            }, 2000)
+        }else{
+            var dataobj={
+                name: e.detail.value.name,
+                mobile: e.detail.value.mobile,
+                age: array[e.detail.value.age],
+                sex: e.detail.value.sex,
+                level: that.data.larray[e.detail.value.level],
+            }
+            that.setData({order:dataobj});
+            that.pay();
+        }
+    },
+
+
+
+
+    begin:function(){
     if(this.data.obj.length>=3){
       wx.showModal({
         title: '提示',
