@@ -11,14 +11,14 @@
   </view>
 </view>
 
-<view style="padding: 10px 20px">
+<view style="padding: 10px 20pxp">
   <view class="booking" style="display:{{state1}}">拼团中</view>
   <view class="booked" style="display:{{state2}}">已开团</view>
   <view class="share" style="display:{{state1}}">分享给更多好友组团</view>
   <view class="tip">还差<view style="display:{{state1}};color: #eaa621">{{unum}}人</view>参团 （报名到{{date}}为止）</view>
 
   <view class='members'>
-    <view class="member" wx:for="{{users}}"><image src="{{item}}"></image></view><view class="tag2">团长</view> 
+    <view class="member" wx:for="{{users}}"><image src="{{item}}"></image></view><view class="tag2">团长</view>
   </view>
 </view>
 
@@ -26,11 +26,10 @@
 <view class="info">
   <view class="infobox">
     <view class="info-item">
-      <image class="location" src='/icon/address.png'></image><view class="address">天河金利来数码网络大厦</view>
+      <image class="location" src='/icon/address.png'></image><view class="address">{{address}}</view>
     </view>
-    <view class="info-item">小蓝，男，8岁，英语水平是正常对话</view>
-    <view class="info-item">小绿，男，8岁，英语水平是正常对话</view>
-    <view class="info-item">小黄，男，8岁，英语水平是正常对话</view>
+    <view class="info-item" wx:for="{{obj}}">{{item.childName}}，{{item.sex}}，{{item.age}}岁，英语水平是{{item.level}}</view>
+
   </view>
 </view>
 

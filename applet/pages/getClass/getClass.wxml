@@ -33,10 +33,10 @@
 <form bindsubmit='formSubmit' bindreset='formReset'>
   <view class="formbox">
     <view class='section'>
-      <label>学生/家长昵称：</label><input class="name" name="name" placeholder='请输入学生昵称' />
+      <label>学生/家长昵称：</label><input class="name" name="name" placeholder='请输入学生昵称'  value="ddd"/>
     </view>
     <view class="section">
-      <label>手机号码：</label><input class="phone" name="mobile"  placeholder='请输入联系方式' />
+      <label>手机号码：</label><input class="phone" name="mobile"  placeholder='请输入联系方式' value="15980987808" />
     </view>
     <view class="section">
       <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array}}" name="age">
@@ -61,7 +61,7 @@
       </picker>
     </view>
     <view class='section'>
-      <label>上课地址：</label><input class="address" name="address" placeholder='请输入上课地址(*不用准确到门牌号)' />
+      <label>上课地址：</label><input class="address" name="address" value="Ddd" placeholder='请输入上课地址(*不用准确到门牌号)' />
     </view>
     
     <view class="create">

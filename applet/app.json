@@ -1,11 +1,11 @@
 {
   "pages": [
+    "pages/openclass/openclass",
     "pages/detail/detail",
     "pages/pay/pay",
     "pages/getClass/getClass",
     "pages/activity/activity",
     "pages/paydone/paydone",
-    "pages/openclass/openclass",
     "pages/libraryDetails/libraryDetails",
     "pages/mine/mine",
     "pages/parents/parents",

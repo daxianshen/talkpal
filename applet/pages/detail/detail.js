@@ -6,7 +6,21 @@ var array = [];
 for (var a = 1; a < 100; a++) {
   array.push(a);
 }
-
+Date.prototype.Format = function (fmt) { //author: meizz
+    var o = {
+        "M+": this.getMonth() + 1, //月份
+        "d+": this.getDate(), //日
+        "h+": this.getHours(), //小时
+        "m+": this.getMinutes(), //分
+        "s+": this.getSeconds(), //秒
+        "q+": Math.floor((this.getMonth() + 3) / 3), //季度
+        "S": this.getMilliseconds() //毫秒
+    };
+    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + "").substr(4 - RegExp.$1.length));
+    for (var k in o)
+        if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
+    return fmt;
+};
 
 Page({
 
@@ -17,6 +31,7 @@ Page({
     state1:"inline-block",
     state2:"none",
     obj:null,
+    address:null,
     users:[
       "/icon/user.png",
       "/icon/user.png",
@@ -30,6 +45,7 @@ Page({
     index1: 0,
     index2: 0,
     array: array,
+    oid:null,
     larray: ["正常对话", "掌握对话", "知道单词", "基础薄弱"],
     button1:"none",
     button2:"none",
@@ -43,104 +59,94 @@ Page({
    */
   onLoad: function (options) {
 
-    var that = this;
+     var that = this;
+      var app = getApp();
+      var g_data = app.globalData;
 
     //获取订单信息、团长和已拼课用户信息....
 
+      that.setData({
+         oid:options.oid
+      });
+      wx.request({
+          url: g_data.host + '/api/shareclass/rest/'+options.oid,//存储用户拼团订单接口
+          method: 'get',
+          header: {
+              'content-type': 'application/json' // 默认值
+          },
+          success: function (res) {
+               var data  = res.data.data;
+              that.setData({
+               });
 
-    //渲染测试
-    //假设用户id为xxx
+              //页面渲染
+              var obj= data.members;
 
-    var uid =1234;
+              //超过五天
+              var order_date =  data.create_at; //下订单的时间戳
+
+              var future = new Date(order_date).getTime() + 5 * 24 * 3600 * 1000;
+
+              var date =  new Date(future).Format("MM-dd");
+
+
+              if((Date.parse(new Date())/1000-order_date)/86400>5){
+                  wx.showToast({
+                      title: '订单已开团',
+                      icon:"success",
+                      duration:1000
+                  })
+              }
+              //
+              var arr =that.data.users;
+              for(var a=0;a<obj.length;a++){
+                  arr[a]=obj[a].headimgurl;
+              }
+              var unum = 3 - obj.length;
+              if(unum<0) unum  = 0;
+              that.setData({
+                  users: arr,obj:obj,address:data.address,unum:unum,date:date
+              });
+
+              var jointhis = false;
+              var istz = false; //是否团长
+              wx.request({
+                  url: g_data.host + "/api/shareclass/join",
+                  method: 'get',
+                  data: {token:g_data.token},
+                  success: function (res) {
+                      console.log(res);
+                      if(res.data){
+                        var data = res.data;
+                        if(data.id && data.id == options.oid) {
+                          jointhis = true;
+                          if(data.tz) istz = true;
+                        }
+                      }
+                      if(istz){ //团长
+                          that.setData({
+                                 button1: "block"
+                            });
+                      }
+                      if(jointhis){
+                          that.setData({
+                              button3: "block"
+                          });
+                      }else {
+                          that.setData({
+                              button2: "block"
+                          });
+                      }
+                  }
+              })
+
+          }
+      });
 
 
     //此订单数据
-    that.setData({
-      obj:[
-        {
-          headpic:"/icon/book.png",
-            openid:1234
-        },
-        {
-          headpic: "/icon/book.png",
-            openid:2345
-        },
-        {
-          headpic: "/icon/book.png",
-            openid:3456
-        }
-      ]
-    })
-
 
     //判断订单是否开团,条件是this.data.obj里边用户数据长度为8或者订单属性"status"为true，“拼团中”“分享XXX”“还差....为止”隐藏，“已开团”显示
-
-
-    //页面渲染
-    var obj= that.data.obj;
-
-
-    //超过五天
-    var order_date = 1526460687; //下订单的时间戳
-
-    if((Date.parse(new Date())/1000-order_date)/86400>5){
-
-      
-      wx.showToast({
-        title: '订单已开团',
-        icon:"success",
-        duration:1000
-      })
-      setTimeout(function(){
-        wx.hideToast();
-        wx.switchTab({
-          url: '/pages/openclass/openclass',
-        })
-      },1000)
-    }
-
-
-    var arr =that.data.users;
-    for(var a=0;a<obj.length;a++){
-      arr[a]=obj[a].headpic;
-    }
-
-
-    for(var b=0;b<obj.length;b++){
-        if(uid==obj[b].openid){
-          console.log(b)
-          if(b==0){
-            that.setData({
-                button1: "block",
-                button2: "none"
-            });
-              console.log(111);
-              break;
-          }else{
-              that.setData({
-                  button3: "block",
-                  button2: "none"
-              });
-              console.log(333);
-              break;
-          }
-        }else{
-          that.setData({
-              button2: "block"
-          });
-            console.log(222);
-        }
-
-    }
-
-
-
-    this.setData({
-      users: arr
-    })
-
-    console.log(this.data.users)
-
 
   },
 
@@ -167,7 +173,7 @@ Page({
       console.log(111);
       return {
         title:"一起来上脱口派的体验课吧~",
-        path:"/pages/detail/detail?orderId=",//订单号orderId
+        path:"/pages/detail/detail?orderId="+this.data.oid,//订单号orderId
         success:function(res){
           
         }

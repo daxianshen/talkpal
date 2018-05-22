@@ -26,7 +26,7 @@
   </view>
 </view>
 
-<view class="paybox">
-  <view class="pay"> <image class="payicon" src="/icon/pay.png"></image> 微信支付 ¥ {{order.nprice}}</view>
+<view class="paybox" >
+  <view class="pay" bindtap="pay"> <image class="payicon" src="/icon/pay.png"></image> 微信支付 ¥ {{order.nprice}}</view>
 </view>
 
