@@ -105,10 +105,7 @@ Page({
     wx.showLoading({
       title: '加载中',
     })
-      wx.navigateTo({
-          url: '../../pages/paydone/paydone?orderid=5b03b6ffa5f1fdcf143b6247'
-      })
-      return;
+  
 
     var app = getApp();
     var g_data = app.globalData;
