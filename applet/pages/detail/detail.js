@@ -204,16 +204,17 @@ Page({
                     var data = res.data.data;
                     console.log(data);
                     wx.hideLoading()
-                    // wx.requestPayment(
-                    //     {
-                    //         'timeStamp': data.timeStamp,
-                    //         'nonceStr': data.nonceStr,
-                    //         'package': data.package,
-                    //         'signType': 'MD5',
-                    //         'paySign': data.paySign,
-                    //         'success': function (res) {
+                    wx.requestPayment(
+                        {
+                            'timeStamp': data.timeStamp,
+                            'nonceStr': data.nonceStr,
+                            'package': data.package,
+                            'signType': 'MD5',
+                            'paySign': data.paySign,
+                            'success': function (res) {
                     var order  = that.data.order;
-                    var data = {
+                     var formId  = data.package.split("=")[1];
+                    var params= {
                         phone:order.mobile,
                         childName:order.name,
                         sex:order.sex,
@@ -223,10 +224,11 @@ Page({
                         level:order.level,
                         headimgurl:g_data.userInfo.avatarUrl,
                         token:g_data.token,
+                        formId:formId, //推送模板消息用
                     };
                     wx.request({
                         url: g_data.host + '/api/shareclass_join/'+that.data.oid,//存储用户拼团订单接口
-                        data: data,
+                        data: params,
                         method: 'post',
                         header: {
                             'content-type': 'application/json' // 默认值
@@ -243,22 +245,22 @@ Page({
                             }, 2000)
                         }
                     })
-                };
-                //     'fail': function (res) {
-                //       wx.hideLoading()
-                //         wx.showToast({
-                //             title: '用户取消',
-                //             icon: 'loading',
-                //             duration: 1500
-                //         })
-                //         setTimeout(function () {
-                //             wx.hideToast()
-                //         }, 2000)
-                //
-                //
-                //     }
-                // })
-                //  }
+                },
+                    'fail': function (res) {
+                      wx.hideLoading()
+                        wx.showToast({
+                            title: '用户取消',
+                            icon: 'loading',
+                            duration: 1500
+                        })
+                        setTimeout(function () {
+                            wx.hideToast()
+                        }, 2000)
+
+
+                    }
+                })
+                 }
             }
         })
 

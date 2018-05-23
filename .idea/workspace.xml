@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="update">
+    <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/applet/pages/detail/detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/applet/pages/detail/detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" beforeDir="false" afterPath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/applet/pages/pay/pay.js" beforeDir="false" afterPath="$PROJECT_DIR$/applet/pages/pay/pay.js" afterDir="false" />
     </list>
@@ -24,95 +25,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="291">
-              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="64" selection-end-column="34" />
-              <folding>
-                <element signature="e#2911#3971#0" />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="211" column="23" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="pay.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1185">
+              <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/app.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="process.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/pages/process/process.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-319" />
           </provider>
         </entry>
       </file>
       <file leaf-file-name="getClass.wxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applet/pages/getClass/getClass.wxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1020">
-              <caret line="68" column="18" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="32" />
+            <state relative-caret-position="513">
+              <caret line="60" column="15" lean-forward="true" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pay.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="19" lean-forward="true" selection-start-line="23" selection-end-line="134" />
+            <state relative-caret-position="330">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getClass.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="openclass.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getClass.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applet/pages/getClass/getClass.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+            <state relative-caret-position="1410">
+              <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paydone.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/paydone/paydone.js">
+      <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/site/css/index.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="paydone.wxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/paydone/paydone.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pay.wxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="33" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mine.wxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="38" lean-forward="true" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mine.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.wxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.wxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+            <state relative-caret-position="345">
+              <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -138,10 +130,10 @@
         <option value="$PROJECT_DIR$/applet/pages/activity/activity.js" />
         <option value="$PROJECT_DIR$/applet/pages/paydone/paydone.wxml" />
         <option value="$PROJECT_DIR$/applet/app.json" />
-        <option value="$PROJECT_DIR$/applet/pages/pay/pay.js" />
         <option value="$PROJECT_DIR$/applet/pages/detail/detail.wxml" />
-        <option value="$PROJECT_DIR$/applet/pages/detail/detail.js" />
         <option value="$PROJECT_DIR$/applet/pages/getClass/getClass.js" />
+        <option value="$PROJECT_DIR$/applet/pages/detail/detail.js" />
+        <option value="$PROJECT_DIR$/applet/pages/pay/pay.js" />
       </list>
     </option>
   </component>
@@ -157,8 +149,8 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="146" />
-    <option name="y" value="23" />
+    <option name="x" value="99" />
+    <option name="y" value="146" />
     <option name="width" value="1365" />
     <option name="height" value="973" />
   </component>
@@ -178,31 +170,6 @@
               <item name="talkpal-site" type="b2602c69:ProjectViewProjectNode" />
               <item name="talkpal-site" type="462c0819:PsiDirectoryNode" />
               <item name="applet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkpal-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkpal-site" type="462c0819:PsiDirectoryNode" />
-              <item name="applet" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkpal-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkpal-site" type="462c0819:PsiDirectoryNode" />
-              <item name="applet" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="getClass" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkpal-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkpal-site" type="462c0819:PsiDirectoryNode" />
-              <item name="applet" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="paydone" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="talkpal-site" type="b2602c69:ProjectViewProjectNode" />
-              <item name="talkpal-site" type="462c0819:PsiDirectoryNode" />
-              <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +238,7 @@
       <workItem from="1525677248833" duration="265000" />
       <workItem from="1526868114797" duration="3070000" />
       <workItem from="1526955905331" duration="15958000" />
-      <workItem from="1527047116489" duration="245000" />
+      <workItem from="1527047116489" duration="8403000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1524623745634</created>
@@ -350,11 +317,18 @@
       <option name="project" value="LOCAL" />
       <updated>1526983134205</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="check  if has join before enter the info page">
+      <created>1527047405831</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1527047405831</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28969000" />
+    <option name="totallyTimeSpent" value="37127000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -366,7 +340,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="146" y="23" width="1365" height="973" extended-state="0" />
+    <frame x="99" y="146" width="1365" height="973" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19642857" />
@@ -401,24 +375,10 @@
     <MESSAGE value="update pay and pay done and detail" />
     <MESSAGE value="update pay of detail" />
     <MESSAGE value="fix error" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix error" />
+    <MESSAGE value="check  if has join before enter the info page" />
+    <option name="LAST_COMMIT_MESSAGE" value="check  if has join before enter the info page" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.json" />
-    <entry file="file://$PROJECT_DIR$/applet/pages/discount/discount.js" />
-    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/app.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -488,13 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applet/utils/util.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -546,9 +499,6 @@
     <entry file="file://$PROJECT_DIR$/applet/pages/mine/mine.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -560,13 +510,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/app.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -601,34 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="19" lean-forward="true" selection-start-line="23" selection-end-line="134" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/getClass/getClass.wxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="68" column="18" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="64" selection-end-column="34" />
-          <folding>
-            <element signature="e#2911#3971#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -639,10 +558,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/applet/data/data.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/site/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="8" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/getClass/getClass.wxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="60" column="15" lean-forward="true" selection-start-line="60" selection-start-column="15" selection-end-line="60" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/openclass/openclass.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="81" column="7" lean-forward="true" selection-start-line="81" selection-start-column="7" selection-end-line="81" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="15" lean-forward="true" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/process/process.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-319" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/getClass/getClass.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        <state relative-caret-position="1410">
+          <caret line="117" column="39" selection-start-line="117" selection-start-column="39" selection-end-line="117" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1185">
+          <caret line="79" column="18" selection-start-line="79" selection-start-column="18" selection-end-line="79" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="211" column="23" selection-start-line="211" selection-start-column="23" selection-end-line="211" selection-end-column="23" />
         </state>
       </provider>
     </entry>

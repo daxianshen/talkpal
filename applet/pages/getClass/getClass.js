@@ -106,7 +106,7 @@ Page({
       }, 2000)
     }else{
       var dataobj={
-        title: that.data.groupDetail.title,
+        title:  that.data.groupDetail.title,
         detail: that.data.groupDetail.detail,
         nprice: that.data.groupDetail.groupPrice,
         oprice: that.data.groupDetail.previousPrice,
@@ -118,12 +118,12 @@ Page({
         level: that.data.larray[e.detail.value.level],
         address: e.detail.value.address
       }
-      
       wx.navigateTo({
         url: '../../pages/pay/pay?data='+JSON.stringify(dataobj)
       })
     }
   },
+
 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {
