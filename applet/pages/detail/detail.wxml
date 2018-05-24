@@ -15,7 +15,7 @@
   <view class="booking" style="display:{{state1}}">拼团中</view>
   <view class="booked" style="display:{{state2}}">已开团</view>
   <view class="share" style="display:{{state1}}">分享给更多好友组团</view>
-  <view class="tip">还差<view style="display:{{state1}};color: #eaa621">{{unum}}人</view>参团 （报名到{{date}}为止）</view>
+  <view class="tip" style="display:{{state1}};">还差<view style="display:inline-block;color: #eaa621">{{unum}}人</view>参团 （报名到{{date}}为止）</view>
 
   <view class='members'>
     <view class="member" wx:for="{{users}}"><image src="{{item}}"></image></view><view class="tag2">团长</view>
@@ -77,8 +77,8 @@
 </view>
 
 <view class="button">
-  <view style="display:{{button1}}">
-    <button class="begin">开始体验</button>
+  <view class="bbox" style="display:{{button1}}">
+    <button class="begin" bindtap='begin'>开始体验</button>
     <button class="invite1" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
   </view>
 

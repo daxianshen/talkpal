@@ -43,6 +43,18 @@ Page({
   },
   
   onShareAppMessage: function () {
-  
+    if (res.from === 'button') {
+      var path = "/pages/detail/detail?oid=" + this.data.order;
+      console.log(path);
+      return {
+        title: "一起来上脱口派的体验课吧~",
+        path: path,//订单号orderId
+        success: function (res) {
+
+        }
+      }
+    } else {
+      wx.hideShareMenu()
+    }
   }
 })

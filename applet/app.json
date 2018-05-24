@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/openclass/openclass",
+    "pages/orderlist/orderlist",
     "pages/detail/detail",
     "pages/pay/pay",
     "pages/getClass/getClass",

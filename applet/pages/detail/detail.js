@@ -125,17 +125,23 @@ Page({
                         }
                       }
                       if(istz){ //团长
+                      
                           that.setData({
-                                 button2: "block"
+                                button1:"block",
+                                 button2:"none",
+                                 button3:"none"
                             });
-                      }
-                      if(jointhis){
+                      } else if(jointhis){
                           that.setData({
-                              button3: "block"
+                            button3: "block",
+                            button2: "none",
+                            button1: "none"
                           });
                       }else {
                           that.setData({
-                              button2: "block"
+                            button2: "block",
+                            button1: "none",
+                            button3: "none"
                           });
                       }
                   }
@@ -337,6 +343,9 @@ Page({
 
 
     begin:function(){
+
+    console.log(this.data.obj)
+
     if(this.data.obj.length>=3){
       wx.showModal({
         title: '提示',
@@ -345,6 +354,8 @@ Page({
           if (res.confirm) {
             console.log('用户点击确定')
             //订单状态status属性改为“true”
+
+        
 
 
           } else if (res.cancel) {

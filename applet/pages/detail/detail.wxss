@@ -191,7 +191,7 @@ form{
 
 
 
-.button {
+.button,.pay{
   position:fixed;
   bottom:0;
   left:0;

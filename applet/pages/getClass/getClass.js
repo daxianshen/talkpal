@@ -81,6 +81,8 @@ Page({
     })
   },
 
+
+//表格验证
   formSubmit:function(e){
     //e.detail.value
 
@@ -105,6 +107,8 @@ Page({
         wx.hideToast()
       }, 2000)
     }else{
+
+      //把数据传去支付页面
       var dataobj={
         title:  that.data.groupDetail.title,
         detail: that.data.groupDetail.detail,
