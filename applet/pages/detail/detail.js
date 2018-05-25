@@ -50,6 +50,7 @@ Page({
     button1:"none",
     button2:"none",
     button3:"none",
+    button4:"none",
     unum:0,
     date:null,
     order:null,
@@ -115,7 +116,8 @@ Page({
               if(data.status == "已开团"){
                   that.setData({
                       state2:"inline-block",
-                      state1:"none"
+                      state1:"none",
+                      button4:"block"
                   });
                   return;
               }
@@ -352,56 +354,85 @@ Page({
 
 
 
-    begin:function(){
+  begin:function(){
 
-    var num = this.data.obj.length;
-        var app = getApp();
-        var g_data = app.globalData;
-        var that = this;
-        var params = {
-            token: g_data.token
-        };
+      var num = this.data.obj.length;
+      var app = getApp();
+      var g_data = app.globalData;
+      var that = this;
+      var params = {
+          token: g_data.token
+      };
 
-        var begin = function(){
+      var begin = function(){
 
-            wx.request({
-                url: g_data.host + "/api/shareclass_finish/"+that.data.oid,
-                method: 'post',
-                data: params,
-                success: function (res) {
-                    if (res.data) {
-                        var data = res.data;
-                        if(data.code == 0 ){
-                                that.setData({
-                                    state2:"inline-block",
-                                    state1:"none",
-                                    button1:"none"
-                                });
-                            }
+          wx.request({
+              url: g_data.host + "/api/shareclass_finish/"+that.data.oid,
+              method: 'post',
+              data: params,
+              success: function (res) {
+                  if (res.data) {
+                      var data = res.data;
+                      if(data.code == 0 ){
+
+                              //提示订单已开团，返回首页
+
+                              wx.showToast({
+                                title: '订单已开团',
+                                icon:"success"
+                              },2000);
+
+                              setTimeout(function(){
+                                wx.hideToast()
+                              },2000);
 
 
-                    }
-                }
-            })
+                              that.setData({
+                                  state2:"inline-block",
+                                  state1:"none",
+                                  button1:"none",
+                                  button4:"block"
+                              });
+                          }
 
-   };
-    if(num>=3 && num<8){
-      wx.showModal({
-        title: '提示',
-        content: '确定不等多点小伙伴了吗？',
-        success: function (res) {
-          if (res.confirm) {
-            console.log('用户点击确定')
-            begin();
 
-          } else if (res.cancel) {
-            console.log('用户点击取消')
+                  }
+              }
+          })
+
+      };
+      if(num>=1 && num<8){
+        wx.showModal({
+          title: '提示',
+          content: '确定不等多点小伙伴了吗？',
+          success: function (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+              begin();
+
+            } else if (res.cancel) {
+              console.log('用户点击取消')
+            }
           }
-        }
-      })
-    }else{
-        begin();
-    }
+        })
+      }else{
+
+        wx.showModal({
+          title: '提示',
+          content: '拼团人数少于3人，不可开团哦~',
+          showCancel: false,
+          confirmText: "好的"
+        })
+      }
+
+  },
+
+  back:function(){
+
+    wx.switchTab({
+      url: '/pages/openclass/openclass'
+    })
+
 
   }
 });

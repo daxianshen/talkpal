@@ -83,6 +83,33 @@ Page({
     })
   },
 
+  click:function(e){
+    var that = this;
+
+    var app = getApp();
+    var g_data = app.globalData;
+    //检测是否加入...
+    wx.request({
+      url: g_data.host + "/api/shareclass/join",
+      method: 'get',
+      data: { token: g_data.token },
+      success: function (res) {
+
+        console.log(res)
+        if (res.data && res.data.id) {
+          wx.navigateTo({
+            url: '../../pages/detail/detail?oid=' + res.data.id,
+          })
+        }else{
+          wx.navigateTo({
+            url: '/pages/getClass/getClass?id=' + that.data.groups[e.currentTarget.dataset.index].id + '&index=' + e.currentTarget.dataset.index
+          })
+        }
+      }
+    });
+
+  },
+
 
   onShareAppMessage: function (res) {
     if (res.from === 'button') {

@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="6fd6a7c4-08ea-4592-96ea-c7312e540374" name="Default" comment="update">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/app.json" afterPath="$PROJECT_DIR$/applet/app.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/detail/detail.js" afterPath="$PROJECT_DIR$/applet/pages/detail/detail.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/detail/detail.wxml" afterPath="$PROJECT_DIR$/applet/pages/detail/detail.wxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/detail/detail.wxss" afterPath="$PROJECT_DIR$/applet/pages/detail/detail.wxss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" afterPath="$PROJECT_DIR$/applet/pages/getClass/getClass.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/mine/mine.wxml" afterPath="$PROJECT_DIR$/applet/pages/mine/mine.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" afterPath="$PROJECT_DIR$/applet/pages/openclass/openclass.wxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/orderlist/orderlist.js" afterPath="$PROJECT_DIR$/applet/pages/orderlist/orderlist.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/orderlist/orderlist.wxml" afterPath="$PROJECT_DIR$/applet/pages/orderlist/orderlist.wxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/paydone/paydone.js" afterPath="$PROJECT_DIR$/applet/pages/paydone/paydone.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/paydone/paydone.wxml" afterPath="$PROJECT_DIR$/applet/pages/paydone/paydone.wxml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/applet/pages/paydone/paydone.wxss" afterPath="$PROJECT_DIR$/applet/pages/paydone/paydone.wxss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,44 +42,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="detail.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="detail.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding>
-                <marker date="1527154300000" expanded="true" signature="1377:3485" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="1591:3485" ph="{&quot;method&quot;: 'get'...}" />
-                <marker date="1527154300000" expanded="true" signature="1819:3485" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="2911:3485" ph="{&quot;method&quot;: 'get'...}" />
-                <marker date="1527154300000" expanded="true" signature="3095:3485" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="3456:3485" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="10281:10295" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="10281:10374" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="10281:10382" ph="{&quot;title&quot;: '提示'...}" />
-                <marker date="1527154300000" expanded="true" signature="10281:10389" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="10281:10393" ph="{...}" />
-                <marker date="1527154300000" expanded="true" signature="10317:10364" ph="{...}" />
-              </folding>
+            <state relative-caret-position="-2">
+              <caret line="333" column="37" lean-forward="true" selection-start-line="333" selection-start-column="37" selection-end-line="333" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pay.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="pay.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+            <state relative-caret-position="553">
+              <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
               <folding>
-                <marker date="1527147447000" expanded="true" signature="315:3317" ph="{...}" />
-                <marker date="1527147447000" expanded="true" signature="493:3310" ph="{&quot;method&quot;: 'post'...}" />
-                <marker date="1527147447000" expanded="true" signature="609:3303" ph="{...}" />
                 <marker date="1527147447000" expanded="true" signature="651:749" ph="{...}" />
                 <marker date="1527147447000" expanded="true" signature="3290:3294" ph="//..." />
-                <marker date="1527147447000" expanded="true" signature="3381:3408" ph="{&quot;title&quot;: '加载中'...}" />
-                <marker date="1527147447000" expanded="true" signature="3543:3662" ph="{&quot;type&quot;: &quot;ping&quot;...}" />
-                <marker date="1527147447000" expanded="true" signature="3678:3927" ph="{&quot;method&quot;: 'post'...}" />
-                <marker date="1527147447000" expanded="true" signature="3791:3921" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -112,8 +92,8 @@
         <option value="$PROJECT_DIR$/applet/pages/getClass/getClass.js" />
         <option value="$PROJECT_DIR$/applet/pages/activity/activity.js" />
         <option value="$PROJECT_DIR$/applet/pages/detail/detail.wxml" />
-        <option value="$PROJECT_DIR$/applet/pages/detail/detail.js" />
         <option value="$PROJECT_DIR$/applet/pages/pay/pay.js" />
+        <option value="$PROJECT_DIR$/applet/pages/detail/detail.js" />
       </list>
     </option>
   </component>
@@ -144,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -249,7 +230,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -272,11 +252,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/applet/pages/detail/detail.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/applet/pages/detail/detail.wxml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/applet/pages/getClass/getClass.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/applet/pages/pay/pay.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -474,7 +451,8 @@
       <workItem from="1526868114797" duration="3781000" />
       <workItem from="1526952963296" duration="604000" />
       <workItem from="1527039048345" duration="596000" />
-      <workItem from="1527125206030" duration="1793000" />
+      <workItem from="1527125206030" duration="2013000" />
+      <workItem from="1527212217594" duration="1789000" />
     </task>
     <task id="LOCAL-00001" summary="update">
       <created>1524623745634</created>
@@ -536,7 +514,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16470000" />
+    <option name="totallyTimeSpent" value="18479000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -839,27 +817,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding>
-            <marker date="1527154300000" expanded="true" signature="1377:3485" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="1591:3485" ph="{&quot;method&quot;: 'get'...}" />
-            <marker date="1527154300000" expanded="true" signature="1819:3485" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="2911:3485" ph="{&quot;method&quot;: 'get'...}" />
-            <marker date="1527154300000" expanded="true" signature="3095:3485" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="3456:3485" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="10281:10295" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="10281:10374" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="10281:10382" ph="{&quot;title&quot;: '提示'...}" />
-            <marker date="1527154300000" expanded="true" signature="10281:10389" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="10281:10393" ph="{...}" />
-            <marker date="1527154300000" expanded="true" signature="10317:10364" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.wxml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1848">
@@ -870,19 +827,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/applet/pages/pay/pay.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="122" column="20" lean-forward="true" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
+        <state relative-caret-position="553">
+          <caret line="122" column="20" lean-forward="false" selection-start-line="122" selection-start-column="20" selection-end-line="122" selection-end-column="20" />
           <folding>
-            <marker date="1527147447000" expanded="true" signature="315:3317" ph="{...}" />
-            <marker date="1527147447000" expanded="true" signature="493:3310" ph="{&quot;method&quot;: 'post'...}" />
-            <marker date="1527147447000" expanded="true" signature="609:3303" ph="{...}" />
             <marker date="1527147447000" expanded="true" signature="651:749" ph="{...}" />
             <marker date="1527147447000" expanded="true" signature="3290:3294" ph="//..." />
-            <marker date="1527147447000" expanded="true" signature="3381:3408" ph="{&quot;title&quot;: '加载中'...}" />
-            <marker date="1527147447000" expanded="true" signature="3543:3662" ph="{&quot;type&quot;: &quot;ping&quot;...}" />
-            <marker date="1527147447000" expanded="true" signature="3678:3927" ph="{&quot;method&quot;: 'post'...}" />
-            <marker date="1527147447000" expanded="true" signature="3791:3921" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/applet/pages/detail/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="333" column="37" lean-forward="true" selection-start-line="333" selection-start-column="37" selection-end-line="333" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

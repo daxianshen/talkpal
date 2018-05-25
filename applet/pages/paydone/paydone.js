@@ -6,13 +6,14 @@ Page({
    */
   data: {
     images:null,
-    order:""
+    order:null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+    console.log(options);
     this.setData({
       order: options.orderid
     })
@@ -43,8 +44,11 @@ Page({
   },
   
   onShareAppMessage: function () {
+
+    var that = this;
+
     if (res.from === 'button') {
-      var path = "/pages/detail/detail?oid=" + this.data.order;
+      var path = "/pages/detail/detail?oid=" + that.data.order;
       console.log(path);
       return {
         title: "一起来上脱口派的体验课吧~",

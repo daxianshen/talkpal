@@ -27,21 +27,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-      var app = getApp();
-      var g_data = app.globalData;
-      //检测是否加入...
-      wx.request({
-          url: g_data.host + "/api/shareclass/join",
-          method: 'get',
-          data: {token:g_data.token},
-          success: function (res) {
-              if(res.data && res.data.id){
-                  wx.navigateTo({
-                      url: '../../pages/detail/detail?oid='+res.data.id,
-                  })
-              }
-          }
-      });
+      
     this.setData({
       groupDetail: postdata.groupData[options.index],
       array:array

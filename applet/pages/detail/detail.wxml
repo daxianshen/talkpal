@@ -83,4 +83,10 @@
   </view>
 
   <button class="invite2" style="display:{{button3}}" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
+
+  <view class="back" style="display:{{button4}}" bindtap='back' >返回首页</view>
+
+
 </view>
+
+  

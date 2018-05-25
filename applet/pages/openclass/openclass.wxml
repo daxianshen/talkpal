@@ -16,12 +16,12 @@
 </view>
 
 <view wx:for="{{groups}}">
-  <navigator class="section s-item" data-index="{{index}}" url='/pages/getClass/getClass?id={{item.id}}&index={{index}}' bindtap='click'>
+  <view class="section s-item" data-index="{{index}}" bindtap='click'>
     <image src="{{item.poster}}" bindload='imageLoad' style="width:{{images.width}}px; height:{{images.height}}px;"></image>
 
     <view class="bottom">
       <view class="title">{{item.title}}</view>
       <view class="bottombox"><view class="now">¥{{item.groupPrice}}</view><view class="old">¥{{item.previousPrice}}</view><view class="go">去开团</view></view>
     </view>
-  </navigator>
+  </view>
 </view>

@@ -205,7 +205,7 @@ button:after{
   border:none;
 }
 
-.begin,.invite1,.invite2,.pay{
+.begin,.invite1,.invite2,.pay,.back{
   padding: 15px 0;
   color: #fff;
   line-height: 1;
@@ -225,4 +225,7 @@ button:after{
 }
 .invite1,.invite2{
   background: #ff7373;
+}
+.back{
+  background: #ffce42
 }

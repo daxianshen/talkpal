@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    orders:null
+    orders:null,
+    state:"block"
   },
 
   /**
@@ -32,13 +33,18 @@ Page({
 
         var data =res.data.data;
 
-        for(var a=0;a<data.length;a++){
-          data[a].create_at = new Date(data[a].create_at).getFullYear() + "/" + (new Date(data[a].create_at).getMonth() + 1) +"/"+ new Date(data[a].create_at).getDate()+ " " + new Date(data[a].create_at).getHours() + ":" + new Date(data[a].create_at).getMinutes();
+        if(data.length>=1){
+
+          for(var a=0;a<data.length;a++){
+            data[a].create_at = new Date(data[a].create_at).getFullYear() + "/" + (new Date(data[a].create_at).getMonth() + 1) +"/"+ new Date(data[a].create_at).getDate()+ " " + new Date(data[a].create_at).getHours() + ":" + new Date(data[a].create_at).getMinutes();
+          }
+          that.setData({
+            orders: data,
+            state: "none"
+          })
         }
 
-        that.setData({
-          orders: data
-        })
+       
       }
     })
   }
