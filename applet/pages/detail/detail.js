@@ -33,15 +33,15 @@ Page({
     obj:null,
     address:null,
     users:[
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png",
-      "/icon/user.png"
-    ],
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png",
+          "/icon/user.png"
+      ],
     index1: 0,
     index2: 0,
     array: array,
@@ -77,11 +77,11 @@ Page({
           },
           success: function (res) {
                var data  = res.data.data;
-              that.setData({
-               });
 
               //页面渲染
               var obj= data.members;
+
+
 
               //超过五天
               var order_date =  data.create_at; //下订单的时间戳
@@ -98,6 +98,9 @@ Page({
                       duration:1000
                   })
               }
+
+
+
               //
               var arr =that.data.users;
               for(var a=0;a<obj.length;a++){
@@ -105,10 +108,17 @@ Page({
               }
               var unum = 3 - obj.length;
               if(unum<0) unum  = 0;
+
               that.setData({
                   users: arr,obj:obj,address:data.address,unum:unum,date:date
               });
-
+              if(data.status == "已开团"){
+                  that.setData({
+                      state2:"inline-block",
+                      state1:"none"
+                  });
+                  return;
+              }
               var jointhis = false;
               var istz = false; //是否团长
               wx.request({
@@ -344,25 +354,54 @@ Page({
 
     begin:function(){
 
-    console.log(this.data.obj)
+    var num = this.data.obj.length;
+        var app = getApp();
+        var g_data = app.globalData;
+        var that = this;
+        var params = {
+            token: g_data.token
+        };
 
-    if(this.data.obj.length>=3){
+        var begin = function(){
+
+            wx.request({
+                url: g_data.host + "/api/shareclass_finish/"+that.data.oid,
+                method: 'post',
+                data: params,
+                success: function (res) {
+                    if (res.data) {
+                        var data = res.data;
+                        if(data.code == 0 ){
+                                that.setData({
+                                    state2:"inline-block",
+                                    state1:"none",
+                                    button1:"none"
+                                });
+                            }
+
+
+                    }
+                }
+            })
+
+   };
+    if(num>=3 && num<8){
       wx.showModal({
         title: '提示',
         content: '确定不等多点小伙伴了吗？',
         success: function (res) {
           if (res.confirm) {
             console.log('用户点击确定')
-            //订单状态status属性改为“true”
-
-        
-
+            begin();
 
           } else if (res.cancel) {
             console.log('用户点击取消')
           }
         }
       })
+    }else{
+        begin();
     }
+
   }
-})
+});

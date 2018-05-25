@@ -35,13 +35,11 @@ Page({
           method: 'get',
           data: {token:g_data.token},
           success: function (res) {
-
               if(res.data && res.data.id){
                   wx.navigateTo({
                       url: '../../pages/detail/detail?oid='+res.data.id,
                   })
               }
-
           }
       });
     this.setData({
