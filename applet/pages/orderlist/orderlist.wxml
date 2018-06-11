@@ -1,0 +1,14 @@
+<!--pages/orderlist/orderlist.wxml-->
+
+<view style="display:{{state}};text-align:center;font-size:12px;color:#ccc;margin-top:10px">您还没有拼团订单哦~</view>
+<view class="box" wx:for="{{orders}}">
+  <navigator url='/pages/detail/detail?oid={{item._id}}'>
+    <view class="title">{{item.goodsName}}</view>
+    <view class="price">¥{{item.price}}</view>
+    <view class="detail">
+      <view class="date">购买时间 {{item.create_at}}</view>
+      <view class="status">{{item.status}}></view>
+    </view>
+  </navigator>
+</view>
+

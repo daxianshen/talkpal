@@ -1,0 +1,92 @@
+<!--pages/detail/detail.wxml-->
+
+<view class="good">
+  <image src="/icon/ekids.jpg" class="goodpic"></image>
+  <view class="detailbox">
+    <view class="title">多人拼课| 45分钟优质外教全广州上门体验课</view>
+    <view class="detail">仅限广州市区地铁沿线的家庭参加，年龄/英语基础需大概一致，3人起即拼团成功。</view>
+    <view class="nprice">¥10</view>
+    <view class="oprice">¥300</view>
+    <view class="tag">拼团价</view>
+  </view>
+</view>
+
+<view style="padding: 10px 20px">
+  <view class="booking" style="display:{{state1}}">拼团中</view>
+  <view class="booked" style="display:{{state2}}">已开团</view>
+  <view class="share" style="display:{{state1}}">分享给更多好友组团</view>
+  <view class="tip" style="display:{{state1}};">还差<view style="display:inline-block;color: #eaa621">{{unum}}人</view>参团 （报名到{{date}}为止）</view>
+
+  <view class='members'>
+    <view class="member" wx:for="{{users}}"><image src="{{item}}"></image></view><view class="tag2">团长</view>
+  </view>
+</view>
+
+
+<view class="info">
+  <view class="infobox">
+    <view class="info-item">
+      <image class="location" src='/icon/address.png'></image><view class="address">{{address}}</view>
+    </view>
+    <view class="info-item" wx:for="{{obj}}">{{item.childName}}，{{item.sex}}，{{item.age}}岁，英语水平是{{item.level}}</view>
+
+  </view>
+</view>
+
+<form bindsubmit='formSubmit' bindreset='formReset' style='display:{{button2}}'>
+  <view class="formbox">
+    <view class='section'>
+      <label>学生/家长昵称：</label><input class="name" name="name" placeholder='请输入学生昵称' value="nick"/>
+    </view>
+    <view class="section">
+      <label>手机号码：</label><input class="phone" name="mobile"  placeholder='请输入联系方式' value="13644789098"/>
+    </view>
+    <view class="section">
+      <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array}}" name="age">
+        <view class="picker">
+          学生年龄：{{array[index1]}}
+        </view>
+      </picker>
+    </view>
+    <view class="section">
+      <radio-group name="sex">
+       
+        <label> 性别：<radio value="男" checked="true" />男</label>
+        <label><radio value="女" />女</label>
+      </radio-group>
+    </view>
+
+    <view class="section">
+      <picker bindchange='bindPickerChange2' value="{{index2}}" range="{{larray}}" name="level">
+        <view class="picker">
+          基础：{{larray[index2]}}
+        </view>
+      </picker>
+    </view>
+  
+  </view>
+  <button class="pay" form-type='submit'>拼团支付</button>
+</form>
+
+<view class="desc">
+  <view style="font-size:14px;">拼团流程</view>
+  <view>① 发起拼团或者参加好友的拼课团。</view>
+  <view>② 在活动时间内（5天）邀请好友一起拼团。</view>
+  <view>③ 三人起支付即视为拼课成功，团长可以选择开始体验课或继续邀请好友拼团。请添加客服老师微信（ID：talkpal0601）咨询安排体验课课时间。</view>
+  <view>④ 若活动结束，拼课未成功时，预付款将原路返回。</view>
+</view>
+
+<view class="button">
+  <view class="bbox" style="display:{{button1}}">
+    <button class="begin" bindtap='begin'>开始体验</button>
+    <button class="invite1" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
+  </view>
+
+  <button class="invite2" style="display:{{button3}}" bindtap='onShareAppMessage' open-type="share" id="1">邀请好友</button>
+
+  <view class="back" style="display:{{button4}}" bindtap='back' >返回首页</view>
+
+
+</view>
+
+  
