@@ -1,5 +1,0 @@
-<!--pages/process/process.wxml-->
-
-<view wx:for="{{imgs}}">
-  <image src="{{item}}" data-index="{{ index }}" bindload='imageLoad' style="width:{{images[index].width}}px; height:{{images[index].height}}px;"></image>
-</view>

@@ -1,3 +1,0 @@
-<view>
-   <web-view src="{{url}}#wechat_redirect"></web-view> 
-</view>
