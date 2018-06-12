@@ -1,0 +1,424 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 100%;
+    min-width: 960px;
+}
+
+section {
+    font-size: 1.5em;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+header {
+    background-color: #1db4dc;
+    color: #fff;
+    .head {
+        padding: 20px 0;
+        margin-bottom: 45px;
+        .logo {
+            img {
+                height: 1.5em;
+            }
+        }
+        .Public {
+            float: right;
+        }
+    }
+    .nav {
+        //      padding-bottom: percentage(100/960);
+        >img {
+            width: percentage(291.5/640);
+        }
+        .download {
+            position: relative;
+            float: right;
+            width: percentage(296.5/640);
+            padding-top: percentage(95/640);
+            >p {
+                margin: 0;
+            }
+            >p:nth-child(1) {
+                font-size: 3em;
+            }
+            >p:nth-child(2) {
+                margin-bottom: 1.5em;
+                font-size: 1em;
+            }
+            >p:nth-of-type(3) {
+                font-size: 0.5em;
+                >span {
+                    display: inline-block;
+                    text-align: center;
+                    font-weight: bold;
+                    width: percentage(136.5/296.5);
+                    border: 1px solid #fff;
+                    border-radius: 5px;
+                    padding: 1em 0;
+                    cursor: pointer;
+                    >img {
+                        width: 9%;
+                    }
+                    &:nth-child(2) {
+                        margin-left: percentage(15.5/296.5);
+                    }
+                }
+                >span:hover{
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
+            >img {
+                position: absolute;
+                &:nth-of-type(1) {
+                    right: 0;
+                    top: 0;
+                }
+                &:nth-of-type(2) {
+                    left: -13%;
+                    top: 15%;
+                }
+                &:nth-of-type(3) {
+                    right: 20%;
+                    bottom: -30%;
+                }
+            }
+        }
+    }
+    img{
+        width: 100%;
+        margin-bottom: -5px;
+    }
+}
+
+.layer {
+    padding-right: 7.5px;
+    color: #445266;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.layer+p {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 60px;
+    >span:nth-child(1) {
+        color: #445266;
+    }
+    >span:nth-last-child(1) {
+        color: #1db4dc;
+    }
+}
+
+.About_Talkpal {
+    background-color: #fff;
+    padding-top: percentage(78.5/640);
+    >div {
+        ul {
+            color: #b1b1b1;
+            width: percentage(291.5/640);
+            font-size: 0.85em;
+            line-height: 2em;
+            float: left;
+        }
+        >p {
+            padding-left: 12px;
+        }
+        >img {
+            float: right;
+            width: percentage(237/640);
+            margin-bottom: percentage(-60/640);
+            margin-right: percentage(4/640);
+        }
+    }
+}
+
+.Courses_Features {
+    background-color: #f4f4f4;
+    position: relative;
+    padding-top: percentage(122/640);
+    padding-bottom: percentage(85/640);
+    >div {}
+    h2 {
+        width: 4em;
+        margin: 0 auto;
+    }
+    p {
+        text-align: center;
+        margin-bottom: percentage(86/640);
+    }
+    .CF_item {
+        width: 47%;
+        float: left;
+        color: #b1b1b1;
+        margin: 0 1.5%;
+        margin-bottom: percentage(40/640);
+        h3 {
+            color: #445266;
+        }
+        >img {
+            float: left;
+            margin: 1.5em 1em 2.5em 0;
+        }
+        &:nth-child(2) {
+            padding-bottom: 1em;
+        }
+    }
+}
+
+.High-frequency_Immersive_Learning {
+    >div {
+        padding-top: percentage(93.5/640);
+        text-align: right;
+        >h2 {
+            width: 8em;
+            float: right;
+        }
+        >img {
+            float: left;
+            width: percentage(290/640);
+            margin-bottom: percentage(-50/640);
+        }
+        >p {
+            margin-bottom: percentage(60/640);
+            margin-top: 2em;
+            width: 14em;
+            margin-left: auto;
+        }
+        >div {
+            width: percentage(250/640);
+            float: right;
+            color: #B1B1B1;
+            text-align: left;
+        }
+        .layer+p>span:nth-child(2) {
+            color: #445266;
+        }
+    }
+}
+
+.Reliable_Platform_for_English_Learning {
+    background-color: #f4f4f4;
+    position: relative;
+    >div {
+        padding: percentage(122/640) 0 percentage(125/640);
+        h2 {
+            width: 8em;
+            margin: 0 auto;
+        }
+        >p {
+            text-align: center;
+        }
+        .choose {
+            .choose_item {
+                width: percentage(144.5/640);
+                float: left;
+                text-align: center;
+                color: #445266;
+                >p {
+                    color: #B1B1B1;
+                    text-align: left;
+                }
+                &:nth-child(2) {
+                    margin: 0 percentage(100/640);
+                }
+            }
+        }
+    }
+}
+
+.Experienced_America_Teachers {
+    >div {
+        position: relative;
+        padding: percentage(118.5/640) 0 percentage(128.5/640);
+        >img {
+            width: percentage(367/640);
+            position: absolute;
+            bottom: 0;
+            right: percentage(-40/640);
+        }
+        >p {
+            padding-left: 12px;
+        }
+        >div {
+            width: percentage(214/640);
+            margin-left: 12px;
+            color: #B1B1B1;
+        }
+    }
+}
+
+.video_box {
+    color: #FFFFFF;
+    background-color: #f4f4f4;
+    padding: percentage(92.5/640) 0 percentage(88/640);
+    >div {
+        position: relative;
+        .video {
+            width: 100%;
+            padding-bottom: percentage(360/640);
+            position: relative;
+            video {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .TheMaskLayer {
+            width: 100%;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: percentage(42/640) 0 percentage(44.5/640);
+            top: 0;
+            left: 0;
+            text-align: center;
+            >span {
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            >img {
+                margin: percentage(64/640) 0;
+                width: percentage(57.5/640);
+            }
+            #ImmediatelyDownload {
+                width: percentage(164/640);
+                line-height: 3em;
+                border-radius: 5px;
+                background-color: #1db4dc;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+footer {
+    background-color: #262d37;
+    //  >div{
+    //      line-height: 3em;
+    //      font-size: 0.8em;
+    //      color: #ffffff;
+    //      text-align: left;
+    //      padding: percentage(22/640) 0;
+    //      >span{
+    //          opacity: 0.8;
+    //      }
+    //      >span:nth-last-child(1){
+    //          opacity: 1;
+    //          >img{
+    //              height: 3em;
+    //              float: right;
+    //              &:nth-of-type(2),&:nth-of-type(3){
+    //                  margin-right: percentage(19/640);
+    //              }
+    //          }
+    //          &:after{
+    //              content: '';
+    //              display: block;
+    //              clear: both;
+    //          }
+    //      }
+    .bottom {
+        line-height: 3em;
+        font-size: 0.8em;
+        color: #ffffff;
+        text-align: left;
+        padding: percentage(22/640) 0;
+        >span {
+            opacity: 0.8;
+        }
+        >div {
+            height: 3em;
+            float: right;
+            position: relative;
+            a>img {
+                height: 100%;
+                cursor: pointer;
+            }
+            >span:nth-of-type(1) {
+                position: absolute;
+                bottom: 4.5em;
+                left: -4em;
+                width: 10em;
+                background-color: #fff;
+                border-radius: 5px;
+                color: #000;
+                text-align: center;
+                line-height: 1.3em;
+                display: none;
+                >img{
+                    width: 10em;
+                }
+                .bottom_jiao{
+                    position: absolute;
+                    bottom: -16px;
+                    right: -8px;
+                    left: 0;
+                    margin: 0 auto;
+                    width: 0;
+                    height: 0;
+                    font-size: 0;
+                    border: solid 8px;
+                    border-color: #ffffff transparent transparent transparent;
+                }
+            }
+            .bottom_wechat{
+                padding: 1em 0 0;
+            }
+            .bottom_QQ{
+                padding: 1em 0;
+            }
+            .bottom_phone{
+                padding: 1em 0;
+            }
+            &:nth-of-type(2),
+            &:nth-of-type(3) {
+                margin-right: percentage(19/640);
+            }
+            ._wechat_img:hover{
+                + span{
+                    display: block;
+                }
+            }
+            ._phone_img:hover{
+                + span{
+                    display: block;
+                }
+            }
+            ._QQ_img:hover{
+                + span{
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+section>div>h2 {
+    border-left: 4.5px solid #e9552f;
+    border-radius: 2px;
+    padding-left: 7.5px;
+    line-height: 1em;
+    margin: 0;
+}
+
+section>div,
+footer>div,
+header>div {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.clear:after {
+    content: '';
+    display: block;
+    clear: both;
+}
