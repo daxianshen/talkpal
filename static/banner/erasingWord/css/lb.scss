@@ -1,0 +1,158 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+}
+html,
+body {
+    width: 100%;
+//  height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+[v-cloak] {
+    display: none !important;
+}
+#app{
+    width: 100%;
+//  height: 100%;
+   padding-bottom: 4%;
+    background-color: rgb(225,62,12);
+    .lb_head{
+        width: percentage(291.5/375);
+        margin: 0 auto;
+        color: #fbcd78;
+        text-align: center;
+        padding: percentage(30/375) 0 percentage(16/375);
+        background-image: url(../img/lb_img/bg@3x.png);
+        background-size: 100% 100%;
+        .lb_head_photo{
+            width: percentage(133/291.5);
+            position: relative;
+            margin: 0 auto;
+            img:nth-child(1){
+                position: absolute;
+                top: 2%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+                border-radius: 50%;
+                width: percentage(82.5/133);
+            }
+            img:nth-child(2){
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+    .leaderboard{
+        margin: percentage(15/375);
+        margin-bottom: 0;
+        background-color: #fb6c30;
+        border-radius: 10px;
+        padding: percentage(13/375) percentage(9/375);
+        .leaderboard_body{
+//          width: percentage(332/360);
+            border-radius: 10px;
+            background-color: #fff8e6;
+            color: #772706;
+            .leaderboard_me{
+                padding: percentage(17.5/332) percentage(16/332) percentage(13.5/332) percentage(18.5/332);
+                height: 40px;
+                line-height: 40px;
+                border-bottom: 1.5px solid #eee3c8;
+                img{
+                    width: 40px;
+                    height: 100%;
+                    margin-left: 1.5em;
+                    margin-right: 1em;
+                    border-radius: 50%;
+                }
+                >span{
+                    float: left;
+                    height: 100%;
+                }
+                >span:nth-child(1){
+                    width: 2em;
+                    text-align: center;
+                }
+                >span:nth-child(3){
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 35%;
+                }
+                .fenshu{
+                    float: right;
+                }
+            }
+            .leaderboard_me:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+        }
+        ul{
+            padding: 0;margin: 0;
+            li{
+                padding: percentage(10.5/332) percentage(16/332) percentage(0/332) percentage(18.5/332);
+//              height: 40px;
+                line-height: 40px;
+                list-style: none;
+                >span:nth-child(1){
+                    width: 2em;
+                    text-align: center;
+                }
+                >span:nth-child(2)>img{
+                    width: 40px;
+                    height: 100%;
+                    margin-left: 1.5em;
+                    margin-right: 1em;
+                    border-radius: 50%;
+                }
+                >span:nth-child(3){
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    width: 35%;
+                }
+                >span{
+                    float: left;
+                    height: 40px;
+                }
+                .fenshu{
+                    float: right;
+                }
+            }
+            li:after{
+                content: '';
+                display: block;
+                clear: both;
+            }
+            li:nth-child(1){
+                padding-top: percentage(14/332);
+            }
+            li:nth-last-child(1){
+                padding-bottom: percentage(14/332);
+            }
+        }
+        
+    }
+}
+@media screen and (max-width: 320px){
+    #app .leaderboard ul li{
+        padding: percentage(10.5/332) percentage(10/332) percentage(0/332) percentage(10/332);
+        >span:nth-child(2)>img{
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+    }
+    #app .leaderboard .leaderboard_body .leaderboard_me{
+        padding: percentage(17.5/332) percentage(10/332) percentage(13.5/332) percentage(10/332);
+        >span:nth-child(2)>img{
+            margin-left: 0.5em;
+            margin-right: 0.5em;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/level1.css"/>
+</head>
+<body>
+    <div id="app">
+        <ul>
+            <li v-for="(item,index) in newList" @click="listClick(index)" v-if="newList" v-cloak>{{item.text}}<span class="icon"><img
+                    src="img/return-right.png" align="center"/></span></li>
+        </ul>
+        <p class="phone">咨询客服电话/微信号：18922403657</p>
+    </div>
+    <script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/level2.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  background-color: #efeff4;
+}
+
+title {
+  color: #445266;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#app ul {
+  padding: 0;
+  margin: 0;
+  color: #445266;
+  font-family: HiraginoSansGB-W3;
+}
+
+#app ul li {
+  background-color: #fff;
+  list-style: none;
+  margin-top: 1px;
+  padding: 1em;
+}
+
+#app ul li:nth-child(1) {
+  margin-top: 0;
+}
+
+#app ul li > span {
+  float: right;
+}
+
+#app ul li > span > img {
+  height: 0.8em;
+}
+
+#app ul li :hover {
+  opacity: 0.5;
+}
+
+#app .phone {
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  bottom: 2em;
+  color: #9f9f9f;
+  text-align: center;
+}

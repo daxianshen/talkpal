@@ -1,0 +1,626 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+  text-align: center;
+  font-size: 100%;
+  font-family: Candara;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#shouye {
+  position: relative;
+  min-height: 100%;
+}
+
+#shouye .biaoti {
+  width: 64.25%;
+  margin-top: 15%;
+}
+
+#shouye #first_donghua {
+  width: 65%;
+  padding-bottom: 65%;
+  background-image: url(../img/planet.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 40px auto 50px;
+  position: relative;
+}
+
+#shouye #first_donghua .xiaopai {
+  position: absolute;
+  width: 92%;
+  top: 8%;
+  right: 4%;
+  z-index: 1;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#shouye #first_donghua .stars1 {
+  position: absolute;
+  animation: clockwise 3s linear infinite;
+  -o-animation: clockwise 3s linear infinite;
+  -ms-animation: clockwise 3s linear infinite;
+  -moz-animation: clockwise 3s linear infinite;
+  -webkit-animation: clockwise 3s linear infinite;
+}
+
+#shouye #first_donghua .stars1:nth-of-type(3) {
+  width: 5%;
+  left: -3%;
+  top: 40%;
+}
+
+#shouye #first_donghua .stars1:nth-of-type(4) {
+  width: 10%;
+  left: -4%;
+  top: 68%;
+}
+
+#shouye #first_donghua .stars1:nth-of-type(5) {
+  width: 7%;
+  right: -12%;
+  top: 40%;
+}
+
+#shouye #first_donghua .stars2 {
+  width: 10%;
+  bottom: 27%;
+  position: absolute;
+  right: 0;
+}
+
+#shouye #readtest {
+  width: 35%;
+  display: block;
+  margin: 0 auto;
+}
+
+#shouye #readtest > img {
+  width: 100%;
+}
+
+#shouye .instruction {
+  color: #2c99b7;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+#shouye .logo {
+  color: #2c99b7;
+  position: absolute;
+  text-align: left;
+  padding-left: 2.5em;
+  line-height: 2em;
+  font-size: 0.8em;
+  bottom: 0;
+  left: 3%;
+}
+
+#shouye .logo > img {
+  height: 2em;
+  position: absolute;
+  left: 1%;
+}
+
+.title {
+  padding: 0 6%;
+  color: #ffffff;
+  min-height: 100%;
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+.title h3 {
+  padding: 5% 0;
+  margin: 0;
+  text-align: center;
+}
+
+.title .tuwen {
+  font-size: 1em;
+}
+
+.title .tuwen > img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title .tuwen > pre {
+  font-weight: bold;
+  font-family: Candara;
+  text-align: left;
+  margin: 10px 0;
+  font-size: 1.3em;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word;
+}
+
+.title .tuwen .fill {
+  text-align: left;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.title .tuwen .fill > span {
+  display: inline-block;
+  width: 4em;
+  height: 1em;
+  line-height: 1em;
+  color: #2c99b7;
+  text-align: center;
+  border-bottom: 1px solid #ffffff;
+}
+
+.title .video {
+  width: 100%;
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+}
+
+.title .video > video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.title .video .video_loading {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.title .xuanze {
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+
+.title .xuanze .floatLeft {
+  float: left;
+}
+
+.title .xuanze .floatRight {
+  float: right;
+  margin-right: 5px;
+}
+
+.title .xuanze .forbadeclick {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.title .xuanze .picture {
+  width: 47%;
+  display: inline-block;
+  position: relative;
+}
+
+.title .xuanze .picture:nth-child(2n) {
+  margin-left: 5px;
+}
+
+.title .xuanze .picture:nth-child(3) {
+  margin-top: 5px;
+}
+
+.title .xuanze .picture:nth-child(4) {
+  margin-top: 5px;
+}
+
+.title .xuanze .picture > span {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  position: absolute;
+  width: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  top: 10%;
+  left: 10%;
+}
+
+.title .xuanze .picture > img {
+  width: 95%;
+  border: 5px solid #ffffff;
+  border-radius: 10px;
+}
+
+.title .xuanze .words {
+  background-color: #ffffff;
+  padding: 10px 0;
+  margin-top: 5px;
+  color: #c1c1c1;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.title .xuanze .words > span {
+  padding: 0 20px;
+  border-right: 2px solid #c1c1c1;
+  margin-right: 20px;
+}
+
+.title .xuanze .choose {
+  width: 30%;
+  color: #c1c1c1;
+  padding: 10px 0;
+  text-align: center;
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-right: 3%;
+}
+
+.title .xuanze .action {
+  background-color: #54c7e6;
+  color: #ffffff;
+}
+
+.title .xuanze .action > span {
+  border-right: 2px solid #ffffff;
+}
+
+.title .xuanze .action > img {
+  border: 5px solid #34b9e5;
+}
+
+.title .xuanze:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.title .foot {
+  position: absolute;
+  bottom: 2%;
+  width: 88%;
+  height: 8px;
+  border-radius: 50px;
+  background-color: #bceffa;
+}
+
+.title .foot > div {
+  border-radius: 50px;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/jindu.png);
+}
+
+.title .foot + p {
+  margin: 0;
+  position: absolute;
+  width: 88%;
+  bottom: 2.5em;
+  color: #2f9bb8;
+  font-size: 0.8em;
+}
+
+#weiye {
+  color: #ffffff;
+  position: relative;
+  height: 100%;
+  overflow: scroll;
+}
+
+#weiye .weibox > span {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  position: absolute;
+  font-size: 1em;
+  right: 5px;
+  top: 5px;
+}
+
+#weiye .weibox #pingjia {
+  text-align: left;
+  padding: 0 2em 45% 4em;
+  font-size: 0.8em;
+}
+
+#weiye .weibox #pingjia > p {
+  margin: 0 0 1em;
+}
+
+#weiye .weibox #pingjia ul {
+  padding-left: 0;
+}
+
+#weiye .weibox #pingjia ul li {
+  margin-bottom: 1em;
+}
+
+#weiye .weibox #pingjia span {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#weiye .weibox #cnd {
+  margin: 0 auto;
+  width: 240px;
+  height: 240px;
+}
+
+#weiye .weibox #next {
+  position: fixed;
+  display: none;
+  bottom: 3em;
+  left: 0;
+  right: 0;
+}
+
+#weiye .weibox #next > p {
+  color: #2c99b7;
+  font-size: 0.8em;
+}
+
+#weiye .weibox #next h1 {
+  font-weight: normal;
+  background-color: #37c0e4;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-size: 1.5em;
+  width: 8em;
+  height: 2.5em;
+  border-radius: 50px;
+  box-shadow: 0px 5px 1px 1px #359bc5;
+  opacity: 0.7;
+  margin-bottom: 0;
+}
+
+#weiye .weibox #next h1 > img {
+  position: absolute;
+  width: 1.5em;
+  top: 25%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+#weiye .weibox .logo {
+  color: #2c99b7;
+  position: fixed;
+  display: none;
+  text-align: left;
+  padding-left: 2.5em;
+  line-height: 2em;
+  font-size: 0.8em;
+  bottom: 0;
+  left: 3%;
+}
+
+#weiye .weibox .logo > img {
+  height: 2em;
+  position: absolute;
+  left: 1%;
+}
+
+.displayNone {
+  display: none;
+}
+
+@keyframes clockwise {
+  from {
+    transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-o-keyframes clockwise {
+  from {
+    transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-ms-keyframes clockwise {
+  from {
+    transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-moz-keyframes clockwise {
+  from {
+    transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@-webkit-keyframes clockwise {
+  from {
+    transform: rotateZ(0deg);
+    -o-transform: rotateZ(0deg);
+    -ms-transform: rotateZ(0deg);
+    -moz-transform: rotateZ(0deg);
+    -webkit-transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -moz-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+  }
+}
+
+@media screen and (min-width: 1023px) and (max-width: 1024px) {
+  body {
+    font-size: 200%;
+  }
+  #shouye #first_donghua {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  .title {
+    padding: 0 12%;
+  }
+  .title .foot {
+    width: 76%;
+  }
+  .title .foot + p {
+    width: 76%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1022px) {
+  body {
+    font-size: 130%;
+  }
+  #shouye #first_donghua {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  .title {
+    padding: 0 12%;
+  }
+  .title .foot {
+    width: 76%;
+  }
+  .title .foot + p {
+    width: 76%;
+  }
+}
+
+@media screen and (max-width: 360px) and (max-height: 550px) {
+  body {
+    font-size: 100%;
+  }
+  #weiye .weibox #cnd {
+    padding-top: 0;
+  }
+  .title {
+    padding: 0 11%;
+  }
+  .title .foot {
+    width: 78%;
+  }
+  .title .foot + p {
+    width: 78%;
+  }
+  #shouye #first_donghua {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 568px) {
+  body {
+    font-size: 80%;
+  }
+  #shouye .biaoti {
+    margin-top: 40px;
+  }
+  .title > h3 {
+    padding: 15px 0;
+  }
+  .title .foot + p {
+    bottom: 2em;
+  }
+  #weiye .weibox #cnd {
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 320px) and (max-height: 480px) {
+  body {
+    font-size: 80%;
+  }
+  #shouye .biaoti {
+    margin-top: 40px;
+  }
+  #shouye #first_donghua {
+    margin: 15px auto 25px;
+  }
+  .title {
+    padding: 0 15%;
+  }
+  .title > h3 {
+    padding: 15px 0;
+  }
+  .title .foot {
+    width: 70%;
+  }
+  .title .foot + p {
+    bottom: 2em;
+    width: 70%;
+  }
+  #weiye .weibox {
+    height: 70%;
+    overflow: scroll;
+  }
+  #weiye .weibox #cnd {
+    padding-top: 0;
+  }
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>抓几把娃娃</title>
+    <style type="text/css">
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            /* Disable selection/copy in UIWebView */
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-size: 200%;
+        }
+        .dolly{
+            background-image: url(img/bg.png);
+            background-size: 100%;
+            max-width: 1024px;
+            min-width: 280px;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 52px;
+            padding-bottom: 48px;
+            font-family: "黑体";
+        }
+        .dolly>header>img{
+            width: 65.7%;
+        }
+        .dolly>header{
+            margin-bottom: 76px;
+        }
+        .dolly .btn{
+            width: 50.4%;
+            padding: 25px 0;
+            color: #fff;
+            border-radius: 10px;
+            background-color: #00efa6;
+            margin: 46px auto 76px;
+        }
+        .dolly .btn>img{
+            height: 1em;
+        }
+        .dolly .merit{
+            background-color: #fff;
+            text-align: left;
+            width: 86.4%;
+            font-weight: bold;
+            margin: 0 auto 17.5px;
+            padding: 36px 0;
+            border-radius: 10px;
+            line-height: 1.8em;
+        }
+        .dolly .merit>img{
+            float: left;
+            height: 3.6em;
+            margin: 0 8.2% 0 15.4%
+        }
+        .dolly .merit:after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .dolly>footer{
+            margin-top: 46px;
+            color: #fff;
+        }
+        .dolly>footer>img:nth-of-type(1){
+            width: 2em;
+            margin-bottom: 17.5px;
+        }
+        .dolly>footer>img:nth-of-type(2){
+            height: 0.8em;
+        }
+
+        @media screen and (max-width: 1024px) {
+            body {
+                font-size: 200%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 150%;
+            }
+        }
+
+        @media screen and (max-width: 414px) {
+            body {
+                font-size: 100%;
+            }
+        }
+        @media screen and (max-width: 320px) {
+            .dolly .merit>img{
+                margin: 0 8.2%;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="dolly">
+    <header>
+        <img src="img/_e-catch_logo.png"/>
+    </header>
+    <!--<div class="btn">-->
+        <!--<img align="center" src="img/7.png"/>-->
+        <!--下载App-->
+    <!--</div>-->
+    <div class="merit">
+        <img align="center" src="img/1.png"/>
+        每天登陆领币<br />
+        新用户还送100币！
+    </div>
+    <div class="merit">
+        <img align="center" src="img/2.png"/>
+        真实在线抓娃娃<br />
+        抓到就送到家！
+    </div>
+    <div class="merit">
+        <img align="center" src="img/3.png"/>
+        超高抓取概率<br />
+        上机万人围观！
+    </div>
+    <footer>
+        <img src="img/5.png"/><br />
+        想抓一个娃娃送给ta <img src="img/6.png"/>
+    </footer>
+</div>
+</body>
+</html>

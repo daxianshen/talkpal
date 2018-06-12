@@ -1,0 +1,394 @@
+html,
+body {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: 微软雅黑;
+}
+
+p, ul {
+  margin: 0;
+}
+
+#app {
+  background-color: #eeeeee;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+.share {
+  width: 100%;
+  padding-top: 40.46296%;
+  padding-bottom: 15.74074%;
+  background-image: url(../img/share_app_bg.png);
+  background-size: 100%;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.share > img {
+  width: 22.22222%;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.share > h4 {
+  text-align: center;
+  color: #555555;
+  margin: 0;
+  padding: 1.16em 0;
+  width: 100%;
+}
+
+.share > h4 > img {
+  width: 10%;
+}
+
+.share .login {
+  width: 100%;
+}
+
+.share .login .information {
+  width: 75.09259%;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.share .login .information > input {
+  width: 78.54501%;
+  line-height: 3em;
+  font-size: 0.9em;
+  border: 0;
+  text-indent: 1em;
+  color: #BFBFBF;
+  display: block;
+  margin: 0 auto;
+  outline: none;
+  padding-left: 3em;
+}
+
+.share .login .information > input:nth-child(1) {
+  border-bottom: 1px solid #eeeeee;
+  border-radius: 0;
+}
+
+.share .login .information #getCode {
+  position: absolute;
+  background-color: #D9F1F7;
+  border-radius: 50px;
+  color: #41AECB;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 0.5em 1em;
+  bottom: 0.5em;
+  right: 0.5em;
+}
+
+.share .login .information #country {
+  position: absolute;
+  font-size: 0.9em;
+  left: 0em;
+  top: 0em;
+  width: 4em;
+  padding: 1px 0em;
+  line-height: 3em;
+  color: #BFBFBF;
+}
+
+.share .login .information #mess {
+  position: absolute;
+  height: 1em;
+  left: 1em;
+  bottom: 1em;
+}
+
+.share .login .information #mess > img {
+  height: 100%;
+}
+
+.share .login .result {
+  width: 85.09259%;
+  background-image: url(../img/share_app_resultbg.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #41AECB;
+  padding: 9% 0;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.share .login .btn {
+  width: 62.96296%;
+  background-color: #54C7E6;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 0.9em;
+  line-height: 3em;
+  margin: 2em auto 0.5em;
+}
+
+.share .login .btn2 {
+  text-align: center;
+  margin: 1em auto 0.5em;
+}
+
+.share .login .btn2 a {
+  height: 100%;
+  display: inline-block;
+  width: 30%;
+  margin: 0 2%;
+}
+
+.share .login .btn2 a > img {
+  width: 100%;
+}
+
+.share .login > p:nth-of-type(1) {
+  color: #BFBFBF;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 1.5em;
+}
+
+.share .login > p:nth-of-type(1) > span {
+  color: #54C7E6;
+}
+
+.share .login .voiceCode {
+  position: absolute;
+  width: 100%;
+  color: #BFBFBF;
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 0.5em;
+  height: 1.5em;
+}
+
+.share .login .voiceCode span {
+  color: #41AECB;
+  text-decoration: underline;
+}
+
+.introduce {
+  padding: 6.01852%;
+  background-color: #fff;
+  margin-top: 3.24074%;
+}
+
+.introduce > p {
+  text-align: center;
+  font-size: 0.9em;
+  color: #54c7e6;
+  margin-bottom: 1em;
+}
+
+.introduce > p > img {
+  width: 20%;
+}
+
+.introduce > p > span {
+  margin: 0 0.5em;
+  font-weight: bold;
+}
+
+.introduce .particulars {
+  padding: 4.21053%;
+  background-color: #eef8fe;
+  border-radius: 10px;
+}
+
+.introduce .particulars > ul {
+  padding-left: 1.2em;
+  line-height: 1.5em;
+  font-size: 0.8em;
+  color: #555555;
+}
+
+.introduce .particulars .img_list {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.introduce .particulars .img_list img {
+  width: 22.5974%;
+  margin: 0 1em;
+}
+
+.introduce .Course_Topics .Course_Topics_Item {
+  margin-top: 2.63158%;
+  padding: 4.21053%;
+  background-color: #eef8fe;
+}
+
+.introduce .Course_Topics .Course_Topics_Item > img {
+  width: 22.20779%;
+  float: left;
+}
+
+.introduce .Course_Topics .Course_Topics_Item > p {
+  font-size: 0.7em;
+  line-height: 1.5em;
+  color: #555555;
+  padding-left: 26.88312%;
+}
+
+.introduce .Course_Topics .Course_Topics_Item > p > span {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #41AECB;
+}
+
+.introduce .Course_Topics .Course_Topics_Item:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.introduce .Course_Topics > table {
+  text-align: center;
+  width: 100%;
+  color: #41AECB;
+  margin-top: 2.63158%;
+  padding: 4.21053%;
+  background-color: #eef8fe;
+}
+
+.introduce .Course_Topics > table tr:nth-of-type(1) td {
+  font-size: 0.9em;
+  font-weight: bold;
+}
+
+.introduce .Course_Topics > table td {
+  font-size: 0.7em;
+  border-radius: 10px;
+  background-color: #F9FDFF;
+  line-height: 3em;
+  border: 1px solid #eef8fe;
+}
+
+.introduce .Course_Topics > table:nth-of-type(2) {
+  padding-top: 0;
+  margin-top: -2.63158%;
+}
+
+.introduce .Course_Topics > table:nth-of-type(2) tr:nth-child(2) td:nth-child(1) {
+  width: 33%;
+}
+
+.bottom {
+  background-color: #fff;
+  padding-bottom: 1em;
+}
+
+.bottom > img {
+  width: 100%;
+}
+
+#internationalCode {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+  background-color: #FFF;
+  right: -100%;
+  color: #555555;
+  transition: 0.5s;
+}
+
+#internationalCode > header {
+  padding: 0 3%;
+  text-align: center;
+  line-height: 2.5em;
+  position: fixed;
+  width: 94%;
+  background-color: #fff;
+  z-index: 1;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+#internationalCode > header > span {
+  float: left;
+}
+
+#internationalCode > header > span > img {
+  height: 1em;
+}
+
+#internationalCode > ul {
+  padding-left: 0;
+  padding-top: 2.5em;
+}
+
+#internationalCode > ul li {
+  list-style: none;
+  line-height: 3em;
+  padding: 0 3%;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+#internationalCode > ul li:nth-last-child(1) {
+  border-bottom: 0;
+}
+
+#internationalCode > ul li .country_code {
+  float: right;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+  body {
+    font-size: 300%;
+  }
+  .share .login .information {
+    border: 3px solid #eeeeee;
+  }
+  .share .login .information input:nth-child(1) {
+    border-bottom: 3px solid #eeeeee;
+  }
+  #internationalCode > header {
+    border-bottom: 3px solid #EEEEEE;
+  }
+  #internationalCode > ul li {
+    border-bottom: 3px solid #EEEEEE;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 601px) {
+  body {
+    font-size: 200%;
+  }
+  .share .login .information {
+    border: 3px solid #eeeeee;
+  }
+  .share .login .information input:nth-child(1) {
+    border-bottom: 3px solid #eeeeee;
+  }
+  #internationalCode > header {
+    border-bottom: 3px solid #EEEEEE;
+  }
+  #internationalCode > ul li {
+    border-bottom: 3px solid #EEEEEE;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body {
+    font-size: 100%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .share .login .result {
+    width: 85.33333%;
+  }
+}

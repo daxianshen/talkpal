@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			html,body{
+				width: 100%;
+				height: 100%;
+			}
+			body{
+				margin: 0;padding: 0;
+				color: #445266;
+				font-size: 100%;
+			}
+			#app{
+				padding: 15px;
+				line-height: 2em;
+				font-size: 1.25em;
+				margin:0;
+				white-space: pre-wrap;
+				white-space: -moz-pre-wrap;
+				white-space: -o-pre-wrap;
+				word-wrap: break-word;
+			}
+			.phone{
+				width: 100%;
+				margin: 0;
+				position: absolute;
+				bottom: 2em;
+				color: #9f9f9f;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<pre id="app" v-if="text"  v-text="text"></pre>
+		<p class="phone">咨询客服电话/微信号：18922403657</p>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/level3.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<!--
+    	作者：1005502700@qq.com
+    	时间：2018-02-23
+    	描述：脱口派入学测试
+    -->
+	<head>
+		<meta charset="utf-8" />
+		<meta name="x5-fullscreen" content="true">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/index2.css" />
+		<link rel="stylesheet" type="text/css" href="css/loading.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<style type="text/css">
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				/* Disable selection/copy in UIWebView */
+			}
+			::-webkit-scrollbar{
+				display:none;
+			}
+			.title .xuanze .words > span {
+				float: left;
+				display: inline-block;
+				padding: 0;
+				width: 15.6%;
+				text-align: center;
+				margin-right: 5%;
+			}
+			.title .xuanze .words > div{
+				float: left;
+				width: 77%;
+			}
+			.title .xuanze .words:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			#weiye .weibox #pingjia ul li{
+				list-style: none;
+			}
+			#weiye .weibox #pingjia ul li span{
+				float: left;
+				font-size: 1em;
+				margin-bottom: 1em;
+				margin-right: 0.5em;
+			}
+			#weiye .weibox #pingjia ul li:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			#weiye .weibox #next,#weiye .weibox .logo{
+				display: block;
+			}
+		</style>
+		<script type='text/javascript'>
+			var user_name = GetRequest().username;
+			var _vds = _vds || [];
+			window._vds = _vds;
+			(function() {
+				_vds.push(['setAccountId', '9cafcafe68c95564']);
+				_vds.push(['setCS3', 'user_name', user_name]);
+				(function() {
+					var vds = document.createElement('script');
+					vds.type = 'text/javascript';
+					vds.async = true;
+					vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(vds, s);
+				})();
+			})();
+			function GetRequest() {
+	            var url = location.search; //获取url中"?"符后的字串
+	            var theRequest = new Object();
+	            if (url.indexOf("?") != -1) {
+	                var str = url.substr(1);
+	                strs = str.split("&");
+	                for(var i = 0; i < strs.length; i ++) {
+	                    theRequest[strs[i].split("=")[0]]= unescape(strs[i].split("=")[1]);
+	                }
+	            }
+	            return theRequest;
+	        }
+		</script>
+	</head>
+
+	<body background="img/bodyBG.png">
+		<div id="app" v-cloak>
+			<div id="shouye" v-if="shouyeBol">
+				<img class="biaoti" src="img/title.png" />
+				<div id="first_donghua">
+					<img class="xiaopai animated bounce" src="img/pettitte.png" />
+					<img class="stars2" src="img/stars2.png" />
+					<img class="stars1" src="img/stars1.png" />
+					<img class="stars1" src="img/stars1.png" />
+					<img class="stars1" src="img/stars1.png" />
+				</div>
+				<span id="readtest" @click="readVideo">
+					<img src="img/answer_button.png"/>
+				</span>
+				<p class="instruction">↑ 测一测自己的英语水平</p>
+				<p class="logo"><img src="img/logo.png" align="center"/>脱口派 专业外教出卷</p>
+			</div>
+			<div class="title" v-for="(item,index) in titleAction" v-if="item.titleBol">
+				<h3>{{index+1}}
+					<!--{{item.answer}}-->
+				</h3>
+				<div class="tuwen" v-if="item.title.length == 1 && item.title[0].type != 'video'">
+					<img :src="item.title[0].src" v-if="item.title[0].type == 'img'" />
+					<pre v-else-if="item.title[0].texts.length <= 4" style="text-align: center;">{{item.title[0].texts}}</pre>
+					<pre v-else>{{item.title[0].texts}}</pre>
+				</div>
+				<div class="tuwen" v-else-if="item.title.length == 2">
+					<img :src="item.title[0].src" />
+					<p v-if="item.topic == 'XCI'" class="fill">There <span></span> two balls <span></span> the table.</p>
+					<pre v-else>{{item.title[1].texts}}</pre>
+				</div>
+				<div class="video" v-if="item.title[0].type == 'video'">
+					<div class="video_loading"></div>
+					<video playsinline webkit-playsinline preload="auto" x-webkit-airplay controls ref="videoList">
+						<source :src="item.title[0].mp4" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频：
+						<a :src="item.title[0].mp4">下载视频</a>
+					</video>
+				</div>
+				<div class="xuanze" v-if="item.options.type == 'img'">
+					<div class="picture floatLeft" v-for="(itemP,indexP) in item.options.src" @click="actionWords(item,index,indexP)">
+						<span v-text="indexP === 0?'A':indexP === 1?'B':indexP === 2?'C':indexP === 3?'D':''">A</span>
+						<img :src="itemP" />
+					</div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="xuanze" v-else-if="item.options.type == 'words'">
+					<div class="words" v-for="(itemW,indexW) in item.options.texts" @click="actionWords(item,index,indexW)">
+						<span v-text="indexW === 0?'A':indexW === 1?'B':indexW === 2?'C':indexW === 3?'D':''"></span>
+						<div class="wordsBlock">
+							{{itemW}}
+						</div>
+					</div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="xuanze" v-else-if="item.options.type == 'choose'">
+					<div class="choose" v-for="(item1,index) in item.options.texts">{{item1}}</div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="foot"><div></div></div>
+				<p v-if="item.title[0].type == 'video'">*请仔细听老师读题，并选择正确答案</p>
+				<p  v-else>*请选出正确的答案</p>
+			</div>
+			<div id="weiye">
+				<div class="weibox">
+					<div id="cnd" style="width: 240px;height: 240px;"></div>
+					<div id="pingjia">
+						<p>根据测试结果，最适合你的是<span>{{dengji}}课程</span></p>
+						<ul v-if="dengji == level.dengji" class="pingjia" v-for="level in pingjia">
+							<li v-for="item in level.list">
+								<span>{{item.skills}}:</span>
+								<div style="padding-left: 3em;">
+									<v-text v-for="(items,index) in item.details"><v-text v-if="item.details.length !== 1">{{index+1}}.</v-text>{{items}}<br v-if="index+1 !== item.details.length"/></v-text>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div id="next" v-if="weiyeBol">
+						<h1 @click="isIOS(lessonid)">
+							<span v-if="!loadingBol">{{dengji}}课程</span>
+							<div class="main" v-if="loadingBol">
+								<div class="s1">
+									<div class="s b sb1"></div>
+									<div class="s b sb2"></div>
+									<div class="s b sb3"></div>
+									<div class="s b sb4"></div>
+								</div>
+								<div class="s2">
+									<div class="s b sb5"></div>
+									<div class="s b sb6"></div>
+									<div class="s b sb7"></div>
+									<div class="s b sb8"></div>
+								</div>
+								<div class="bigcon">
+									<div class="big b"></div>
+								</div>
+							</div>
+						</h1>
+						<br />
+						<p id="test_again">点击查看课程详情</p>
+						<!--<img src="img/test_again.png"/>-->
+						<!--<img src="img/sunInSun.png"/>-->
+					</div>
+					<p class="logo" v-if="weiyeBol"><img src="img/logo.png" />脱口派 专业外教出卷</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iphone-inline-video.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index2.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

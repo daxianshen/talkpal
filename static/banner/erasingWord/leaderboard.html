@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta charset="UTF-8">
+		<title>无尽排行榜</title>
+		<link rel="stylesheet" type="text/css" href="css/lb.css"/>
+	</head>
+	<body>
+		<div id="app" v-cloak>
+			<div class="lb_head">
+				<div class="lb_head_photo">
+					<img src="img/lb_img/timg.jpg"/>
+					<img src="img/lb_img/noone.png"/>
+				</div>
+				<p>Lilith</p>
+			</div>
+			<div class="leaderboard">
+				<div class="leaderboard_body">
+					<div class="leaderboard_me">
+						<span class="paiming">{{userIdData.ranking}}</span>
+						<span><img class="touxiang" src="img/lb_img/timg.jpg"/></span>
+						<span class="name">{{userIdData.name}}</span>
+						<span class="fenshu">{{userIdData.score}}分</span>
+					</div>
+					<div class="leaderboard_list">
+						<ul>
+							<li v-for="(item,index) in leaderboard">
+								<span>
+									<img v-if="index+1 === 1" align="center" src="img/lb_img/leaderboard-goldmedal.png"/>
+									<img v-else-if="index+1 === 2" align="center" src="img/lb_img/leaderboard-silvermedal.png"/>
+									<img v-else-if="index+1 === 3" align="center" src="img/lb_img/leaderboard-bronze.png"/>
+									<v-text v-else>{{index+1}}</v-text>
+								</span>
+								<span><img src="img/lb_img/timg.jpg"/></span>
+								<span class="name">{{item.name}}</span>
+								<span class="fenshu">{{item.score}}分</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/lb.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>

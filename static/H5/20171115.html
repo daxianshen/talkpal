@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+			}
+			body{
+				margin: 0;padding: 0;
+				font-size: 200%;
+			}
+			#look_like{
+				padding: 0 20px 20px;
+				color: rgb(46,117,181);
+				font-family: Calibri;
+			}
+			table{
+				margin: 0px auto 20px;
+				text-align: left;
+				border: 0;
+    			background-color: #000000;
+			}
+			.img{
+				text-align: right;
+				margin: 0 auto;
+			}
+			img{
+				padding-bottom: 1em;
+			}
+			td{
+				border: 0;
+				background-color: #fff;
+				padding: 1em;
+				font-weight: bold;
+			    font-style: italic;
+			}
+			h3{
+				font-style: italic;
+				text-align: center;
+				margin-bottom: 1.5em;
+			}
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 200%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="look_like">
+			<h3>What words can you find?</h3>
+			<div class="img">
+				<img src="20171115.jpg"/>
+			</div>
+			<table border="1" cellspacing="" cellpadding="">
+				<tr><td>b</td>	<td>p</td>	<td>d</td>	<td>z</td>	<td>n</td>	<td>c</td></tr>
+				<tr><td>y</td>	<td>d</td>	<td>f</td>	<td>b</td>	<td>u</td>	<td>a</td></tr>
+				<tr><td>f</td>	<td>l</td>	<td>o</td>	<td>w</td>	<td>e</td>	<td>r</td></tr>
+				<tr><td>i</td>	<td>n</td>	<td>v</td>	<td>o</td>	<td>f</td>	<td>d</td></tr>
+			</table>
+		</div>
+		<script type="text/javascript">
+			var img_Box = document.getElementsByClassName("img")[0];
+			var table = document.getElementsByTagName("table")[0];
+			img_Box.style.width = table.clientWidth + "px";
+		</script>
+	</body>
+</html>

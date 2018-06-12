@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="x5-fullscreen" content="true">
+		<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1, maximum-scale=1, user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				/* Disable selection/copy in UIWebView */
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/loading.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.min.css" />
+		<script type='text/javascript'>
+			var user_name = GetRequest().username
+			var _vds = _vds || [];
+			window._vds = _vds;
+			(function() {
+				_vds.push(['setAccountId', '9cafcafe68c95564']);
+				_vds.push(['setCS3', 'user_name', user_name]);
+				(function() {
+					var vds = document.createElement('script');
+					vds.type = 'text/javascript';
+					vds.async = true;
+					vds.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'dn-growing.qbox.me/vds.js';
+					var s = document.getElementsByTagName('script')[0];
+					s.parentNode.insertBefore(vds, s);
+				})();
+			})();
+			function GetRequest() {
+	            var url = location.search; //获取url中"?"符后的字串
+	            var theRequest = new Object();
+	            if (url.indexOf("?") != -1) {
+	                var str = url.substr(1);
+	                strs = str.split("&");
+	                for(var i = 0; i < strs.length; i ++) {
+	                    theRequest[strs[i].split("=")[0]]= unescape(strs[i].split("=")[1]);
+	                }
+	            }
+	            return theRequest;
+	        }
+		</script>
+	</head>
+
+	<body background="img/bodyBG.png">
+		<div id="app">
+			<div id="shouye">
+				<img class="biaoti" src="img/title.png" />
+				<div id="first_donghua">
+					<img class="xiaopai animated bounce" src="img/pettitte.png" />
+					<img class="stars2" src="img/stars2.png" />
+					<img class="stars1" src="img/stars1.png" />
+					<img class="stars1" src="img/stars1.png" />
+					<img class="stars1" src="img/stars1.png" />
+				</div>
+				<span id="readtest">
+					<img src="img/answer_button.png"/>
+				</span>
+				<p class="instruction">↑ 测一测自己的英语水平</p>
+				<p class="logo"><img src="img/logo.png" align="center"/>脱口派 专业外教出卷</p>
+			</div>
+			<div class="title" v-for="(item,index) in title">
+				<h3>{{index+1}}/15</h3>
+				<div class="tuwen" v-if="item.title.length == 1 && item.title[0].type != 'video'">
+					<img :src="item.title[0].src" v-if="item.title[0].type == 'img'" />
+					<pre v-else>{{item.title[0].texts}}</pre>
+				</div>
+				<div class="tuwen" v-else-if="item.title.length == 2">
+					<img :src="item.title[0].src" />
+					<p v-if="item.topic == 'XCI'" class="fill">There <span></span> two balls <span></span> the table.</p>
+					<pre v-else>{{item.title[1].texts}}</pre>
+				</div>
+				<div class="video" v-if="item.title[0].type == 'video'">
+					<video playsinline webkit-playsinline preload="auto">
+						<source :src="item.title[0].mp4" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频：
+						<a :src="item.title[0].mp4">下载视频</a>
+					</video>
+					<div class="video_loading"></div>
+				</div>
+				<div class="xuanze" v-if="item.options.type == 'img'">
+					<div class="picture floatLeft"><span>A</span><img :src="item.options.src[0]" /></div>
+					<div class="picture floatRight"><span>B</span><img :src="item.options.src[1]" /></div>
+					<div class="picture floatLeft"><span>C</span><img :src="item.options.src[2]" /></div>
+					<div class="picture floatRight"><span>D</span><img :src="item.options.src[3]" /></div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="xuanze" v-else-if="item.options.type == 'words'">
+					<div class="words"><span>A</span>{{item.options.texts[0]}}</div>
+					<div class="words"><span>B</span>{{item.options.texts[1]}}</div>
+					<div class="words"><span>C</span>{{item.options.texts[2]}}</div>
+					<div class="words"><span>D</span>{{item.options.texts[3]}}</div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="xuanze" v-else-if="item.options.type == 'choose'">
+					<div class="choose" v-for="(item1,index) in item.options.texts">{{item1}}</div>
+					<div class="forbadeclick"></div>
+				</div>
+				<div class="foot"><div></div></div>
+				<p>*请仔细听老师读题，并选择正确图片</p>
+			</div>
+			<div id="weiye">
+				<div class="weibox">
+					<div id="cnd" style="width: 240px;height: 240px;"></div>
+					<div id="pingjia">
+						<p>根据测试结果，最适合你的是<span>{{dengji}}课程</span></p>
+						<ul v-if="dengji == '高级'">
+							<li><span>听力</span>：语速正常的短对话中掌握60%-80%的信息</li>
+							<li><span>词汇</span>：掌握800-1000左右单词，掌握交际词汇与动词词组</li>
+							<li><span>阅读</span>：能够联系上下文语境，进行情景理解阅读。</li>
+							<li><span>语法</span>：掌握时态变化、介词短语、否定式等语法</li>
+						</ul>
+						<ul v-else-if="dengji == '中级' || dengji == '初级'">
+							<li><span>听力</span>：听得懂简单句型，语速正常的句子中听懂60%-80%的信息</li>
+							<li><span>词汇</span>：掌握300-500左右单词，掌握生活词汇与词组，学习使用动词</li>
+							<li><span>阅读</span>：能够联系长句子，在指导下做小段落阅读。</li>
+							<li><span>语法</span>：掌握简单句、一般疑问句、单复数变化等简单语法</li>
+						</ul>
+						<ul v-else-if="dengji == '入门'">
+							<li><span>听力</span>：听得懂简单词汇，语速较慢的句子中听懂个别单词</li>
+							<li><span>词汇</span>：掌握100左右单词，掌握常见基础数字、颜色、物品词汇</li>
+							<li><span>阅读</span>：能够通过图片词汇意义或者简单单词串联句子意思。</li>
+							<li><span>语法</span>：尚未有语法概念</li>
+						</ul>
+					</div>
+					<div id="next">
+						<h1 @click="isIOS(lessonid)">
+							<span v-if="!loadingBol">{{dengji}}课程</span>
+							<div class="main" v-if="loadingBol">
+								<div class="s1">
+									<div class="s b sb1"></div>
+									<div class="s b sb2"></div>
+									<div class="s b sb3"></div>
+									<div class="s b sb4"></div>
+								</div>
+								<div class="s2">
+									<div class="s b sb5"></div>
+									<div class="s b sb6"></div>
+									<div class="s b sb7"></div>
+									<div class="s b sb8"></div>
+								</div>
+								<div class="bigcon">
+									<div class="big b"></div>
+								</div>
+							</div>
+						</h1>
+						<br />
+						<p id="test_again">点击查看课程详情</p>
+						<!--<img src="img/test_again.png"/>-->
+						<!--<img src="img/sunInSun.png"/>-->
+					</div>
+					<p class="logo"><img src="img/logo.png" />脱口派 专业外教出卷</p>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/echarts.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/iphone-inline-video.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

@@ -1,0 +1,27 @@
+﻿{
+"data":[
+
+{"text":"dog","type":"word voice","chinese":"n.狗","picture":"https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/dog.gif","phonetic":"/dɔɡ/","id":27556},
+
+{"text":"I can see a dog and a cat.","type":"sentence voice","chinese":"我看到一条狗和一只猫。","picture":"https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/p1-dog.jpg","id":27557},
+
+{"type":"picture choice","answer":"C","choices":["https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/q1.1-not.png","https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/q1.2-not.png","https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/q1.3-yes.png","https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/q1.4-not.png"],"question":"I can see a dog.","id":27579},
+
+{"text":"I can see a ____.","type":"answer voice","answer":"dog","picture":"https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/q1.3-yes.png","id":27580},
+
+{"type":"word choice","answer":"B","choices":["pig","dog","duck","lion"],"picture":"https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/picture/1366/ab.gif","question":"I can see a ____ and a cat.","id":27581},
+
+{"mix":"i","text":"d _ _","type":"words-making","answer":"d o g","id":27583},
+
+{"type":"multiple choice","answer":"1,3","chinese":"他们是动物。","choices":["dog","pen","cat","pencil"],"question":"They are animals.","id":27584},
+
+{"type":"sentence-making","answer":"They are animals.","id":27585}
+
+],
+	
+"time":[44,78,95,131,150,174,199,222,249,279,300,324,348,381,407,432],
+
+"videoUrl":"https://s3.cn-north-1.amazonaws.com.cn/talkpal/lecture/video/1366/talkpal20170614101257.mp4"
+
+
+}

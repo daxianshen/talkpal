@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<!--
+    	作者：1005502700@qq.com
+    	时间：2018-02-22
+    	描述：脱口派消消乐
+    -->
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script src="js/jquery-2.1.0.js"></script>
+	<script type="text/javascript">
+        $(".RankingList").click(function() {
+            window.location.href = "./leaderboard.html";
+        })
+        document.onreadystatechange = loadingChange; //当页面加载状态改变的时候执行这个方法.
+        function loadingChange() {
+//				$("#app").hide()
+            $(".loading>div").animate({
+                width: "70%"
+            },function () {
+                $(".loading>span").html("70%");
+            });
+            if(document.readyState == "complete") { //当页面加载状态为完全结束时进入
+                $(".loading>div").animate({
+                    width: "100%"
+                }, 2000, function() {
+                    $(".loading>span").html("100%");
+                    $(".loading").hide();
+                    $(".loading_next").hide();
+                    $("#app").show();
+//					$(".gameRead").pause();
+					$(".gameRead")[0].play();
+                });
+            }
+        }
+	</script>
+</head>
+
+<body>
+<div id="app" v-cloak>
+	<div id="erasingWord" v-if="shouye">
+		<div class="head">
+			<img src="img/title@3x.png" />
+			<img src="img/question@3x.png" id="help" @click="help(helpBol)" />
+		</div>
+		<audio loop height="100" width="100" class="gameRead">
+			<!--<source src="https://www.talkpal.com/static/banner/erasingWord/music/gameDoesn'tStart.mp3" type="audio/mp3" />-->
+			<source src="https://www.talkpal.com/static/banner/erasingWord/music/gameDoesn'tStart.wav"/>
+			<!--<embed height="100" width="100" src="https://www.talkpal.com/static/banner/erasingWord/music/gameDoesn'tStart.mp3" />-->
+		</audio>
+		<div class="grades">
+			<span id="grades_easy" @click="startGame(0)">简单</span>
+			<span id="grades_ordinary" @click="startGame(1)">普通</span>
+			<span id="grades_difficult" @click="startGame(2)">困难</span>
+			<span id="grades_endless" @click="startGame(3)"><img align="center" src="img/nolimit.png"/>无尽模式</span>
+		</div>
+		<!--<div class="RankingList">
+            <img align="center" src="img/leaderboard@3x.png" /> 无尽排行榜
+        </div>
+        <div class="foot"></div>-->
+		<div class="maskLayer" v-if="helpBol"></div>
+		<div class="gamesRules" v-if="helpBol">
+			<p>游戏规则</p>
+			在规定时间内找到单词或图片对应的中文翻译，消除一组得10分。 游戏分成四种模式：简单、普通、困难模式，时间为120秒，一共5关。 无尽模式时间为300秒，关数不限。
+			<span id="gamesRulesNone" @click="help(helpBol)">
+						好的
+					</span>
+		</div>
+	</div>
+	<div class="game" v-if="currentMode && !gameOver">
+		<audio class="InTheGame" loop height="100" width="100">
+			<source src="https://www.talkpal.com/static/banner/erasingWord/music/InTheGame.mp3" type="audio/mp3" />
+			<!--<source src="https://www.talkpal.com/static/banner/erasingWord/music/InTheGame.wav"/>-->
+			<embed height="100" width="100" src="https://www.talkpal.com/static/banner/erasingWord/music/InTheGame.mp3" />
+		</audio>
+		<audio class="click" height="100" width="100">
+			<source src="https://www.talkpal.com/static/banner/erasingWord/music/click.mp3" type="audio/mp3" />
+			<source src="https://www.talkpal.com/static/banner/erasingWord/music/click.wav"/>
+			<embed height="100" width="100" src="https://www.talkpal.com/static/banner/erasingWord/music/click.mp3" />
+		</audio>
+		<div class="gameHead">
+			<img src="img/return.png" @click="returnOut" />
+			<span class="score">
+						{{score}}
+						<img src="img/score@3x.png"/><br />
+						<span v-if="addScore" id="addScore">+10</span>
+					</span>
+			<div class="mvshi">
+				{{currentMode}}模式
+				<span v-if="currentMode === '无尽'">{{index+1}}</span>
+				<span v-else>{{index+1}}/{{topicList.length}}</span>
+			</div>
+			<div class="loading_next" v-if="loading_time">
+				<div class="loading_time">
+					{{loading_time}}
+				</div>
+			</div>
+		</div>
+		<div class="topicList">
+					<span :style="{ display: item.display_Bol}" v-for="item in topic" @click="eliminate(item,topic)">
+						<img v-if="item.type === 'img' ":src="item.img" alt="" :class="item.classItem?'opacity03':''">
+						<v-text v-else :class="item.classItem?'textAction':''" >{{item.textItem}}</v-text>
+						<span v-if="item.classItem" :class="item.classItem?'topicAction':''" ></span>
+					</span>
+		</div>
+		<div class="ProgressBar">
+			<div class="myFirst"></div>
+		</div>
+	</div>
+	<div class="resultsPage" v-if="gameOver">
+		<div class="score">
+			<span>{{score}}</span><br />
+			<span>总得分</span>
+			<!--<p v-if="currentMode === '无尽'">恭喜获得第<span>13</span>名</p>-->
+			<p v-if="successBol && currentMode !== '无尽'">恭喜闯关成功</p>
+			<p v-else-if="!successBol && currentMode !== '无尽'">闯关失败</p>
+		</div>
+		<div class="button">
+			<span v-if="currentMode == '无尽'" @click="startGame(3)">再玩一遍</span>
+			<span v-else @click="returnOut">回到首页</span>
+			<!--<span>晒得分</span>-->
+		</div>
+		<!--<div class="RankingList">
+            <img align="center" src="img/leaderboard@3x.png" /> 无尽排行榜
+        </div>-->
+		<div class="maskLayer" v-if="gifBol" @click="gifBol=false">
+			<audio class="succeed" loop height="100" width="100" v-if="successBol && gifBol">
+				<!--<source src="https://www.talkpal.com/static/banner/erasingWord/music/Success.mp3" type="audio/mp3" />-->
+				<source src="https://www.talkpal.com/static/banner/erasingWord/music/succeed.wav"/>
+				<!--<embed height="100" width="100" src="https://www.talkpal.com/static/banner/erasingWord/music/Success.mp3" />-->
+			</audio>
+			<audio class="failure" loop height="100" width="100" v-else-if="!successBol && gifBol">
+				<!--<source src="https://www.talkpal.com/static/banner/erasingWord/music/failure.mp3" type="audio/mp3" />-->
+				<source src="https://www.talkpal.com/static/banner/erasingWord/music/failure.wav"/>
+				<!--<embed height="100" width="100" src="https://www.talkpal.com/static/banner/erasingWord/music/failure.mp3" />-->
+			</audio>
+		</div>
+		<img v-if="successBol && gifBol" @click="gifBol=false" src="img/Success.gif" />
+		<img v-else-if="!successBol && gifBol" @click="gifBol=false" src="img/failure.gif" />
+	</div>
+</div>
+<div class="loading">
+	<div></div><span>0%</span>
+</div>
+<div class="loading_next"></div>
+<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>

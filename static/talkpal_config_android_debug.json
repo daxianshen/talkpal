@@ -1,0 +1,11 @@
+﻿{
+"id":1,
+"homePluginVersion":1030,
+"homePluginApkUrl":"https://www.talkpal.com/static/pluginApk/debug/homeplugin.apk",
+"homePluginUpdateContent":"上面的版本号要跟apk版本对应，同版本覆盖存在bug，注意先上传apk再改版本号 ",
+"share_tips":"每成功邀请一个好友注册你就可以获得 100块钱\n你的好友可以获得 3 天免费课程以及 100块钱\n邀请的好友越多，获得的奖励越多",
+"about_us_tips":"脱口派英语是由欧美外教老师担任主播，每天晚上 7:00-8:30 黄金时段进行互动直播教学的英语学习 APP。<br/>
+            我们的外教老师都有着多年的对外教学经验，让孩子像学母语一样学习英语。<br/>
+            我们的课程经过精心编制，生动精彩，旨在激发孩子学习兴趣，让孩子在全英语环境中轻松脱口而出！<br/>",
+"max_discount":100.0
+}

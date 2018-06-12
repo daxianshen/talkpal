@@ -1,0 +1,182 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  /* Disable selection/copy in UIWebView */
+}
+
+html,
+body {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+[v-cloak] {
+  display: none !important;
+}
+
+#app {
+  width: 100%;
+  padding-bottom: 4%;
+  background-color: #e13e0c;
+}
+
+#app .lb_head {
+  width: 77.73333%;
+  margin: 0 auto;
+  color: #fbcd78;
+  text-align: center;
+  padding: 8% 0 4.26667%;
+  background-image: url(../img/lb_img/bg@3x.png);
+  background-size: 100% 100%;
+}
+
+#app .lb_head .lb_head_photo {
+  width: 45.62607%;
+  position: relative;
+  margin: 0 auto;
+}
+
+#app .lb_head .lb_head_photo img:nth-child(1) {
+  position: absolute;
+  top: 2%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 62.03008%;
+}
+
+#app .lb_head .lb_head_photo img:nth-child(2) {
+  width: 100%;
+  position: relative;
+}
+
+#app .leaderboard {
+  margin: 4%;
+  margin-bottom: 0;
+  background-color: #fb6c30;
+  border-radius: 10px;
+  padding: 3.46667% 2.4%;
+}
+
+#app .leaderboard .leaderboard_body {
+  border-radius: 10px;
+  background-color: #fff8e6;
+  color: #772706;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me {
+  padding: 5.27108% 4.81928% 4.06627% 5.57229%;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1.5px solid #eee3c8;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me img {
+  width: 40px;
+  height: 100%;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me > span {
+  float: left;
+  height: 100%;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me > span:nth-child(1) {
+  width: 2em;
+  text-align: center;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me > span:nth-child(3) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 35%;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me .fenshu {
+  float: right;
+}
+
+#app .leaderboard .leaderboard_body .leaderboard_me:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#app .leaderboard ul {
+  padding: 0;
+  margin: 0;
+}
+
+#app .leaderboard ul li {
+  padding: 3.16265% 4.81928% 0% 5.57229%;
+  line-height: 40px;
+  list-style: none;
+}
+
+#app .leaderboard ul li > span:nth-child(1) {
+  width: 2em;
+  text-align: center;
+}
+
+#app .leaderboard ul li > span:nth-child(2) > img {
+  width: 40px;
+  height: 100%;
+  margin-left: 1.5em;
+  margin-right: 1em;
+  border-radius: 50%;
+}
+
+#app .leaderboard ul li > span:nth-child(3) {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 35%;
+}
+
+#app .leaderboard ul li > span {
+  float: left;
+  height: 40px;
+}
+
+#app .leaderboard ul li .fenshu {
+  float: right;
+}
+
+#app .leaderboard ul li:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+#app .leaderboard ul li:nth-child(1) {
+  padding-top: 4.21687%;
+}
+
+#app .leaderboard ul li:nth-last-child(1) {
+  padding-bottom: 4.21687%;
+}
+
+@media screen and (max-width: 320px) {
+  #app .leaderboard ul li {
+    padding: 3.16265% 3.01205% 0% 3.01205%;
+  }
+  #app .leaderboard ul li > span:nth-child(2) > img {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  #app .leaderboard .leaderboard_body .leaderboard_me {
+    padding: 5.27108% 3.01205% 4.06627% 3.01205%;
+  }
+  #app .leaderboard .leaderboard_body .leaderboard_me > span:nth-child(2) > img {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+}
