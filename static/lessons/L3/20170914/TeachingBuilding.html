@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+			}
+			body{
+				margin: 0;padding: 0;
+				font-size: 100%;
+			}
+			#floot{
+				padding: 1em 0;
+			}
+			ul{
+				padding: 0;
+				margin: 0 3%;
+				font-size: 0.7em;
+				float: left;
+			}
+			ul>li{
+				list-style: none;
+			    height: 2em;
+			    border: 0.1em solid #fff;
+			    border-left: 0;
+			    border-right: 0;
+			    line-height: 2em;
+			    font-family: Calibri;
+			    color: rgb(112,173,71);
+			    /*margin: 0 5px;*/
+			}
+			table{
+				width: 69%;
+			    border: 0;
+			    font-size: 0.7em;
+			    float: left;
+			    background-color: rgb(91,155,213);
+			    font-family: Calibri;
+			    color: rgb(91,155,213);
+			}
+			td{
+				width: 45%;
+				height: 2em;
+				line-height: 2em;
+				border: 0;
+				background-color: rgb(251,229,214);
+				padding: 0 0 0 10px;
+			}
+			tr>td:nth-child(2){
+				width: 10%;
+				background-image: url(img/1504853281.png);
+				background-size: 100% 100%;
+			}
+			td>span{
+				border: 2px solid rgb(65,133,156);
+				border-radius: 5px;
+				background-color: rgb(213,230,230);
+				padding: 1px 3px;
+			}
+			#footer{
+				float: left;
+				width: 100%;
+			}
+			#footer>h3{
+				text-align: center;
+				margin-top: 2em;
+				color: rgb(237,124,49);
+				font-family: Jokerman;
+			}
+			#footer>p{
+				font-family: Migraffiti;
+				font-weight: bold;
+				line-height: 2em;
+				color: rgb(0,176,240);
+				padding-left: 1em;
+			}
+			#floot:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			.textRight{
+				text-align: right;
+				padding: 0 10px 0 0;
+			}
+			@media screen and (max-width: 1024px) {
+				body{
+					font-size: 250%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				body{
+					font-size: 200%;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				body{
+					font-size: 180%;
+				}
+			}
+			@media screen and (max-width: 414px) {
+				body{
+					font-size: 100%;
+				}
+			}
+			@media screen and (max-width: 320px) {
+				ul{
+					margin: 0 2%;
+				}
+				.textRight{
+					text-align: right;
+					padding: 0 5px 0 0;
+				}
+				#footer>p{
+					padding-left: 10px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="floot">
+			<ul>
+				<li>The fifth floor</li>
+				<li>The fourth floor</li>
+				<li>The third floor</li>
+				<li>The second floor</li>
+				<li>The first floor</li>
+			</ul>
+			<table border="2">
+				<tr>
+					<td class="textRight"><span>computer room</span></td>
+					<td class="louti"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="louti"></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td><span>staffroom</span></td>
+					<td class="louti"></td>
+					<td class="textRight"><span>library</span></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td class="louti"></td>
+					<td><span>music room</span></td>
+				</tr>
+				<tr>
+					<td class="textRight"><span>toilet</span></td>
+					<td class="louti"></td>
+					<td class="textRight"><span>gym</span></td>
+				</tr>
+			</table>
+			<div id="footer">
+				<h3>Introduce the Teaching Building</h3>
+				<p>
+					This is our teaching building. <br />
+					The computer room is on....<br />
+					The staffroom is on...<br />
+					...
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

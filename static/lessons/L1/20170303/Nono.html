@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=device-dpi" />
+    <title>Title</title>
+    <style>
+        *{
+
+-webkit-touch-callout:none;
+-webkit-user-select:none;
+-khtml-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+user-select:none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+	body{
+	    padding:20px;
+	}
+
+        html,li,video,img{
+            width: 100%;
+        }
+        html{
+            background-image: url("video/share.png");
+            background-size: 100%;
+        }
+        ul{
+            width: 80%;
+            margin:10% auto;
+        }
+
+        li{
+            text-align: center;
+            color: #fff;
+            font-size: 4vw;
+            margin-bottom: 15%;
+        }
+        .wrap div{
+            border: 2vw solid #fff;
+            border-radius: 10px;
+            margin-bottom: 7%;
+            position: relative;
+        }
+        
+        .play{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            opacity: 1;
+            z-index: 10000;
+        }
+        .play img{
+            width: 30%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            -webkit-transform: translate(-50%,-50%);
+        }
+
+    </style>
+</head>
+<body>
+
+<p style="text-align:center;">
+	<span style="font-size:18px;"><br />
+</span> 
+<blockquote>
+</blockquote>
+<blockquote>
+	<span style="font-size:18px;line-height:1.5;"></span><span style="font-size:18px;line-height:1.5;">接下来，Nono小朋友要来做一个简短的自我介绍哦！<br />
+</span><span style="font-size:18px;line-height:1.5;">还记得之前和Ally老师一起学过的“What's your name”吗？Nono用了很多次“I am....”的句式哦！<br />
+</span><span style="font-size:18px;line-height:1.5;">点开下面的视频一起来听听吧~另外，老师也在期待着你的自我介绍视频哦~</span><span style="font-size:18px;line-height:1.5;"></span><span style="font-size:18px;line-height:1.5;"></span>
+
+</blockquote><p style="text-align:center;">
+	</p>	
+    <div class="wrap">
+
+        <ul>
+
+
+            <li>
+                <div>
+                    <p  class="play" id="play"  onclick="qqplay()"><img src="video/play.png" alt=""></p>
+                    <video id="video" src="video/Nono.mp4"></video>
+                </div>
+                <span>Nono</span>
+            </li>
+           
+        </ul>
+    </div>
+
+
+    <script>
+
+
+	function qqplay() {
+
+ var myVideo = document.getElementsByTagName('video')[0];
+
+       if (myVideo.paused){
+
+document.getElementById("play").style.opacity =0;
+           myVideo.play();
+}
+else{
+
+document.getElementById("play").style.opacity =1;
+           myVideo.pause();
+}
+
+
+       }
+
+	
+	
+    </script>
+</body>
+</html>

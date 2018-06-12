@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				font-size: 100%;
+				font-weight: bold;
+				font-family: Calibri;
+			}
+			
+			div {
+				padding: 0 15px 20px;
+			}
+			
+			p:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			span {
+				color: rgb(255, 0, 0);
+			}
+			
+			h2 {
+				color: rgb(112, 173, 71);
+				font-family: Segoe Print;
+				font-style: italic;
+				text-align: center;
+			}
+			
+			img {
+				float: right;
+			}
+			
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 300%;
+				}
+			}
+			
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 200%;
+				}
+			}
+			
+			@media screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+			}
+			
+			@media screen and (max-width: 320px) {
+				div {
+					font-size: 12px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<h2>This / These</h2>
+
+			<p><span>This is</span> my cushion. <img src="img/11.png" align="absmiddle" /></p>
+
+			<p><span>These are</span> my plane models. <img src="img/12.png" align="absmiddle" /></p>
+
+			<p><span>This</span> sweater <span>is</span> soft. <img style="width: 91px;" src="img/13.png" align="absmiddle" /></p>
+
+			<p><span>These</span> marbles <span>are</span> smooth. <img src="img/14.png" align="absmiddle" /></p>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var p = document.getElementsByTagName("p");
+				var img = document.getElementsByTagName("img");
+				for(var i = 0; i < p.length; i++) {
+					p[i].style.lineHeight = img[i].offsetHeight + "px";
+				}
+			}
+		</script>
+	</body>
+
+</html>

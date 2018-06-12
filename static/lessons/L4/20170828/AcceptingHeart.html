@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			body{
+				margin: 0;padding: 0;
+				font-size: 100%;
+			}
+			.shouxin{
+				color: #686868;
+				font-weight: bold;
+				padding-bottom: 20px;
+			}
+			.news{
+				font-size: 0.8em;
+				margin-top: 2em;
+    			padding-left: 3em;
+			    position: relative;
+			    line-height: 1.5em;
+			}
+			.news>img{
+				width: 1.5em;
+				margin-right: 5px;
+			}
+			h2{
+				text-align: left;
+			    color: #fd982c;
+			    position: relative;
+			    padding-left: 30%;
+			    margin-bottom: 0;
+			}
+			h2>img{
+				position: absolute;
+			    left: 3%;
+			    top: 0em;
+			    height: 3.5em;
+			}
+			.bird2{
+				font-size: 0.8em;
+				margin-top: 0.5em;
+			    padding-left: 30%;
+			    position: relative;
+			}
+			.bird2>img{
+				height: 150%;
+			    position: absolute;
+			    right: 32%;
+			    bottom: -34%;
+			}
+			#bird2_img{
+				width: 20%;
+			    top: -4em;
+			    position: absolute;
+			    right: 10%;
+			}
+			#erweima{
+				text-align: center;
+				color: #fd982c;
+				font-size: 0.6em;
+			}
+			#erweima>img{
+				width: 20%;
+			}
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 250%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 200%;
+				}
+			}
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+			}
+			@media screen and (max-width: 360px) {
+				#bird2_img {
+    				right: 5%;
+    			}
+    			.bird2>img {
+				    right: 30%;
+				}
+			}
+			@media screen and (max-width: 320px) {
+				#bird2_img {
+				    top: -3em;
+				    right: 1%;
+				}
+    			.bird2{
+				    padding-left: 35%;
+			    }
+			    h2{
+				    padding-left: 35%;
+			    }
+    			.bird2>img {
+    				right: 19%;
+				}
+				.news{
+					font-size: 0.6em;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="shouxin">
+			<h2><img src="img/bird1.png"/>脱口派配音大比拼</h2>
+			<div class="bird2">
+				开学啦！开学啦！<img src="img/bird3.png"/><br />
+				脱口派帮你收心。
+			</div>
+			
+			<div class="news">
+				<img align="center" src="img/time.png"/>8月28-9月8日，周一至周五每天20:30<img src="img/bird2.png" id="bird2_img"/><br />
+				<img align="center" src="img/Movie.png"/>2分钟看一个电影片段，配一句电影台词。<br />
+				<img align="center" src="img/speech.png"/>参与语音打卡，即可获得老师一对一点评。<br />
+			</div>
+			<div id="erweima">
+				扫码添加Jill老师<img align="center" src="img/Jill.jpg" />带你看片带你飞
+			</div>
+			
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				font-size: 100%;
+				font-weight: bold;
+				font-family: Segoe Print;
+			}
+			
+			div {
+				padding: 0 20px 20px;
+			}
+			
+			span {
+				color: rgb(255, 0, 0);
+			}
+			
+			p:nth-child(1) {
+				color: rgb(112, 173, 71);
+				font-style: italic;
+				font-size: 1.5em;
+			}
+			
+			p:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			img {
+				margin-left: 15px;
+				float: right;
+			}
+			
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 300%;
+				}
+			}
+			
+			@media screen and (max-width: 800px) {
+				body {
+					font-size: 200%;
+				}
+			}
+			
+			@media screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+				.w20 {
+					width: 20%;
+				}
+			}
+			
+			@media screen and (max-width: 360px) {
+				.w20 {
+					width: 25%;
+				}
+			}
+			
+			@media screen and (max-width: 320px) {
+				div {
+					font-size: 12px;
+				}
+				.w20 {
+					width: 30%;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<p>Joey's schoolbag <img class="w20" src="img/31.png" align="absmiddle" /></p>
+
+			<p><span>This is</span> his pencil case. <img src="img/32.png" align="absmiddle" /></p>
+
+			<p><span>These are</span> his crayons. <img src="img/33.png" align="absmiddle" /></p>
+
+			<p><span>This</span> correction tape <span>is</span> cute. <img src="img/34.png" align="absmiddle" /></p>
+
+			<p><span>These</span> books <span>are</span> heavy. <img src="img/35.png" align="absmiddle" /></p>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var p = document.getElementsByTagName("p");
+				var img = document.getElementsByTagName("img");
+				for(var i = 0; i < p.length; i++) {
+					p[i].style.lineHeight = img[i].offsetHeight + "px";
+				}
+			}
+		</script>
+	</body>
+
+</html>

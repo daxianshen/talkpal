@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>Let’s chat</title>
+    <style type="text/css">
+        * {
+            -webkit-touch-callout: none;
+            -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+        }
+        body{
+            margin: 0;padding: 0;
+            font-size: 200%;
+        }
+        .LetsChat{
+            padding: 20px;
+            text-align: left;
+            max-width: 1024px;
+            min-width: 280px;
+            margin: 0 auto;
+            font-family: "Calibri";
+        }
+        h2{
+            font-family: Jokerman;
+            font-style: italic;
+            color: rgb(112,173,71);
+            text-align: center;
+            margin: 0 auto 1em;
+        }
+        p{
+            color: #000000;
+            font-style: italic;
+        }
+        ul{
+            padding: 0;
+        }
+        li{
+            list-style: none;
+        }
+        li:nth-child(2n-1){
+            color: rgb(91,155,213);
+        }
+        li:nth-child(2n){
+            color: rgb(237,125,49);
+        }
+        li:nth-child(2n)>span{
+            color: rgb(174,170,170);
+            font-style: italic;
+        }
+        ul,p{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            width: 100%;
+        }
+        @media screen and (max-width: 768px) {
+            body {
+                font-size: 150%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 100%;
+            }
+        }
+        @media screen and (max-width: 360px) {
+            body {
+                font-size: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="LetsChat">
+        <h2>Let’s chat</h2>
+        <p>Look at Jerry’s neighborhood.</p>
+        <ul>
+            <li>T: Where’s Jerry’s house?</li>
+            <li>S: It’s ________. <span>(next to)</span></li>
+            <li>T: Where’s the post office?</li>
+            <li>S: It’s _______. <span>(between)</span></li>
+            <li>T: Is there _____ nearby?</li>
+            <li>S: No, it’s ________ Jerry’s house.</li>
+        </ul>
+        <img src="letschat.jpg">
+    </div>
+</body>
+</html>

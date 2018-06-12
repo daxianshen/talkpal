@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div class="block1">
+    <span class="info">昨天的In the Lab你学得怎么样呢？来看看lilylily的课堂笔记吧！</span>
+    <div class="parent">
+        <div class="gallery">
+            <ul>
+                <li>
+                    <div class="poster">
+                        <img src="img/lilylily.jpg" alt="">
+                    </div>
+                    <span>lilylily</span>
+                </li>
+            </ul>
+            <script>
+                var $li =$(".gallery ul li");
+                var lLength = $li.length;
+                var lWidth = $li.width();
+                var lHeight = $li.height();
+                var ll =parseInt($li.css("marginLeft"));
+
+                var ulLength = (ll+lWidth)*lLength+ll;
+                $(".gallery ul").css({
+                    width:parseInt(ulLength)+'px',
+                    height:parseInt(lHeight)+20+'px'
+                });
+                $(".parent").css("height",lHeight);
+
+            </script>
+        </div>
+    </div>
+
+    <p>*左右滑动切换,点击放大作品</p>
+</div>
+
+
+
+    <div class="cover">
+        <img src="" alt="">
+    </div>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

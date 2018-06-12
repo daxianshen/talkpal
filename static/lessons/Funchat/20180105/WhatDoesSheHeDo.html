@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>What does she/he do?</title>
+		<style type="text/css">
+			* {
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+			}
+			body{
+				margin: 0;padding: 0;
+				font-size: 200%;
+				font-family: Calibri;
+			}
+			.WhatDoesSheHeDo{
+				padding: 20px;
+				text-align: left;
+				color: rgb(91,155,213);
+				max-width: 1024px;
+				min-width: 280px;
+				margin: 0 auto;
+			}
+			.color_gray{
+				color: rgb(127,127,127);
+				font-family: "宋体";
+				font-weight: normal;
+			}
+			h3{
+				font-family: Jokerman;
+				color: rgb(112,173,71);
+				text-align: center;
+				margin: 0;
+			}
+			p{
+				font-family: Indie Flower;
+				font-weight: bold;
+			}
+			p:after{
+				content: '';
+				display: block;
+				clear: both;
+			}
+			img{
+				width: 40%;
+				float: right;
+			}
+			table{
+				width: 80%;
+				background-color: rgb(68,84,106);
+				color: rgb(68,84,106);
+				text-align: center;
+				font-family: Indie Flower;
+				font-weight: bold;
+				line-height: 2em;
+				margin: 0 auto;
+			}
+			td{
+				background-color: #ffffff;
+				width: 40%;
+			}
+			tr>td:nth-child(2){
+				width: 60%;
+			}
+			ul{
+				padding: 0;
+				font-style: italic;
+			}
+			li{
+				list-style: none;
+				line-height: 1.5em;
+			}
+			li:nth-child(2n){
+				color: rgb(237,125,49);
+				margin-top: 0;
+			}
+			ul li:nth-last-child(1){
+				color: #000000;
+			}
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				body {
+					font-size: 100%;
+				}
+			}
+			@media screen and (max-width: 360px) {
+				body {
+					font-size: 80%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="WhatDoesSheHeDo">
+			<h3>What does she/he do?</h3>
+			<p>
+				<img src="WhatDoesSheHeDo.jpg"/>
+				Ask your family members what they do. Then finish the form.<br />
+				<span class="color_gray">(问问你的家庭成员们他们的职业是什么，然后完成表格)</span>
+			</p>
+			<table>
+				<tr>
+					<td>mother</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>father</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>aunt</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>uncle</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>you</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>...</td>
+					<td></td>
+				</tr>
+			</table>
+			<ul>
+				<li>A: What does your mother do?</li>
+				<li>B: She is a ________.</li>
+				<li>A: What does your father do?</li>
+				<li>B: He is a _________.</li>
+				<li>A: What’s your uncle’s job?</li>
+				<li>B: He is a _________.</li>
+				<li>......</li>
+			</ul>	
+		</div>
+	</body>
+</html>

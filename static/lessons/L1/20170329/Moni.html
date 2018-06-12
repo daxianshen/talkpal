@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no, target-densitydpi=device-dpi">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/jquery-2.1.1.js"></script>
+</head>
+<body>
+<div class="block1">
+    <span class="info">Where are you from? 小朋友们都来自哪里呢？偷偷告诉你，脱口派小朋友们来自世界各地哦！有中国，越南，日本......</span>
+    <div class="parent">
+        <div class="gallery">
+            <ul>
+                <li>
+                    <div class="poster">
+                        <img src="img/monika.jpg" alt="">
+                    </div>
+                    <span>Monika</span>
+                </li>
+                  <li>
+                    <div class="poster">
+                        <img src="img/Hanlucky.jpg" alt="">
+                    </div>
+                    <span>Hanlucky</span>
+                </li>                           
+                <li>
+                    <div class="poster">
+                        <img src="img/Duoduo.jpg" alt="">
+                    </div>
+                    <span>Duoduo</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/mart.jpg" alt="">
+                    </div>
+                    <span>mart</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/fenline.jpg" alt="">
+                    </div>
+                    <span>fenline</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/roise.jpg" alt="">
+                    </div>
+                    <span>Roise</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/Audrey.jpg" alt="">
+                    </div>
+                    <span>Audrey</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/Steven2011.jpg" alt="">
+                    </div>
+                    <span>Steven2011</span>
+                </li>
+                <li>
+                    <div class="poster">
+                        <img src="img/xinrui.jpg" alt="">
+                    </div>
+                    <span>xinrui</span>
+                </li>
+
+
+            </ul>
+            <script>
+                var $li =$(".gallery ul li");
+                var lLength = $li.length;
+                var lWidth = $li.width();
+                var lHeight = $li.height();
+                var ll =parseInt($li.css("marginLeft"));
+
+                var ulLength = (ll+lWidth)*lLength+ll;
+                $(".gallery ul").css({
+                    width:parseInt(ulLength)+'px',
+                    height:parseInt(lHeight)+20+'px'
+                });
+                $(".parent").css("height",lHeight);
+
+            </script>
+        </div>
+    </div>
+
+    <p>*左右滑动切换,点击放大作品</p>
+</div>
+
+
+
+    <div class="cover">
+        <img src="" alt="">
+    </div>
+
+    <!-- <script src="js/index.js"></script> -->
+    <script type="text/javascript">
+        $('.poster').click(function() {
+            var select_url = $('img', this).prop('src')
+            var urls = $('ul img').map(function(){
+                return $(this).prop('src')
+            }).toArray()
+            var params = {'method':'show_image', 'params': {'url': select_url, 'urls':urls}}
+            window.webkit.messageHandlers.webViewApp.postMessage(params);
+        })
+    </script>
+</body>
+</html>

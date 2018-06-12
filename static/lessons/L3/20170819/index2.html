@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			body {
+				margin: 0;
+				padding: 0;
+				text-align: left;
+				font-weight: bold;
+				font-size: 100%;
+				font-family: Segoe Print;
+			}
+			
+			div {
+				padding: 0 20px 20px;
+			}
+			
+			span {
+				color: rgb(255, 0, 0);
+			}
+			
+			h2 {
+				color: rgb(112, 173, 71);
+			}
+			
+			img {
+				margin-left: 15px;
+				float: right;
+			}
+			
+			p:after {
+				content: "";
+				display: block;
+				clear: both;
+			}
+			
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 300%;
+				}
+			}
+			
+			@media screen and (max-width: 800px) {
+				body {
+					font-size: 200%;
+				}
+			}
+			
+			@media screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+				.w30 {
+					width: 30%;
+				}
+			}
+			
+			@media screen and (max-width: 320px) {
+				div {
+					font-size: 12px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div>
+			<h2>Let's introduce!</h2>
+
+			<span>This is</span> my bedroom. <br /><br />
+
+			<p><span>This</span> pillow <span>is</span> soft. <img src="img/21.png" align="absmiddle" /></p>
+
+			<p><span>These</span> chairs <span>are</span> hard. <img src="img/22.png" align="absmiddle" /></p>
+
+			<p><span>This</span> wardrobe <span>is</span> big. <img class="w30" src="img/23.png" align="absmiddle" /></p>
+
+			<p><span>These</span> clothes <span>are</span> warm. <img class="w30" src="img/24.png" align="absmiddle" /></p>
+		</div>
+		<script type="text/javascript">
+			window.onload = function() {
+				var p = document.getElementsByTagName("p");
+				var img = document.getElementsByTagName("img");
+				for(var i = 0; i < p.length; i++) {
+					p[i].style.lineHeight = img[i].offsetHeight + "px";
+				}
+			}
+		</script>
+	</body>
+
+</html>

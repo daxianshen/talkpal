@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<style type="text/css">
+			* {
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+			}
+			body{
+				margin: 0;padding: 0;
+				font-size: 250%;
+				font-family: Segoe Print;
+				color: rgb(91,155,213);
+			}
+			#verbs{
+				max-width: 1024px;
+				min-width: 280px;
+				margin: 0 auto;
+				padding: 0 1em 1em;
+				font-style: italic;
+			}
+			#img_box:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			#songti{
+				font-family: "宋体";
+			}
+			table{
+				color: rgb(91,155,213);
+			    margin: 0px auto 20px;
+			    font-family: Courier New;
+			    text-align: center;
+			}
+			td{
+			    width: 2em;
+			    height: 3em;
+			    line-height: 3em;
+			}
+			img{
+				margin-bottom: 1.2em;
+				float: right;
+			}
+			h5{
+				color: rgb(112,173,71);
+			    font-family: Jokerman;
+			    text-align: center;
+			    font-weight: normal;
+			    font-style: italic;
+			}
+			table.gridtable {
+				font-family: verdana,arial,sans-serif;
+				color:#000;
+				border-width: 1px;
+				border-color: #000;
+				border-collapse: collapse;
+			}
+			table.gridtable th {
+				border-width: 1px;
+				padding: 8px;
+				border-style: solid;
+				border-color: #000;
+				background-color: #dedede;
+			}
+			table.gridtable td {
+				border-width: 1px;
+				padding: 8px;
+				border-style: solid;
+				border-color: #000;
+				background-color: #ffffff;
+			}
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 250%;
+				}
+				img{
+					width: 10%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 180%;
+				}
+			}
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 120%;
+				}
+				img{
+					width: 20%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="verbs">
+			<h5>What past forms of verbs <span id="songti">(动词过去式)</span> can you see?</h5>
+			<div id="img_box"><img src="verbs.jpg"/></div>
+            <table class="gridtable">
+    			<tr><td>v</td>	<td>k</td>	<td>t</td>	<td>c</td>	<td>a</td>	<td>m</td>	<td>e</td></tr>
+				<tr><td>r</td>	<td>n</td>	<td>r</td>	<td>n</td>	<td>t</td>	<td>f</td>	<td>e</td></tr>
+				<tr><td>p</td>	<td>a</td>	<td>i</td>	<td>x</td>	<td>e</td>	<td>v</td>	<td>h</td></tr>
+				<tr><td>i</td>	<td>r</td>	<td>n</td>	<td>d</td>	<td>a</td>	<td>p</td>	<td>o</td></tr>
+				<tr><td>d</td>	<td>d</td>	<td>y</td>	<td>g</td>	<td>u</td>	<td>h</td>	<td>s</td></tr>
+            </table>
+		</div>
+	</body>
+</html>

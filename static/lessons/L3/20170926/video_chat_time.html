@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>Video Chat Time!</title>
+		<style type="text/css">
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				/* Disable selection/copy in UIWebView */
+			}
+			body{
+				margin: 0;padding: 0;
+				font-size: 250%;
+			}
+			#time{
+				padding: 0 20px 20px;
+				color: rgb(91,155,213);
+				line-height: 2em;
+				font-family: Indie Flower;
+				text-align: center;
+				max-width: 1024px;
+				min-width: 320px;
+				margin: 0 auto;
+			}
+			#time:after{
+				content: "";
+				display: block;
+				clear: both;
+			}
+			h3{
+				color: rgb(112,173,71);
+				font-family: Jokerman;
+				text-align: center;
+				margin-bottom: 0px;
+			}
+			img{
+				float: right;
+				margin-right: 10px;
+				width: 50%;
+			}
+			ul{
+				padding-left: 0;
+				margin: 0;
+				font-family: Calibri;
+				text-align: left;
+				float: left;
+				width: 100%;
+			}
+			ul>li{
+				list-style: none;
+				font-weight: bold;
+				font-style: italic;
+			}
+			ul>li:nth-child(2n+1){
+				color: rgb(237,125,49);
+			}
+			ul>li:nth-child(2n){
+				color: rgb(91,155,213);
+			}
+			@media screen and (max-width: 1024px) {
+				body {
+					font-size: 250%;
+				}
+			}
+			@media screen and (max-width: 768px) {
+				body {
+					font-size: 180%;
+				}
+			}
+			@media screen and (max-width: 600px) {
+				body {
+					font-size: 150%;
+				}
+			}
+			@media screen and (max-width: 500px) {
+				body {
+					font-size: 140%;
+				}
+			}
+			@media screen and (max-width: 414px) {
+				body {
+					font-size: 100%;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="time">
+			<h3>Video Chat Time!</h3>
+			<img src="video_chat_time.jpg"/>
+			<ul>
+				<li>A: What outdoor activities do you know?</li>
+				<li>B: __________.</li>
+				<li>A: Which one do you like best?</li>
+				<li>B: __________.</li>
+				<li>A: What would you like to take when...?</li>
+				<li>B: __________.</li>
+			</ul>
+		</div>
+	</body>
+</html>
