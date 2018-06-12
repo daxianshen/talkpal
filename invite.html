@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/invite.css" type="text/css" />
+		<style type="text/css">
+			/** {
+			    -webkit-touch-callout: none;
+			    -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+			/*}*/
+			::-webkit-input-placeholder {
+				/* WebKit browsers */
+				color: #BFBFBF;
+			}
+			
+			:-moz-placeholder {
+				/* Mozilla Firefox 4 to 18 */
+				color: #BFBFBF;
+			}
+			
+			::-moz-placeholder {
+				/* Mozilla Firefox 19+ */
+				color: #BFBFBF;
+			}
+			
+			:-ms-input-placeholder {
+				/* Internet Explorer 10+ */
+				color: #BFBFBF;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="app" v-cloak>
+			<div class="share">
+				<img v-if="user_url" :src="user_url" />
+				<img v-else src="img/share_app_default_phone.jpg" />
+				<h4><img style="transform: rotateZ(180deg);" align="center" src="img/share_app_titleline.png"/> {{user_name}}邀请你一起学英语 <img align="center" src="img/share_app_titleline.png"/></h4>
+				<div class="login">
+					<div v-if="!succeedBol" class="information">
+						<!--<input type="text" id="userName" value="" placeholder="输入英文名" onfocus="this.placeholder=''" onblur="this.placeholder='输入英文名'" maxlength="20"/>-->
+						<input type="tel" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/" id="phoneNumber" v-model="placeholder" placeholder="输入手机号" onfocus="this.placeholder=''" onblur="this.placeholder='输入手机号'"/>
+						<input type="tel" onkeyup="value=value.replace(/[^\d]/g,'') " ng-pattern="/[^a-zA-Z]/" id="code" v-model="code" placeholder="输入验证码" onfocus="this.placeholder=''" onblur="this.placeholder='输入验证码'"/>
+						<span id="getCode" @click="isClickCode && getCode()">
+							获取验证码
+						</span>
+						<span id="country" @click="getCountry">
+							{{country}}
+						</span>
+						<span id="mess">
+							<img src="img/share_app_mess.png"/>
+						</span>
+					</div>
+					<div class="voiceCode" v-if="CodeBol">收不到验证码？点此获取<span id="voiceCode">语音验证码</span></div>
+					<div v-if="!succeedBol" class="btn" id="registration"@click="AcceptTheInvitation">接受邀请</div>
+					<div v-if="succeedBol" class="result">
+						成功领取一周免费课程和100奖学金！<br />下载app立即上课吧！
+					</div>
+					<!--<div v-if="succeedBol" class="btn" id="install">立即下载</div>-->
+					<div v-if="succeedBol" class="btn2" id="install">
+						<a href="https://itunes.apple.com/cn/app/tuo-kou-pai/id1147092179"><img src="img/share_app_iOS.png"/></a>
+						<a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.sdhz.talkpallive"><img src="img/share_app_Android.png"/></a>
+					</div>
+					<p>接受邀请，即可立即<br />领取脱口派<span>免费课程和现金奖励</span></p>
+				</div>
+			</div>
+			<div class="introduce" v-for="item in introduce">
+				<p><img align="center" src="img/share_app_titleline_blue.png"/><span>{{item.text}}</span><img src="img/share_app_titleline_blue.png" style="transform: rotateZ(180deg);" align="center" /></p>
+				<div class="particulars">
+					<ul>
+						<li v-for="item1 in item.list">{{item1}}</li>
+					</ul>
+					<div class="img_list" v-if="item.imgBol">
+						<img :src="imgItem" v-for="imgItem in item.imglist"/>
+					</div>
+				</div>
+				<div class="Course_Topics" v-if="item.text === '课程'">
+					<div class="Course_Topics_Item" v-for="item2 in item.Course_Topics">
+						<img :src="item2.img"/>
+						<p><span>{{item2.title}}</span><br />{{item2.word}}</p>
+					</div>
+					<table v-for="classItem in item.classList">
+						<tr><td :colspan="classItem.list.length">{{classItem.title}}</td></tr>
+						<tr><td v-for="classItems in classItem.list">{{classItems}}</td></tr>
+						<tr><td v-for="timeItems in classItem.timeList">{{timeItems}}</td></tr>
+					</table>
+				</div>
+			</div>
+			<p class="bottom"><img src="img/share_app_bottom.png" /></p>
+			<div id="internationalCode" class="countryList" style="display: none;">
+				<header>
+					<span @click="country_back"><img align="center" src="img/share_app_back.png"/></span>
+					区域码选择
+				</header>
+				<ul>
+					<li v-for="country in countryList" @click="country_back(country)">
+						<span class="country_name">{{country.country_name_en}}</span>
+						<span class="country_code">+{{country.country_code}}</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/vue.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/invite.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.addEventListener('touchstart', function(event) {
+					if(event.touches.length > 1) {
+						event.preventDefault();
+					}
+				});
+				var lastTouchEnd = 0;
+				document.addEventListener('touchend', function(event) {
+					var now = (new Date()).getTime();
+					if(now - lastTouchEnd <= 300) {
+						event.preventDefault();
+					}
+					lastTouchEnd = now;
+				}, false);
+				var imgW = $(".share img:nth-child(1)").width();
+				$(".share>img:nth-child(1)").css({
+					"height": imgW
+				});
+			}
+		</script>
+	</body>
+
+</html>

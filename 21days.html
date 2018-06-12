@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>脱口派</title>
+		<style type="text/css">
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+				/* Disable selection/copy in UIWebView */
+			}
+			html,
+			body {
+				width: 100%;
+				height: 100%;
+			}
+			
+			body {
+				margin: 0;
+				padding: 0;
+				font-size: 100%;
+			}
+			
+			p {
+				margin: 0;
+			}
+			
+			#transcripe {
+				width: 100%;
+				height: 100%;
+				background-image: url(img/checkin-bg.png);
+				background-size: 145% 100%;
+				background-position-x: 45%;
+				font-family: "黑体";
+			}
+			
+			#transcripe .header {
+				width: 74%;
+				height: 3em;
+				color: #fff;
+				line-height: 2.4em;
+				margin: 0 auto;
+				text-align: center;
+				justify-content: center;
+				padding: 36.5px 0;
+			}
+			
+			#transcripe .header>p {
+				width: 100%;
+				height: 3em;
+				background-image: url(img/checkin-title.png);
+				background-size: 100% 100%;
+			}
+			
+			#transcripe #first {
+				color: #fff;
+				text-align: center;
+			}
+			
+			#transcripe #first .touxiang {
+				width: 5.5em;
+				height: 5.5em;
+				margin: 0 auto;
+				background-color: #56cbe8;
+				border-radius: 50%;
+				border: 2px solid #fff;
+			}
+			#transcripe #first .touxiang img {
+				width: 100%;
+				border-radius: 50%;
+			}
+			#transcripe #first>p:nth-of-type(1) {
+				font-weight: bold;
+				margin: 16.5px 0 0;
+			}
+			
+			#transcripe #first>p:nth-of-type(2) {
+				font-size: 1em;
+				width: 64.5%;
+				font-weight: bold;
+				margin: 2em auto 0;
+				padding-bottom: 36.5px;
+				border-bottom: 1px solid #ffffff;
+			}
+			
+			#transcripe #first>p:nth-of-type(2)>span {
+				font-size: 1.5em;
+			    margin: 0 10px;
+			    padding: 0.3em;
+			    color: #ffe400;
+			    background-color: #56cbe8;
+			    border-radius: 50px;
+			}
+			
+			#transcripe #first>p:nth-of-type(3) {
+				margin-top: 1em;
+				font-size: 1em;
+			}
+			
+			#transcripe #footer {
+				position: absolute;
+				width: 86%;
+				padding: 20px 7%;
+				bottom: 0;
+			    background-color: rgba(255,255,255,0.5);
+			}
+			
+			#transcripe #footer>img {
+				width: 28%;
+				float: left;
+			}
+			
+			#transcripe #footer .foot_cezhao {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #ffd782;
+				opacity: 0.6;
+			}
+			
+			#transcripe #footer>p {
+				padding: 9% 0;
+				float: right;
+				font-size: 0.8em;
+				color: #1fbae1;
+				bottom: 9%;
+				width: 68%;
+				margin: 0;
+			}
+			
+			#transcripe #footer>p>img {
+				width: 4em;
+			}
+			
+			@media screen and (max-width: 1024px) and (min-width: 769px) {
+				body {
+					font-size: 200%;
+				}
+				#transcripe #header>p {
+					padding-left: 100px;
+				}
+			}
+			
+			@media screen and (max-width: 768px) and (min-width: 415px) {
+				body {
+					font-size: 150%;
+				}
+				#transcripe #header>img {
+					width: 2.8em;
+				}
+				#transcripe #header>p {
+					padding-left: 80px;
+				}
+			}
+			
+			@media screen and (max-width: 375px) {
+				#transcripe #header>p>img {
+					width: 20%;
+				}
+				#transcripe #header>p:nth-of-type(2) {
+					font-size: 0.9em;
+				}
+			}
+			
+			@media screen and (max-width: 360px) {
+				#transcripe #header>p:nth-of-type(2) {
+					font-size: 0.8em;
+				}
+			}
+			
+			@media screen and (max-width: 320px) {
+				#transcripe #header>p:nth-of-type(2) {
+					font-size: 0.7em;
+				}
+				#transcripe #footer>p {
+					padding: 5% 0;
+					font-size: 0.7em;
+				}
+			}
+			
+			@media screen and (max-width: 320px) and (max-height: 480px) {
+				#transcripe .header {
+					padding: 15.5px 0;
+				}
+				#transcripe #first>p:nth-of-type(2) {
+					margin: 15.5px auto 0;
+					padding-bottom: 15.5px;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="transcripe">
+			<div class="header">
+				<p>21天脱口而出计划</p>
+			</div>
+			<div id="first">
+				<div class="touxiang">
+					<img id="touxiang" src="" onerror="this.src='img/21days_default_phone.jpg'" />
+				</div>
+				<p id="username">Chakery</p>
+				<p>已连续打卡<span id="dataNum">10</span>天</p>
+				<p>坚持21天，流利英语脱口而出!</p>
+			</div>
+			<div id="footer">
+				<img src="img/21days_erweima.png" />
+				<p><img src="img/checkin-talkpal.png" /><br />长按图片识别二维码加入脱口派英语</p>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript">
+            var Id = GetRequest().id||null;
+            var dateNum = GetRequest().date||null;
+            $.ajax({
+                type:"get",
+                url:"https://api.talkpal.com/users/"+Id,
+                async:true,
+                data: {
+
+                },
+                success: function(data) {
+                    console.log(data);
+                    $("#username").html(data.data.username);
+                    if (data.data.profile_image_url) {
+                        $("#touxiang")[0].src = data.data.profile_image_url;
+                    }
+                },
+                error: function(e, b, c) {
+                    console.log(e, b, c);
+                }
+            });
+            $.ajax({
+				type: "get",
+				url: "https://api.talkpal.com/users/"+Id+"/consecutive_learning_days",
+				async:true,
+				data:{
+					date: dateNum
+				},
+				success: function (data) {
+					console.log(data);
+                    $("#dataNum").html(data.data.consecutive_learning_days);
+                },
+				error:function (e,b,c) {
+					console.log(e,b,c);
+                }
+			});
+            function GetRequest() {
+                var url = location.search; //获取url中"?"符后的字串
+                var theRequest = new Object();
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    strs = str.split("&");
+                    for(var i = 0; i < strs.length; i ++) {
+                        theRequest[strs[i].split("=")[0]]= unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
+		</script>
+	</body>
+
+</html>
