@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta charset="UTF-8">
+    <title>test</title>
+</head>
+<body>
+    <div id="app">
+        <button @click="setCookie()">
+            写入cookie
+        </button>
+        <div>
+            <input type="text" v-model="cname"/>
+            <input type="text" v-model="cvalue" />
+            <input type="text" v-model="exdays" />
+        </div>
+        <button @click="getCookie()">
+            读取cookie
+        </button>
+        <button @click="clearCookie()">
+            清除cookie
+        </button>
+        <div>{{cookieList}}</div>
+    </div>
+</body>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script>
+        var app = new Vue({
+            el: "#app",
+            data: {
+                cookieList:'',
+                exdays: '',
+                cname: '',
+                cvalue: ''
+            },
+            created: function () {
+                this.checkCookie();
+            },
+            methods: {
+                //设置cookie
+                setCookie: function (cname, cvalue, exdays) {
+                    if(!cname){
+                        cname = this.cname;
+                    }
+                    if(!cvalue){
+                        cname = this.cname;
+                    }
+                    if(!exdays){
+                        cname = this.cname;
+                    }
+                    var d = new Date();
+                    d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+                    var expires = "expires=" + d.toUTCString();
+                    console.info(cname + "=" + cvalue + "; " + expires);
+                    document.cookie = cname + "=" + cvalue + "; " + expires;
+                    console.info(document.cookie);
+                },
+                //获取cookie
+                // getCookie: function (cname) {
+                //     var name = cname + "=";
+                //     var ca = document.cookie.split(';');
+                //     for (var i = 0; i < ca.length; i++) {
+                //         var c = ca[i];
+                //         while (c.charAt(0) == ' ') c = c.substring(1);
+                //         if (c.indexOf(name) != -1) return c.substring(name.length, c.length);
+                //     }
+                //     return "";
+                // },
+                getCookie: function () {
+                    if(document.cookie){
+                        alert("cookie" + document.cookie);
+                    }else {
+                        alert("cookie获取失败");
+                    }
+                    console.log(document.cookie);
+                    this.cookieList = document.cookie;
+                },
+                //清除cookie
+                clearCookie: function () {
+                    this.setCookie("gr_user_id", "", -1);
+                    var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+                    console.log(keys);
+                    if(keys) {
+                        for(var i = keys.length; i--;)
+                            document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
+                    }
+                },
+                checkCookie: function () {
+                    var user = this.getCookie("username");
+                    if (user != "") {
+                        // alert("Welcome again " + user);
+                    } else {
+                        user = prompt("Please enter your name:", "");
+                        if (user != "" && user != null) {
+                            this.setCookie("username", user, 365);
+                        }
+                    }
+                }
+            }
+        })
+    </script>
+</body>
+</html>
