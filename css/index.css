@@ -76,6 +76,11 @@ header .nav .download > p:nth-child(2) {
   font-size: 1em;
 }
 
+header .nav .download > p:nth-child(2) #hiringEntry{
+  display: none;
+  margin-top: 0.2em;
+}
+
 header .nav .download > p:nth-of-type(3) {
   font-size: 0.5em;
 }

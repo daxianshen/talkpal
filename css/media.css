@@ -60,7 +60,10 @@
     padding-top: 0;
   }
   header .nav .download > p:nth-child(2) {
-    margin-bottom: 4em;
+    margin-bottom: 3em;
+  }
+  header .nav .download > p:nth-child(2) #hiringEntry{
+    display: inline-block;
   }
   header .nav > img {
     width: 92.89541%;
@@ -88,6 +91,7 @@
     width: 200%;
     margin-left: -50%;
   }
+
   .About_Talkpal {
     text-align: center;
   }

@@ -21,12 +21,15 @@
 				<span class="Public">
 					微信公众号：脱口派英语   |   客服电话：189-2240-3657
 				</span>
+				<span id="teachersPortal" class="Public" style="margin-right: 1rem;">
+					Teacher's Portal
+				</span>
 			</div>
 			<div class="nav clear">
 				<img src="img/banner_left.png" />
 				<div class="download">
 					<p>脱口派App</p>
-					<p>看外教直播 、学纯正英语</p>
+					<p>看外教直播 、学纯正英语<span id="hiringEntry">Teacher's Portal</span></p>
 					<p>
 						<span id="ios_download"><img src="img/banner_download_iOS.png"/><br />iOS版 下载</span>
 						<span id="android_download"><img src="img/banner_download_Android.png"/><br />安卓版 下载</span>
@@ -133,7 +136,7 @@
 				<h2 class="layer">资深美国教师</h2>
 				<p>
 					<span>Experienced </span>
-					<span>America Teachers</span>
+					<span>American Teachers</span>
 				</p>
 				<div>
 					脱口派的外教皆毕业于国外本科院校；其中硕士及以上学历占比超过30%；在职教师均具有丰富的教学经验，且其中80%以上的外教具有三年以上教学经验；经过美国招聘主管4轮严格面试，层层筛选，确保每一位脱口派外教都懂教育、爱孩子。
@@ -207,7 +210,9 @@
 		var logo = document.getElementsByClassName("logo")[0];
 		var atpic = document.getElementsByClassName("atpic")[0];
 		var hfipic = document.getElementsByClassName("hfipic")[0];
-		var eatpic = document.getElementsByClassName("eatpic")[0];
+        var eatpic = document.getElementsByClassName("eatpic")[0];
+        var teachersPortal = document.getElementById("teachersPortal");
+        var hiringEntry = document.getElementById("hiringEntry");
 		if (document.body.clientWidth <= 414) {
 			logo.innerHTML = '<img align="center" src="img/top_logo.png"/>';
 			pic(atpic,"img/about_Talkpal_pic.png");
@@ -235,6 +240,9 @@
             video.addEventListener("ended",function(){
                 $(".TheMaskLayer").show();
             })
+        }
+        teachersPortal.onclick = hiringEntry.onclick = function () {
+            window.location.href = 'teachersPortal.html'
         }
 //        $(document).ready(function() {
 //            var navBox = $("#navBox");
